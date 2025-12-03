@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: "Imran Khan",
     role: "Education Consultant",
-    content: "Student portal + login system properly bana. Useful reporting features. Highly recommended!",
+    content: "Student portal and login system exactly as required. Professional work!",
     rating: 5,
   },
 ];
