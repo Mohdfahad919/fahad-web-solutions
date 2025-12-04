@@ -1,3 +1,5 @@
+import fahadImage from "@/assets/fahad.jpg";
+
 const services = [
   {
     title: "Business Website",
@@ -7,7 +9,7 @@ const services = [
   },
   {
     title: "E-commerce Website",
-    image: "https://lovable-public.s3.amazonaws.com/user-uploads/a1024d06-220e-4c45-852e-dd9ac167d391/fahad-photo.jpg",
+    image: fahadImage,
     description: "Products, checkout, secure payments, cart system.",
     price: "₹8,000 – ₹18,000",
   },
