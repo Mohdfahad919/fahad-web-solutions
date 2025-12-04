@@ -7,7 +7,7 @@ const services = [
   },
   {
     title: "E-commerce Website",
-    image: "https://images.unsplash.com/photo-1525182008055-f88b95ff7980?w=1200&q=80",
+    image: "https://lovable-public.s3.amazonaws.com/user-uploads/a1024d06-220e-4c45-852e-dd9ac167d391/fahad-photo.jpg",
     description: "Products, checkout, secure payments, cart system.",
     price: "₹8,000 – ₹18,000",
   },
