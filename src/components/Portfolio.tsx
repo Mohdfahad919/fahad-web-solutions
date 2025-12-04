@@ -8,7 +8,7 @@ const portfolioImages = [
     alt: "Programming workspace with colorful code",
   },
   {
-    src: "https://images.unsplash.com/photo-1559027615-ce3da15bdd0b?w=1200&q=80",
+    src: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80",
     alt: "Modern web development setup",
   },
 ];

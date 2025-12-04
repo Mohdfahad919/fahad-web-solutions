@@ -182,14 +182,12 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground mb-1">WhatsApp</p>
-                  <a
-                    href="https://wa.me/9076669103"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => window.open("https://wa.me/9076669103?text=Hi%20Fahad", "_blank")}
                     className="text-muted-foreground hover:text-whatsapp transition-colors"
                   >
                     9076669103
-                  </a>
+                  </button>
                 </div>
               </div>
 
@@ -209,15 +207,13 @@ export function Contact() {
               <p className="text-foreground font-medium mb-3">
                 Prefer WhatsApp? Chat with us directly!
               </p>
-              <a
-                href="https://wa.me/9076669103"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => window.open("https://wa.me/9076669103?text=Hi%20Fahad", "_blank")}
                 className="inline-flex items-center gap-2 bg-whatsapp text-primary-foreground font-semibold px-6 py-3 rounded-xl hover:bg-whatsapp-hover transition-all duration-300"
               >
                 <MessageCircle className="w-5 h-5" />
                 Chat on WhatsApp
-              </a>
+              </button>
             </div>
           </div>
         </div>

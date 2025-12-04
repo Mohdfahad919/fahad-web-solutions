@@ -1,11 +1,13 @@
 import { MessageCircle } from "lucide-react";
 
 export function WhatsAppButton() {
+  const openWhatsApp = () => {
+    window.open("https://wa.me/9076669103?text=Hi%20Fahad", "_blank");
+  };
+
   return (
-    <a
-      href="https://wa.me/9076669103"
-      target="_blank"
-      rel="noopener noreferrer"
+    <button
+      onClick={openWhatsApp}
       className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-whatsapp rounded-full flex items-center justify-center shadow-lg hover:bg-whatsapp-hover hover:scale-110 transition-all duration-300 group"
       aria-label="Chat on WhatsApp"
     >
@@ -18,6 +20,6 @@ export function WhatsAppButton() {
       
       {/* Ping Animation */}
       <span className="absolute inset-0 rounded-full bg-whatsapp animate-ping opacity-30" />
-    </a>
+    </button>
   );
 }
