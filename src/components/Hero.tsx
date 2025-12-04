@@ -10,6 +10,8 @@ export function Hero() {
           src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&q=80"
           alt="Professional web development workspace"
           className="w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,50%,10%,0.75)] to-[hsl(220,50%,10%,0.9)]" />
       </div>
