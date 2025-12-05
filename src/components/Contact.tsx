@@ -5,6 +5,11 @@ import { supabase } from "@/integrations/supabase/client";
 
 export function Contact() {
   const { toast } = useToast();
+  
+  const openWhatsApp = () => {
+    const url = "https://wa.me/9076669103";
+    window.location.href = url;
+  };
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -197,9 +202,7 @@ export function Contact() {
                 <div>
                   <p className="font-semibold text-foreground mb-1">WhatsApp</p>
                   <button
-                    onClick={() => {
-                      window.open("https://wa.me/9076669103", "_blank");
-                    }}
+                    onClick={openWhatsApp}
                     className="text-muted-foreground hover:text-whatsapp transition-colors"
                   >
                     9076669103
@@ -224,9 +227,7 @@ export function Contact() {
                 Prefer WhatsApp? Chat with us directly!
               </p>
               <button
-                onClick={() => {
-                  window.open("https://wa.me/9076669103", "_blank");
-                }}
+                onClick={openWhatsApp}
                 className="inline-flex items-center gap-2 bg-whatsapp text-primary-foreground font-semibold px-6 py-3 rounded-xl hover:bg-whatsapp-hover transition-all duration-300"
               >
                 <MessageCircle className="w-5 h-5" />
