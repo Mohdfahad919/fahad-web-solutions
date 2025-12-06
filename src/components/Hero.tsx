@@ -11,7 +11,6 @@ export function Hero() {
           alt="Professional web development workspace"
           className="w-full h-full object-cover"
           loading="eager"
-          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,50%,10%,0.75)] to-[hsl(220,50%,10%,0.9)]" />
       </div>
