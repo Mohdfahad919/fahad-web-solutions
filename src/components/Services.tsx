@@ -1,5 +1,3 @@
-import fahadImage from "@/assets/fahad.jpg";
-
 const services = [
   {
     title: "Business Website",
@@ -9,13 +7,13 @@ const services = [
   },
   {
     title: "E-commerce Website",
-    image: fahadImage,
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80",
     description: "Products, checkout, secure payments, cart system.",
     price: "₹8,000 – ₹18,000",
   },
   {
     title: "Custom / Advanced Website",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&q=80",
     description: "Admin panel, login system, dashboards, coaching portals.",
     price: "₹12,000 – ₹35,000",
   },
