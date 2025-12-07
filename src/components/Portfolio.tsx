@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Sparkles } from "lucide-react";
 import { AnimatedSection } from "./AnimatedSection";
 
 const portfolioImages = [
@@ -36,46 +36,57 @@ const portfolioImages = [
 
 export function Portfolio() {
   return (
-    <section id="portfolio" className="section-padding bg-card">
-      <div className="section-container">
+    <section id="portfolio" className="section-padding bg-card relative overflow-hidden">
+      {/* Background accents */}
+      <div className="absolute top-1/2 left-0 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[100px] -translate-y-1/2" />
+      <div className="absolute top-1/3 right-0 w-[250px] h-[250px] bg-accent/5 rounded-full blur-[80px]" />
+
+      <div className="section-container relative">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
+          <span className="section-badge mb-5">
+            <Sparkles className="w-4 h-4" />
             Our Work
           </span>
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-5">
             Our <span className="text-primary">Portfolio</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
             Browse through our recent projects and see the quality of modern, professional designs we deliver.
           </p>
         </AnimatedSection>
 
         {/* Portfolio Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {portfolioImages.map((image, index) => (
             <AnimatedSection
               key={index}
               animation="scale-in"
-              delay={index * 80}
+              delay={index * 100}
             >
-              <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer shadow-card hover:shadow-card-hover transition-all duration-500">
+              <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer border border-border/50 hover:border-primary/30 transition-all duration-500" style={{ boxShadow: 'var(--shadow-card)' }}>
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-[0.7]"
                   loading="lazy"
                 />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                    <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full mb-2">
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-6 group-hover:translate-y-0 transition-all duration-500 ease-out">
+                    <span className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-primary text-primary-foreground text-xs font-bold rounded-full mb-3 shadow-lg">
                       {image.category}
                     </span>
-                    <p className="text-primary-foreground font-medium flex items-center gap-2">
+                    <p className="text-white font-medium flex items-center gap-2 text-lg">
                       View Project <ExternalLink className="w-4 h-4" />
                     </p>
                   </div>
+                </div>
+
+                {/* Corner accent */}
+                <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100">
+                  <ExternalLink className="w-4 h-4 text-white" />
                 </div>
               </div>
             </AnimatedSection>
@@ -83,12 +94,12 @@ export function Portfolio() {
         </div>
 
         {/* CTA */}
-        <AnimatedSection className="text-center mt-12">
+        <AnimatedSection className="text-center mt-16">
           <a
             href="#contact"
-            className="btn-primary inline-flex items-center gap-2"
+            className="btn-primary inline-flex items-center gap-2 text-lg"
           >
-            Start Your Project <ExternalLink className="w-4 h-4" />
+            Start Your Project <ExternalLink className="w-5 h-5" />
           </a>
         </AnimatedSection>
       </div>

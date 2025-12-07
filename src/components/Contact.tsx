@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, MessageCircle, Send, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Send, ArrowRight, Headphones } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { AnimatedSection } from "./AnimatedSection";
@@ -58,18 +58,32 @@ export function Contact() {
     }));
   };
 
+  const contactInfo = [
+    { icon: Phone, label: "Phone", value: "+91 9076669103", href: "tel:9076669103", color: "primary" },
+    { icon: Mail, label: "Email", value: "fahadshaikh9076669103@gmail.com", href: "mailto:fahadshaikh9076669103@gmail.com", color: "primary" },
+    { icon: MessageCircle, label: "WhatsApp", value: "+91 9076669103", onClick: openWhatsApp, color: "whatsapp" },
+    { icon: MapPin, label: "Location", value: "India", color: "primary" },
+  ];
+
   return (
-    <section id="contact" className="section-padding bg-muted">
-      <div className="section-container">
+    <section id="contact" className="section-padding bg-muted relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[120px]" />
+        <div className="absolute bottom-1/4 left-1/4 w-[350px] h-[350px] bg-accent/5 rounded-full blur-[100px]" />
+      </div>
+
+      <div className="section-container relative">
         {/* Section Header */}
-        <AnimatedSection className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
+        <AnimatedSection className="text-center mb-20">
+          <span className="section-badge mb-5">
+            <Headphones className="w-4 h-4" />
             Contact Us
           </span>
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-foreground mb-5">
             Get In <span className="text-primary">Touch</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
             Ready to start your project? Contact us today for a free consultation.
           </p>
         </AnimatedSection>
@@ -78,13 +92,13 @@ export function Contact() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
           <AnimatedSection animation="slide-up" delay={0}>
-            <div className="card-base p-8 h-full">
-              <h3 className="font-display font-bold text-xl text-foreground mb-6">
+            <div className="card-premium p-8 lg:p-10 h-full rounded-3xl">
+              <h3 className="font-display font-bold text-2xl text-foreground mb-8">
                 Send Us a Message
               </h3>
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2.5">
                     Your Name
                   </label>
                   <input
@@ -94,13 +108,13 @@ export function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3.5 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                    className="w-full px-5 py-4 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-300"
                     placeholder="Enter your name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
+                  <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2.5">
                     Phone Number
                   </label>
                   <input
@@ -110,13 +124,13 @@ export function Contact() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3.5 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                    className="w-full px-5 py-4 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-300"
                     placeholder="Enter your phone number"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2.5">
                     Email Address
                   </label>
                   <input
@@ -126,13 +140,13 @@ export function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3.5 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                    className="w-full px-5 py-4 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-300"
                     placeholder="Enter your email"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="requirement" className="block text-sm font-semibold text-foreground mb-2">
+                  <label htmlFor="requirement" className="block text-sm font-semibold text-foreground mb-2.5">
                     Project Requirement
                   </label>
                   <textarea
@@ -142,7 +156,7 @@ export function Contact() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3.5 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300 resize-none"
+                    className="w-full px-5 py-4 rounded-xl border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-300 resize-none"
                     placeholder="Describe your project requirements..."
                   />
                 </div>
@@ -150,7 +164,8 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="btn-accent w-full flex items-center justify-center gap-2 disabled:opacity-70 hover:scale-[1.02]"
+                  className="group w-full bg-accent text-accent-foreground font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 hover:scale-[1.02] disabled:opacity-70"
+                  style={{ boxShadow: '0 8px 24px -8px hsl(24 95% 53% / 0.4)' }}
                 >
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
@@ -161,6 +176,7 @@ export function Contact() {
                     <>
                       <Send className="w-5 h-5" />
                       Send Message
+                      <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                     </>
                   )}
                 </button>
@@ -169,81 +185,61 @@ export function Contact() {
           </AnimatedSection>
 
           {/* Contact Info */}
-          <AnimatedSection animation="slide-up" delay={100}>
-            <div className="card-base p-8 h-full flex flex-col">
-              <h3 className="font-display font-bold text-xl text-foreground mb-6">
+          <AnimatedSection animation="slide-up" delay={120}>
+            <div className="card-premium p-8 lg:p-10 h-full flex flex-col rounded-3xl">
+              <h3 className="font-display font-bold text-2xl text-foreground mb-8">
                 Contact Information
               </h3>
 
               <div className="space-y-6 flex-1">
-                <div className="flex items-start gap-4 group">
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                    <Phone className="w-6 h-6 text-primary" />
+                {contactInfo.map((item, index) => (
+                  <div key={index} className="flex items-center gap-5 group">
+                    <div className={`w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-105 ${
+                      item.color === 'whatsapp' 
+                        ? 'bg-whatsapp/10 group-hover:bg-whatsapp/20' 
+                        : 'bg-primary/10 group-hover:bg-primary/20'
+                    }`}>
+                      <item.icon className={`w-6 h-6 ${item.color === 'whatsapp' ? 'text-whatsapp' : 'text-primary'}`} />
+                    </div>
+                    <div>
+                      <p className="font-bold text-foreground mb-0.5">{item.label}</p>
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          className={`text-muted-foreground hover:text-${item.color} transition-colors text-lg break-all`}
+                        >
+                          {item.value}
+                        </a>
+                      ) : item.onClick ? (
+                        <button
+                          onClick={item.onClick}
+                          className="text-muted-foreground hover:text-whatsapp transition-colors text-lg text-left"
+                        >
+                          {item.value}
+                        </button>
+                      ) : (
+                        <p className="text-muted-foreground text-lg">{item.value}</p>
+                      )}
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-bold text-foreground mb-1">Phone</p>
-                    <a
-                      href="tel:9076669103"
-                      className="text-muted-foreground hover:text-primary transition-colors text-lg"
-                    >
-                      +91 9076669103
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 group">
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                    <Mail className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-foreground mb-1">Email</p>
-                    <a
-                      href="mailto:fahadshaikh9076669103@gmail.com"
-                      className="text-muted-foreground hover:text-primary transition-colors break-all"
-                    >
-                      fahadshaikh9076669103@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 group">
-                  <div className="w-14 h-14 rounded-xl bg-whatsapp/10 flex items-center justify-center flex-shrink-0 group-hover:bg-whatsapp/20 transition-colors">
-                    <MessageCircle className="w-6 h-6 text-whatsapp" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-foreground mb-1">WhatsApp</p>
-                    <button
-                      onClick={openWhatsApp}
-                      className="text-muted-foreground hover:text-whatsapp transition-colors text-lg"
-                    >
-                      +91 9076669103
-                    </button>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 group">
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                    <MapPin className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-foreground mb-1">Location</p>
-                    <p className="text-muted-foreground text-lg">India</p>
-                  </div>
-                </div>
+                ))}
               </div>
 
               {/* Quick WhatsApp CTA */}
-              <div className="mt-8 p-6 rounded-2xl bg-gradient-to-br from-whatsapp/10 to-whatsapp/5 border border-whatsapp/20">
-                <p className="text-foreground font-semibold mb-4 text-lg">
-                  Prefer WhatsApp? Chat with us directly!
+              <div className="mt-10 p-8 rounded-2xl bg-gradient-to-br from-whatsapp/10 via-whatsapp/5 to-transparent border border-whatsapp/20">
+                <p className="text-foreground font-bold mb-2 text-lg">
+                  Prefer WhatsApp?
+                </p>
+                <p className="text-muted-foreground mb-5">
+                  Chat with us directly for faster response!
                 </p>
                 <button
                   onClick={openWhatsApp}
-                  className="inline-flex items-center gap-2 bg-whatsapp text-primary-foreground font-bold px-6 py-3.5 rounded-xl hover:bg-whatsapp-hover hover:scale-105 transition-all duration-300 shadow-lg"
+                  className="group inline-flex items-center gap-2 bg-whatsapp text-white font-bold px-6 py-4 rounded-xl hover:bg-whatsapp-hover hover:scale-[1.02] transition-all duration-300 shadow-lg"
                 >
                   <MessageCircle className="w-5 h-5" />
                   Chat on WhatsApp
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </button>
               </div>
             </div>
