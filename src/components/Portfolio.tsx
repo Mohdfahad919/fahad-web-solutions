@@ -64,7 +64,12 @@ export function Portfolio() {
               animation="scale-in"
               delay={index * 100}
             >
-              <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer border border-border/50 hover:border-primary/30 transition-all duration-500" style={{ boxShadow: 'var(--shadow-card)' }}>
+              <a
+                href="#contact"
+                className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer border border-border/50 hover:border-primary/30 transition-all duration-500 block"
+                style={{ boxShadow: 'var(--shadow-card)' }}
+                aria-label={`View ${image.category} project - ${image.alt}`}
+              >
                 <img
                   src={image.src}
                   alt={image.alt}
@@ -79,7 +84,7 @@ export function Portfolio() {
                       {image.category}
                     </span>
                     <p className="text-white font-medium flex items-center gap-2 text-lg">
-                      View Project <ExternalLink className="w-4 h-4" />
+                      Start Similar Project <ExternalLink className="w-4 h-4" />
                     </p>
                   </div>
                 </div>
@@ -88,7 +93,7 @@ export function Portfolio() {
                 <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100">
                   <ExternalLink className="w-4 h-4 text-white" />
                 </div>
-              </div>
+              </a>
             </AnimatedSection>
           ))}
         </div>
