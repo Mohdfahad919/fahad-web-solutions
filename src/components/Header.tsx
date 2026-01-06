@@ -1,22 +1,21 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { useScrollSpy } from "@/hooks/useScrollSpy";
+import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "Services", href: "#services", id: "services" },
-  { name: "Portfolio", href: "#portfolio", id: "portfolio" },
-  { name: "Pricing", href: "#pricing", id: "pricing" },
-  { name: "Testimonials", href: "#testimonials", id: "testimonials" },
-  { name: "Contact", href: "#contact", id: "contact" },
+  { name: "Home", href: "/" },
+  { name: "Services", href: "/services" },
+  { name: "Portfolio", href: "/portfolio" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
-
-const sectionIds = ["hero", "services", "portfolio", "pricing", "testimonials", "contact"];
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const activeSection = useScrollSpy(sectionIds, 150);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,61 +25,69 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
+
+  const isActiveLink = (href: string) => {
+    return location.pathname === href;
+  };
+
   return (
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        isScrolled
-          ? "bg-card/98 backdrop-blur-xl shadow-header py-3"
+        isScrolled || !isHome
+          ? "bg-white/98 backdrop-blur-xl shadow-header py-3"
           : "bg-transparent py-5"
       )}
     >
       <div className="section-container">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <Link to="/" className="flex items-center gap-2 group">
             <span className={cn(
               "font-display font-extrabold text-xl sm:text-2xl tracking-tight transition-all duration-300",
-              isScrolled 
-                ? "text-primary group-hover:text-primary-dark" 
-                : "text-primary-foreground group-hover:text-accent"
+              isScrolled || !isHome
+                ? "text-primary group-hover:text-primary/80" 
+                : "text-white group-hover:text-white/80"
             )}>
-              FAHAD WEB SERVICE
+              FAHAD WEB SERVICES
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className={cn(
                   "relative px-4 py-2 font-medium text-sm transition-all duration-300 rounded-lg",
-                  isScrolled
-                    ? activeSection === link.id
+                  isScrolled || !isHome
+                    ? isActiveLink(link.href)
                       ? "text-primary bg-primary/10"
                       : "text-foreground hover:text-primary hover:bg-primary/5"
-                    : activeSection === link.id
-                      ? "text-accent"
-                      : "text-primary-foreground/90 hover:text-primary-foreground"
+                    : isActiveLink(link.href)
+                      ? "text-white bg-white/20"
+                      : "text-white/90 hover:text-white hover:bg-white/10"
                 )}
               >
                 {link.name}
-                {activeSection === link.id && (
-                  <span className={cn(
-                    "absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full transition-all",
-                    isScrolled ? "bg-primary" : "bg-accent"
-                  )} />
-                )}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
-              className="ml-4 btn-accent text-sm px-6 py-2.5 hover:scale-105"
+            <Link
+              to="/contact"
+              className={cn(
+                "ml-4 font-bold px-6 py-2.5 rounded-xl transition-all duration-300 hover:scale-105",
+                isScrolled || !isHome
+                  ? "bg-primary text-white hover:bg-primary/90"
+                  : "bg-white text-primary hover:bg-white/90"
+              )}
             >
-              Start Project
-            </a>
+              Get Started
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -88,9 +95,9 @@ export function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={cn(
               "lg:hidden p-2.5 rounded-xl transition-all duration-300",
-              isScrolled 
+              isScrolled || !isHome
                 ? "text-foreground hover:bg-primary/10" 
-                : "text-primary-foreground hover:bg-primary-foreground/10"
+                : "text-white hover:bg-white/10"
             )}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -102,33 +109,27 @@ export function Header() {
           "lg:hidden overflow-hidden transition-all duration-300",
           isMobileMenuOpen ? "max-h-96 opacity-100 mt-4 pb-4" : "max-h-0 opacity-0"
         )}>
-          <nav className="flex flex-col gap-1">
+          <nav className="flex flex-col gap-1 bg-white rounded-2xl p-4 shadow-lg">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
+                to={link.href}
                 className={cn(
                   "py-3 px-4 rounded-xl font-medium transition-all duration-300",
-                  isScrolled
-                    ? activeSection === link.id
-                      ? "text-primary bg-primary/10"
-                      : "text-foreground hover:text-primary hover:bg-primary/5"
-                    : activeSection === link.id
-                      ? "text-accent bg-accent/10"
-                      : "text-primary-foreground/90 hover:text-primary-foreground hover:bg-primary-foreground/10"
+                  isActiveLink(link.href)
+                    ? "text-primary bg-primary/10"
+                    : "text-foreground hover:text-primary hover:bg-primary/5"
                 )}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#contact"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="btn-accent text-center py-3 mt-2"
+            <Link
+              to="/contact"
+              className="bg-primary text-white text-center font-bold py-3 rounded-xl mt-2 hover:bg-primary/90 transition-colors"
             >
-              Start Project
-            </a>
+              Get Started
+            </Link>
           </nav>
         </div>
       </div>
