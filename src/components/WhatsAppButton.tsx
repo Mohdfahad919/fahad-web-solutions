@@ -2,26 +2,27 @@ import { MessageCircle } from "lucide-react";
 
 export function WhatsAppButton() {
   const openWhatsApp = () => {
-    const url = "https://wa.me/9076669103";
-    window.location.href = url;
+    window.location.href = "https://wa.me/9076669103";
   };
 
   return (
     <button
       onClick={openWhatsApp}
-      className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-whatsapp rounded-full flex items-center justify-center shadow-[0_8px_24px_-4px_hsl(var(--whatsapp)/0.5)] hover:bg-whatsapp-hover hover:scale-110 hover:shadow-[0_12px_32px_-4px_hsl(var(--whatsapp)/0.6)] transition-all duration-300 group"
+      className="fixed bottom-6 right-6 z-50 group"
       aria-label="Chat on WhatsApp"
-      title="Chat with us on WhatsApp"
     >
-      <MessageCircle className="w-8 h-8 text-primary-foreground" />
+      {/* Glow effect */}
+      <span className="absolute inset-0 rounded-full bg-whatsapp/40 animate-ping" />
       
-      {/* Tooltip */}
-      <span className="absolute right-full mr-4 px-4 py-2 bg-card text-foreground text-sm font-semibold rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap pointer-events-none">
-        Chat with us
+      {/* Button */}
+      <span className="relative flex items-center justify-center w-14 h-14 rounded-full bg-whatsapp text-white shadow-lg hover:bg-whatsapp-hover transition-all duration-300 hover:scale-110">
+        <MessageCircle className="w-6 h-6" />
       </span>
       
-      {/* Ping Animation */}
-      <span className="absolute inset-0 rounded-full bg-whatsapp animate-ping opacity-25" />
+      {/* Tooltip */}
+      <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 rounded-lg bg-surface-elevated border border-border text-foreground text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+        Chat with us
+      </span>
     </button>
   );
 }

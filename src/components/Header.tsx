@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
-  { name: "Portfolio", href: "/portfolio" },
+  { name: "Work", href: "/portfolio" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
@@ -15,7 +15,6 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const isHome = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +24,6 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
@@ -38,8 +36,8 @@ export function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        isScrolled || !isHome
-          ? "bg-white/98 backdrop-blur-xl shadow-header py-3"
+        isScrolled
+          ? "glass-header py-3"
           : "bg-transparent py-5"
       )}
     >
@@ -47,13 +45,11 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <span className={cn(
-              "font-display font-extrabold text-xl sm:text-2xl tracking-tight transition-all duration-300",
-              isScrolled || !isHome
-                ? "text-primary group-hover:text-primary/80" 
-                : "text-white group-hover:text-white/80"
-            )}>
-              FAHAD WEB SERVICES
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-gradient-blue flex items-center justify-center">
+              <span className="text-white font-bold text-lg">F</span>
+            </div>
+            <span className="font-display font-bold text-lg sm:text-xl text-foreground tracking-tight hidden sm:block">
+              Fahad <span className="text-primary">WebService</span>
             </span>
           </Link>
 
@@ -64,41 +60,41 @@ export function Header() {
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  "relative px-4 py-2 font-medium text-sm transition-all duration-300 rounded-lg",
-                  isScrolled || !isHome
-                    ? isActiveLink(link.href)
-                      ? "text-primary bg-primary/10"
-                      : "text-foreground hover:text-primary hover:bg-primary/5"
-                    : isActiveLink(link.href)
-                      ? "text-white bg-white/20"
-                      : "text-white/90 hover:text-white hover:bg-white/10"
+                  "relative px-4 py-2.5 font-medium text-sm transition-all duration-300 rounded-xl",
+                  isActiveLink(link.href)
+                    ? "text-primary bg-primary/10"
+                    : "text-muted-foreground hover:text-foreground hover:bg-surface-elevated"
                 )}
               >
                 {link.name}
+                {isActiveLink(link.href) && (
+                  <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-primary" />
+                )}
               </Link>
             ))}
+          </nav>
+
+          {/* CTA Button */}
+          <div className="hidden lg:flex items-center gap-3">
+            <a
+              href="tel:9076669103"
+              className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm"
+            >
+              <Phone className="w-4 h-4" />
+              <span className="hidden xl:inline">+91 9076669103</span>
+            </a>
             <Link
               to="/contact"
-              className={cn(
-                "ml-4 font-bold px-6 py-2.5 rounded-xl transition-all duration-300 hover:scale-105",
-                isScrolled || !isHome
-                  ? "bg-primary text-white hover:bg-primary/90"
-                  : "bg-white text-primary hover:bg-white/90"
-              )}
+              className="btn-primary text-sm px-6 py-2.5"
             >
-              Get Started
+              Book a Free Call
             </Link>
-          </nav>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={cn(
-              "lg:hidden p-2.5 rounded-xl transition-all duration-300",
-              isScrolled || !isHome
-                ? "text-foreground hover:bg-primary/10" 
-                : "text-white hover:bg-white/10"
-            )}
+            className="lg:hidden p-2.5 rounded-xl text-foreground hover:bg-surface-elevated transition-colors"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -107,9 +103,9 @@ export function Header() {
         {/* Mobile Navigation */}
         <div className={cn(
           "lg:hidden overflow-hidden transition-all duration-300",
-          isMobileMenuOpen ? "max-h-96 opacity-100 mt-4 pb-4" : "max-h-0 opacity-0"
+          isMobileMenuOpen ? "max-h-[500px] opacity-100 mt-4 pb-4" : "max-h-0 opacity-0"
         )}>
-          <nav className="flex flex-col gap-1 bg-white rounded-2xl p-4 shadow-lg">
+          <nav className="flex flex-col gap-1 glass-card p-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -118,18 +114,20 @@ export function Header() {
                   "py-3 px-4 rounded-xl font-medium transition-all duration-300",
                   isActiveLink(link.href)
                     ? "text-primary bg-primary/10"
-                    : "text-foreground hover:text-primary hover:bg-primary/5"
+                    : "text-muted-foreground hover:text-foreground hover:bg-surface-elevated"
                 )}
               >
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/contact"
-              className="bg-primary text-white text-center font-bold py-3 rounded-xl mt-2 hover:bg-primary/90 transition-colors"
-            >
-              Get Started
-            </Link>
+            <div className="pt-2 mt-2 border-t border-border">
+              <Link
+                to="/contact"
+                className="btn-primary w-full text-center block text-sm py-3"
+              >
+                Book a Free Call
+              </Link>
+            </div>
           </nav>
         </div>
       </div>
