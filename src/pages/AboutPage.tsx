@@ -3,7 +3,9 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Link } from "react-router-dom";
-import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
+import { motion } from "framer-motion";
+import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2, Heart, Zap, BadgeCheck, Star } from "lucide-react";
+import fahadImage from "@/assets/fahad.jpg";
 
 const values = [
   { icon: Users, title: "Client-Focused", description: "Your success is our priority. We listen, understand, and deliver solutions that exceed expectations." },
@@ -17,6 +19,13 @@ const stats = [
   { value: "50+", label: "Happy Clients" },
   { value: "7+", label: "Years Experience" },
   { value: "100%", label: "Satisfaction Rate" },
+];
+
+const milestones = [
+  { year: "2017", title: "Started Journey", description: "Began freelancing and building websites for local businesses" },
+  { year: "2019", title: "50+ Projects", description: "Reached milestone of 50 completed projects" },
+  { year: "2021", title: "Agency Founded", description: "Officially launched Fahad WebService as a premium agency" },
+  { year: "2024", title: "120+ Projects", description: "Trusted by 50+ businesses across India" },
 ];
 
 export default function AboutPage() {
