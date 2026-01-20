@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
-import { Phone, Mail, MapPin, MessageCircle, Send, ArrowRight, Clock, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Send, ArrowRight, Clock, CheckCircle2, Shield, Zap, BadgeCheck } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -43,23 +43,41 @@ export default function ContactPage() {
     { icon: MapPin, label: "Location", value: "India" },
   ];
 
+  const trustBadges = [
+    { icon: Shield, text: "No Hidden Charges" },
+    { icon: Zap, text: "Fast Response" },
+    { icon: BadgeCheck, text: "Premium Quality" },
+  ];
+
   return (
     <div className="min-h-screen bg-background gradient-mesh">
       <Header />
       <main>
-        <section className="pt-32 pb-20">
+        <section className="pt-32 pb-16">
           <div className="section-container">
             <AnimatedSection className="text-center max-w-4xl mx-auto">
               <span className="section-badge mb-4"><MessageCircle className="w-4 h-4" />Contact Us</span>
               <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-foreground mb-6">
                 Let's <span className="gradient-text">build something amazing</span>
               </h1>
-              <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed">Book a free strategy call and let's discuss your project.</p>
+              <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed mb-8">
+                Book a free strategy call and get your quote instantly. No obligations.
+              </p>
+              
+              {/* Trust badges */}
+              <div className="flex flex-wrap justify-center gap-3">
+                {trustBadges.map((badge) => (
+                  <div key={badge.text} className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary font-medium">
+                    <badge.icon className="w-4 h-4" />
+                    {badge.text}
+                  </div>
+                ))}
+              </div>
             </AnimatedSection>
           </div>
         </section>
 
-        <section className="py-10">
+        <section className="py-10 pb-24">
           <div className="section-container">
             <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
               <AnimatedSection animation="slide-up">
@@ -73,13 +91,13 @@ export default function ContactPage() {
                         <input type="text" name="name" value={formData.name} onChange={handleChange} required className="input-premium" placeholder="Your name" />
                       </div>
                       <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">Phone/WhatsApp *</label>
-                        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required className="input-premium" placeholder="Your phone" />
+                        <label className="block text-sm font-semibold text-foreground mb-2">WhatsApp Number *</label>
+                        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required className="input-premium" placeholder="Your WhatsApp number" />
                       </div>
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">Email *</label>
-                      <input type="email" name="email" value={formData.email} onChange={handleChange} required className="input-premium" placeholder="Your email" />
+                      <label className="block text-sm font-semibold text-foreground mb-2">Email</label>
+                      <input type="email" name="email" value={formData.email} onChange={handleChange} className="input-premium" placeholder="Your email (optional)" />
                     </div>
                     <div>
                       <label className="block text-sm font-semibold text-foreground mb-2">Business Name</label>
@@ -90,10 +108,10 @@ export default function ContactPage() {
                         <label className="block text-sm font-semibold text-foreground mb-2">Website Type</label>
                         <select name="websiteType" value={formData.websiteType} onChange={handleChange} className="select-premium">
                           <option value="">Select type</option>
-                          <option value="Landing Page">Landing Page</option>
-                          <option value="Business Website">Business Website</option>
-                          <option value="E-commerce">E-commerce</option>
-                          <option value="Portfolio">Portfolio</option>
+                          <option value="Landing Page">Landing Page (₹1,999+)</option>
+                          <option value="Business Website">Business Website (₹4,999+)</option>
+                          <option value="E-commerce">E-commerce Store (₹8,999+)</option>
+                          <option value="Portfolio">Portfolio (₹2,999+)</option>
                           <option value="Other">Other</option>
                         </select>
                       </div>
@@ -101,10 +119,10 @@ export default function ContactPage() {
                         <label className="block text-sm font-semibold text-foreground mb-2">Budget</label>
                         <select name="budget" value={formData.budget} onChange={handleChange} className="select-premium">
                           <option value="">Select budget</option>
-                          <option value="Under ₹10,000">Under ₹10,000</option>
-                          <option value="₹10,000 - ₹25,000">₹10,000 - ₹25,000</option>
-                          <option value="₹25,000 - ₹50,000">₹25,000 - ₹50,000</option>
-                          <option value="₹50,000+">₹50,000+</option>
+                          <option value="₹1,999 - ₹2,999">₹1,999 - ₹2,999</option>
+                          <option value="₹4,999 - ₹6,999">₹4,999 - ₹6,999</option>
+                          <option value="₹8,999 - ₹12,999">₹8,999 - ₹12,999</option>
+                          <option value="₹12,999+">₹12,999+</option>
                         </select>
                       </div>
                     </div>
@@ -113,7 +131,18 @@ export default function ContactPage() {
                       <textarea name="message" value={formData.message} onChange={handleChange} required rows={4} className="input-premium resize-none" placeholder="Tell us about your project..." />
                     </div>
                     <button type="submit" disabled={isSubmitting} className="btn-primary w-full flex items-center justify-center gap-2">
-                      {isSubmitting ? (<span className="flex items-center gap-2"><span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />Sending...</span>) : (<><Send className="w-5 h-5" />Send Message<ArrowRight className="w-5 h-5" /></>)}
+                      {isSubmitting ? (
+                        <span className="flex items-center gap-2">
+                          <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                          Sending...
+                        </span>
+                      ) : (
+                        <>
+                          <Send className="w-5 h-5" />
+                          Send Message
+                          <ArrowRight className="w-5 h-5" />
+                        </>
+                      )}
                     </button>
                   </form>
                 </div>
@@ -126,24 +155,42 @@ export default function ContactPage() {
                     <div className="space-y-5">
                       {contactDetails.map((item, index) => (
                         <div key={index} className="flex items-start gap-4 group">
-                          <div className="icon-box w-12 h-12 flex-shrink-0"><item.icon className="w-5 h-5 text-primary group-hover:text-white transition-colors" /></div>
+                          <div className="icon-box w-12 h-12 flex-shrink-0">
+                            <item.icon className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
+                          </div>
                           <div>
                             <p className="font-bold text-foreground">{item.label}</p>
-                            {item.href ? (<a href={item.href} className="text-primary hover:underline break-all">{item.value}</a>) : item.onClick ? (<button onClick={item.onClick} className="text-primary hover:underline text-left">{item.value}</button>) : (<p className="text-foreground">{item.value}</p>)}
+                            {item.href ? (
+                              <a href={item.href} className="text-primary hover:underline break-all">{item.value}</a>
+                            ) : item.onClick ? (
+                              <button onClick={item.onClick} className="text-primary hover:underline text-left">{item.value}</button>
+                            ) : (
+                              <p className="text-foreground">{item.value}</p>
+                            )}
                           </div>
                         </div>
                       ))}
                     </div>
                   </div>
-                  <div className="glass-card p-8">
+                  
+                  <div className="glass-card p-8 border-2 border-whatsapp/30">
                     <MessageCircle className="w-10 h-10 text-whatsapp mb-4" />
                     <h3 className="font-display font-bold text-xl text-foreground mb-2">Prefer WhatsApp?</h3>
-                    <p className="text-muted-foreground mb-4">Get instant response through WhatsApp.</p>
-                    <button onClick={openWhatsApp} className="btn-accent w-full flex items-center justify-center gap-2"><MessageCircle className="w-5 h-5" />Chat on WhatsApp</button>
+                    <p className="text-muted-foreground mb-4">Get instant response through WhatsApp. Most queries answered within 1 hour!</p>
+                    <button onClick={openWhatsApp} className="btn-accent w-full flex items-center justify-center gap-2">
+                      <MessageCircle className="w-5 h-5" />
+                      Chat on WhatsApp
+                    </button>
                   </div>
+                  
                   <div className="glass-card p-6 flex items-center gap-4">
-                    <div className="icon-box w-12 h-12"><Clock className="w-5 h-5 text-primary" /></div>
-                    <div><p className="font-bold text-foreground">Quick Response</p><p className="text-muted-foreground text-sm">We typically respond within 24 hours</p></div>
+                    <div className="icon-box w-12 h-12">
+                      <Clock className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-bold text-foreground">Quick Response</p>
+                      <p className="text-muted-foreground text-sm">We typically respond within 1-24 hours</p>
+                    </div>
                     <CheckCircle2 className="w-6 h-6 text-primary ml-auto" />
                   </div>
                 </div>
