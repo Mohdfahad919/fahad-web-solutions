@@ -30,7 +30,16 @@ import {
   Clock,
   Headphones,
   Monitor,
-  Smartphone
+  Smartphone,
+  Building2,
+  User,
+  UtensilsCrossed,
+  GraduationCap,
+  Stethoscope,
+  Home,
+  FileCode,
+  Newspaper,
+  Settings
 } from "lucide-react";
 import { useState } from "react";
 
@@ -41,6 +50,69 @@ const services = [
   { icon: ShoppingCart, title: "E-commerce Websites", description: "Online stores that convert" },
   { icon: PenTool, title: "Branding & Logo", description: "Memorable brand identity" },
   { icon: Wrench, title: "Maintenance & Support", description: "Ongoing support & updates" },
+];
+
+const websiteTypes = [
+  { 
+    icon: Building2, 
+    title: "Business Website", 
+    description: "Professional online presence for your business",
+    features: ["Company Profile", "Services Page", "Contact Form"]
+  },
+  { 
+    icon: User, 
+    title: "Portfolio Website", 
+    description: "Showcase your work & attract clients",
+    features: ["Project Gallery", "About Section", "Testimonials"]
+  },
+  { 
+    icon: ShoppingCart, 
+    title: "E-commerce Website", 
+    description: "Sell products online & grow revenue",
+    features: ["Product Catalog", "Cart & Checkout", "Payment Gateway"]
+  },
+  { 
+    icon: UtensilsCrossed, 
+    title: "Restaurant / Cafe", 
+    description: "Menu display & online ordering",
+    features: ["Digital Menu", "Online Booking", "WhatsApp Orders"]
+  },
+  { 
+    icon: GraduationCap, 
+    title: "Coaching / Institute", 
+    description: "Courses, admissions & student portal",
+    features: ["Course Listings", "Enquiry Forms", "Fee Structure"]
+  },
+  { 
+    icon: Stethoscope, 
+    title: "Hospital / Clinic", 
+    description: "Appointment booking & patient info",
+    features: ["Doctor Profiles", "Appointment Booking", "Services List"]
+  },
+  { 
+    icon: Home, 
+    title: "Real Estate Website", 
+    description: "Property listings & lead generation",
+    features: ["Property Search", "Agent Profiles", "Lead Capture"]
+  },
+  { 
+    icon: Rocket, 
+    title: "Landing Page", 
+    description: "High-converting single page for campaigns",
+    features: ["Hero Section", "CTA Focus", "Lead Form"]
+  },
+  { 
+    icon: Newspaper, 
+    title: "Blog / News Website", 
+    description: "Content publishing & audience growth",
+    features: ["Blog Posts", "Categories", "Newsletter Signup"]
+  },
+  { 
+    icon: Settings, 
+    title: "Custom Web App", 
+    description: "Admin panels & custom solutions",
+    features: ["Custom Dashboard", "User Management", "Data Analytics"]
+  },
 ];
 
 const benefits = [
@@ -368,6 +440,61 @@ const Index = () => {
                 </AnimatedSection>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Website Types Section */}
+        <section id="website-types" className="py-24 relative">
+          <div className="section-container">
+            <AnimatedSection className="text-center mb-16">
+              <span className="section-badge mb-4">
+                <Monitor className="w-4 h-4" />
+                Website Types
+              </span>
+              <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-foreground mb-4">
+                Website types <span className="gradient-text">we build</span>
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                From business websites to custom web apps, we create solutions for every industry.
+              </p>
+            </AnimatedSection>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6">
+              {websiteTypes.map((type, index) => (
+                <AnimatedSection key={type.title} animation="scale-in" delay={index * 60}>
+                  <div className="glass-card neon-border p-5 sm:p-6 h-full group flex flex-col">
+                    <div className="icon-box w-12 h-12 mb-4">
+                      <type.icon className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-display font-bold text-sm sm:text-base text-foreground mb-2">{type.title}</h3>
+                    <p className="text-muted-foreground text-xs sm:text-sm mb-4 flex-1">{type.description}</p>
+                    <ul className="space-y-1.5 mb-4">
+                      {type.features.map((feature) => (
+                        <li key={feature} className="flex items-center gap-2 text-xs text-muted-foreground">
+                          <Check className="w-3 h-3 text-primary flex-shrink-0" />
+                          <span className="truncate">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link 
+                      to="/contact" 
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-light transition-colors mt-auto"
+                    >
+                      Get Quote <ArrowRight className="w-3 h-3" />
+                    </Link>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+
+            <AnimatedSection className="text-center mt-12">
+              <p className="text-muted-foreground mb-6">
+                Don't see your industry? <span className="text-primary font-medium">We build custom websites for any business.</span>
+              </p>
+              <Link to="/contact" className="btn-primary inline-flex items-center gap-2">
+                Discuss Your Project <ArrowRight className="w-5 h-5" />
+              </Link>
+            </AnimatedSection>
           </div>
         </section>
 
