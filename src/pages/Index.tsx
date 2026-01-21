@@ -37,11 +37,13 @@ import {
   GraduationCap,
   Stethoscope,
   Home,
-  FileCode,
   Newspaper,
-  Settings
+  Settings,
+  Send
 } from "lucide-react";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const services = [
   { icon: Palette, title: "UI/UX Design", description: "Beautiful interfaces that users love" },
@@ -211,13 +213,47 @@ const faqs = [
 ];
 
 const Index = () => {
+  const { toast } = useToast();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activeFilter, setActiveFilter] = useState("All");
+  const [leadForm, setLeadForm] = useState({ name: "", phone: "", business: "", websiteType: "", budget: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const filters = ["All", "Website", "E-commerce", "UI/UX"];
   const filteredProjects = activeFilter === "All" 
     ? projects 
     : projects.filter(p => p.category === activeFilter);
+
+  const handleLeadFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!leadForm.name || !leadForm.phone) {
+      toast({ title: "Please fill required fields", description: "Name and WhatsApp number are required.", variant: "destructive" });
+      return;
+    }
+    setIsSubmitting(true);
+    try {
+      const { error } = await supabase.functions.invoke("send-contact-email", {
+        body: { 
+          name: leadForm.name, 
+          phone: leadForm.phone, 
+          email: "via-homepage-form@placeholder.com", 
+          requirement: `Business: ${leadForm.business}\nType: ${leadForm.websiteType}\nBudget: ${leadForm.budget}\n\n${leadForm.message}` 
+        },
+      });
+      if (error) throw error;
+      toast({ title: "Message Sent!", description: "We'll contact you within 24 hours." });
+      setLeadForm({ name: "", phone: "", business: "", websiteType: "", budget: "", message: "" });
+    } catch (error) {
+      console.error("Error:", error);
+      toast({ title: "Error", description: "Please try WhatsApp instead.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleLeadFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setLeadForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
   return (
     <div className="min-h-screen bg-background gradient-mesh">
@@ -850,46 +886,82 @@ const Index = () => {
                   {/* Right - Lead Form */}
                   <div className="glass-card p-6 sm:p-8">
                     <h3 className="font-display font-bold text-xl text-foreground mb-6 text-center">Get Your Free Quote</h3>
-                    <form className="space-y-4">
+                    <form onSubmit={handleLeadFormSubmit} className="space-y-4">
                       <input
                         type="text"
-                        placeholder="Your Name"
+                        name="name"
+                        value={leadForm.name}
+                        onChange={handleLeadFormChange}
+                        placeholder="Your Name *"
                         className="input-premium"
                         required
                       />
                       <input
                         type="tel"
-                        placeholder="WhatsApp Number"
+                        name="phone"
+                        value={leadForm.phone}
+                        onChange={handleLeadFormChange}
+                        placeholder="WhatsApp Number *"
                         className="input-premium"
                         required
                       />
                       <input
                         type="text"
+                        name="business"
+                        value={leadForm.business}
+                        onChange={handleLeadFormChange}
                         placeholder="Business Name"
                         className="input-premium"
                       />
-                      <select className="select-premium" defaultValue="">
-                        <option value="" disabled>Website Type</option>
-                        <option value="business">Business Website</option>
-                        <option value="ecommerce">E-commerce Store</option>
-                        <option value="landing">Landing Page</option>
-                        <option value="portfolio">Portfolio</option>
-                        <option value="other">Other</option>
+                      <select 
+                        name="websiteType"
+                        value={leadForm.websiteType}
+                        onChange={handleLeadFormChange}
+                        className="select-premium"
+                      >
+                        <option value="">Website Type</option>
+                        <option value="Business Website">Business Website</option>
+                        <option value="E-commerce Store">E-commerce Store</option>
+                        <option value="Landing Page">Landing Page</option>
+                        <option value="Portfolio">Portfolio</option>
+                        <option value="Other">Other</option>
                       </select>
-                      <select className="select-premium" defaultValue="">
-                        <option value="" disabled>Budget Range</option>
-                        <option value="1999-2999">₹1,999 - ₹2,999</option>
-                        <option value="4999-6999">₹4,999 - ₹6,999</option>
-                        <option value="8999-12999">₹8,999 - ₹12,999</option>
-                        <option value="12999+">₹12,999+</option>
+                      <select 
+                        name="budget"
+                        value={leadForm.budget}
+                        onChange={handleLeadFormChange}
+                        className="select-premium"
+                      >
+                        <option value="">Budget Range</option>
+                        <option value="₹1,999 - ₹2,999">₹1,999 - ₹2,999</option>
+                        <option value="₹4,999 - ₹6,999">₹4,999 - ₹6,999</option>
+                        <option value="₹8,999 - ₹12,999">₹8,999 - ₹12,999</option>
+                        <option value="₹12,999+">₹12,999+</option>
                       </select>
                       <textarea
+                        name="message"
+                        value={leadForm.message}
+                        onChange={handleLeadFormChange}
                         placeholder="Tell us about your project..."
                         rows={3}
                         className="input-premium resize-none"
                       />
-                      <button type="submit" className="btn-primary w-full">
-                        Send Message
+                      <button 
+                        type="submit" 
+                        disabled={isSubmitting}
+                        className="btn-primary w-full flex items-center justify-center gap-2"
+                      >
+                        {isSubmitting ? (
+                          <span className="flex items-center gap-2">
+                            <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                            Sending...
+                          </span>
+                        ) : (
+                          <>
+                            <Send className="w-5 h-5" />
+                            Send Message
+                          </>
+                        )}
                       </button>
                     </form>
                   </div>

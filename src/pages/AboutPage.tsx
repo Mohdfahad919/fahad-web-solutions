@@ -3,9 +3,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2, Heart, Zap, BadgeCheck, Star } from "lucide-react";
-import fahadImage from "@/assets/fahad.jpg";
+import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
 
 const values = [
   { icon: Users, title: "Client-Focused", description: "Your success is our priority. We listen, understand, and deliver solutions that exceed expectations." },
