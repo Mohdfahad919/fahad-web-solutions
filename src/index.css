@@ -97,17 +97,49 @@
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
     max-width: 100vw;
+    min-width: 320px;
   }
 
   #root {
     overflow-x: hidden;
     max-width: 100vw;
+    position: relative;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  /* Responsive typography scale */
+  h1 {
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     letter-spacing: -0.03em;
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    letter-spacing: -0.025em;
     font-weight: 700;
+    font-size: clamp(1.5rem, 4vw + 0.5rem, 2.75rem);
+    line-height: 1.15;
+  }
+
+  h3 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-size: clamp(1.125rem, 2vw + 0.5rem, 1.5rem);
+    line-height: 1.25;
+  }
+
+  h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  /* Better paragraph readability */
+  p {
+    line-height: 1.7;
   }
 
   ::selection {
@@ -117,38 +149,56 @@
 }
 
 @layer components {
+  /* Premium container with perfect centering */
   .section-container {
-    @apply max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-8;
+    @apply w-full mx-auto;
+    max-width: 1200px;
+    padding-left: clamp(1rem, 4vw, 2rem);
+    padding-right: clamp(1rem, 4vw, 2rem);
+  }
+
+  .section-container-wide {
+    @apply w-full mx-auto;
+    max-width: 1320px;
+    padding-left: clamp(1rem, 4vw, 2rem);
+    padding-right: clamp(1rem, 4vw, 2rem);
+  }
+
+  .section-container-narrow {
+    @apply w-full mx-auto;
+    max-width: 800px;
+    padding-left: clamp(1rem, 4vw, 2rem);
+    padding-right: clamp(1rem, 4vw, 2rem);
   }
 
   .section-padding {
-    @apply py-24 sm:py-28 lg:py-32;
+    @apply py-20 sm:py-24 lg:py-28;
   }
 
-  /* Gradient mesh background */
+  /* Premium gradient mesh background */
   .gradient-mesh {
     background: 
-      radial-gradient(ellipse 80% 50% at 20% -20%, hsl(262 83% 58% / 0.15) 0%, transparent 50%),
-      radial-gradient(ellipse 60% 40% at 80% 0%, hsl(217 91% 60% / 0.1) 0%, transparent 50%),
-      radial-gradient(ellipse 50% 30% at 10% 100%, hsl(330 100% 60% / 0.08) 0%, transparent 50%),
-      radial-gradient(ellipse 40% 30% at 90% 90%, hsl(24 100% 55% / 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse 60% 40% at 10% -10%, hsl(262 83% 58% / 0.12) 0%, transparent 50%),
+      radial-gradient(ellipse 50% 35% at 90% 0%, hsl(217 91% 60% / 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse 40% 25% at 5% 100%, hsl(330 100% 60% / 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse 35% 25% at 95% 85%, hsl(24 100% 55% / 0.04) 0%, transparent 50%),
       hsl(var(--background));
   }
 
-  /* Glass card */
+  /* Glass card - optimized hover */
   .glass-card {
-    @apply rounded-2xl overflow-hidden transition-all duration-500 ease-out;
+    @apply rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-300 ease-out;
     background: hsl(var(--card) / 0.6);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid hsl(var(--border) / 0.5);
     box-shadow: var(--shadow-card);
   }
 
   .glass-card:hover {
-    border-color: hsl(var(--primary) / 0.3);
-    box-shadow: var(--shadow-card-hover), var(--glow-neon);
-    transform: translateY(-4px);
+    border-color: hsl(var(--primary) / 0.25);
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-3px);
   }
 
   /* Premium card styles */
@@ -192,27 +242,31 @@
 
   /* Section badge */
   .section-badge {
-    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold;
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold;
     background: linear-gradient(135deg, hsl(var(--primary) / 0.15) 0%, hsl(var(--primary) / 0.05) 100%);
     color: hsl(var(--primary-light));
     border: 1px solid hsl(var(--primary) / 0.2);
   }
 
-  /* Premium buttons */
+  /* Premium buttons - responsive sizing */
   .btn-primary {
-    @apply font-semibold px-8 py-4 rounded-2xl transition-all duration-300 ease-out relative overflow-hidden;
+    @apply font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl transition-all duration-300 ease-out relative overflow-hidden;
     background: linear-gradient(135deg, hsl(var(--gradient-purple)) 0%, hsl(var(--gradient-blue)) 100%);
     color: white;
-    box-shadow: 0 4px 20px -4px hsl(var(--primary) / 0.5);
+    box-shadow: 0 4px 15px -4px hsl(var(--primary) / 0.4);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px -4px hsl(var(--primary) / 0.6), var(--glow-primary);
+    box-shadow: 0 6px 25px -4px hsl(var(--primary) / 0.5), var(--glow-primary);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
   }
 
   .btn-secondary {
-    @apply font-semibold px-8 py-4 rounded-2xl transition-all duration-300 ease-out;
+    @apply font-semibold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl transition-all duration-300 ease-out;
     background: hsl(var(--surface-elevated) / 0.8);
     border: 1px solid hsl(var(--border));
     color: hsl(var(--foreground));
@@ -224,16 +278,24 @@
     transform: translateY(-2px);
   }
 
+  .btn-secondary:active {
+    transform: translateY(0);
+  }
+
   .btn-accent {
-    @apply font-bold px-8 py-4 rounded-2xl transition-all duration-300 ease-out;
+    @apply font-bold px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl transition-all duration-300 ease-out;
     background: linear-gradient(135deg, hsl(var(--gradient-pink)) 0%, hsl(var(--gradient-orange)) 100%);
     color: white;
-    box-shadow: 0 4px 20px -4px hsl(var(--accent) / 0.5);
+    box-shadow: 0 4px 15px -4px hsl(var(--accent) / 0.4);
   }
 
   .btn-accent:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px -4px hsl(var(--accent) / 0.6), var(--glow-accent);
+    box-shadow: 0 6px 25px -4px hsl(var(--accent) / 0.5), var(--glow-accent);
+  }
+
+  .btn-accent:active {
+    transform: translateY(0);
   }
 
   /* Gradient text */
@@ -261,18 +323,18 @@
     background: linear-gradient(90deg, transparent 0%, hsl(var(--border)) 50%, transparent 100%);
   }
 
-  /* Icon box with gradient */
+  /* Icon box with gradient - uses inline w/h */
   .icon-box {
-    @apply w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300;
-    background: linear-gradient(135deg, hsl(var(--primary) / 0.15) 0%, hsl(var(--primary) / 0.05) 100%);
-    border: 1px solid hsl(var(--primary) / 0.2);
+    @apply rounded-xl sm:rounded-2xl flex items-center justify-center transition-all duration-300 flex-shrink-0;
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.12) 0%, hsl(var(--primary) / 0.04) 100%);
+    border: 1px solid hsl(var(--primary) / 0.15);
   }
 
   .icon-box:hover, .group:hover .icon-box {
     background: linear-gradient(135deg, hsl(var(--gradient-purple)) 0%, hsl(var(--gradient-blue)) 100%);
     border-color: transparent;
-    transform: scale(1.1);
-    box-shadow: var(--glow-primary);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px -5px hsl(var(--primary) / 0.4);
   }
 
   /* Pricing card popular */
@@ -294,9 +356,9 @@
     opacity: 0.7;
   }
 
-  /* Input styles */
+  /* Input styles - responsive */
   .input-premium {
-    @apply w-full px-5 py-4 rounded-xl transition-all duration-300;
+    @apply w-full px-4 py-3 sm:px-5 sm:py-3.5 rounded-xl transition-all duration-300 text-sm sm:text-base;
     background: hsl(var(--surface-elevated) / 0.5);
     border: 1px solid hsl(var(--border));
     color: hsl(var(--foreground));
@@ -309,26 +371,27 @@
   .input-premium:focus {
     outline: none;
     border-color: hsl(var(--primary) / 0.5);
-    box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1), var(--glow-neon);
+    box-shadow: 0 0 0 2px hsl(var(--primary) / 0.1);
     background: hsl(var(--surface-elevated));
   }
 
-  /* Select styles */
+  /* Select styles - responsive */
   .select-premium {
-    @apply w-full px-5 py-4 rounded-xl transition-all duration-300 appearance-none cursor-pointer;
+    @apply w-full px-4 py-3 sm:px-5 sm:py-3.5 rounded-xl transition-all duration-300 appearance-none cursor-pointer text-sm sm:text-base;
     background: hsl(var(--surface-elevated) / 0.5);
     border: 1px solid hsl(var(--border));
     color: hsl(var(--foreground));
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239ca3af' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
-    background-position: right 1rem center;
+    background-position: right 0.75rem center;
     background-repeat: no-repeat;
-    background-size: 1.5em 1.5em;
+    background-size: 1.25em 1.25em;
+    padding-right: 2.5rem;
   }
 
   .select-premium:focus {
     outline: none;
     border-color: hsl(var(--primary) / 0.5);
-    box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1), var(--glow-neon);
+    box-shadow: 0 0 0 2px hsl(var(--primary) / 0.1);
     background-color: hsl(var(--surface-elevated));
   }
 }

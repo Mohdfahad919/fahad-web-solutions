@@ -36,20 +36,20 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-400",
         isScrolled
-          ? "glass-header py-3"
-          : "bg-transparent py-5"
+          ? "glass-header py-2.5 shadow-header"
+          : "bg-transparent py-4"
       )}
     >
-      <div className="section-container">
+      <div className="w-full mx-auto" style={{ maxWidth: '1200px', paddingLeft: 'clamp(1rem, 4vw, 2rem)', paddingRight: 'clamp(1rem, 4vw, 2rem)' }}>
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-gradient-blue flex items-center justify-center">
-              <span className="text-white font-bold text-lg">F</span>
+          <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-primary to-gradient-blue flex items-center justify-center shadow-md">
+              <span className="text-white font-bold text-base sm:text-lg">F</span>
             </div>
-            <span className="font-display font-bold text-lg sm:text-xl text-foreground tracking-tight hidden sm:block">
+            <span className="font-display font-bold text-base sm:text-lg text-foreground tracking-tight hidden sm:block">
               Fahad <span className="text-primary">WebService</span>
             </span>
           </Link>
