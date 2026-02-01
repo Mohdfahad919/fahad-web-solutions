@@ -31,23 +31,23 @@ export function Footer() {
   return (
     <footer className="relative overflow-hidden">
       {/* Gradient overlay */}
-      <div className="absolute inset-0 gradient-mesh opacity-50" />
+      <div className="absolute inset-0 gradient-mesh opacity-40" />
       
       <div className="relative border-t border-border/50">
-        <div className="section-container py-16 lg:py-20">
+        <div className="w-full mx-auto py-12 lg:py-16" style={{ maxWidth: '1200px', paddingLeft: 'clamp(1rem, 4vw, 2rem)', paddingRight: 'clamp(1rem, 4vw, 2rem)' }}>
           {/* Main Footer Content */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12 pb-12 border-b border-border/50">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 mb-10 pb-10 border-b border-border/50">
             {/* Brand */}
             <div className="sm:col-span-2 lg:col-span-1">
-              <Link to="/" className="flex items-center gap-2 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-gradient-blue flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">F</span>
+              <Link to="/" className="flex items-center gap-2 mb-4">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary to-gradient-blue flex items-center justify-center">
+                  <span className="text-white font-bold text-base">F</span>
                 </div>
-                <span className="font-display font-bold text-xl text-foreground">
+                <span className="font-display font-bold text-lg text-foreground">
                   Fahad <span className="text-primary">WebService</span>
                 </span>
               </Link>
-              <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
+              <p className="text-muted-foreground leading-relaxed mb-5 text-sm max-w-xs">
                 Premium web development agency crafting beautiful, high-converting websites for ambitious businesses.
               </p>
               <div className="flex gap-3">
