@@ -281,9 +281,9 @@ const Index = () => {
             />
           </div>
 
-          {/* Full-width container with edge-aligned padding */}
-          <div className="relative z-10 w-full px-4 sm:px-6 md:px-12 lg:px-12 xl:px-16">
-            <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-10 xl:gap-16 items-center py-8 sm:py-12 lg:py-16">
+          {/* Full-width container - edge-aligned with minimal padding */}
+          <div className="relative z-10 w-full px-4 sm:px-5 lg:px-6 xl:px-8 2xl:px-10">
+            <div className="grid lg:grid-cols-[1fr_1.15fr] gap-6 lg:gap-16 xl:gap-24 2xl:gap-32 items-center py-8 sm:py-12 lg:py-16">
               {/* Left Content - ~45% */}
               <div className="text-center lg:text-left order-2 lg:order-1">
                 {/* Badge */}
