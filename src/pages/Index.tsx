@@ -281,9 +281,9 @@ const Index = () => {
             />
           </div>
 
-          {/* Full-width container with large horizontal padding */}
-          <div className="relative z-10 w-full px-4 sm:px-8 md:px-16 lg:px-20 xl:px-32 2xl:px-40">
-            <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-12 xl:gap-20 items-center py-8 sm:py-12 lg:py-16">
+          {/* Full-width container with edge-aligned padding */}
+          <div className="relative z-10 w-full px-4 sm:px-6 md:px-12 lg:px-12 xl:px-16">
+            <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-10 xl:gap-16 items-center py-8 sm:py-12 lg:py-16">
               {/* Left Content - ~45% */}
               <div className="text-center lg:text-left order-2 lg:order-1">
                 {/* Badge */}
@@ -364,9 +364,9 @@ const Index = () => {
                 </AnimatedSection>
               </div>
 
-              {/* Right Content - Device Mockup ~55% - LARGER and more impactful */}
-              <AnimatedSection delay={200} animation="scale-in" className="hidden lg:flex order-1 lg:order-2 justify-center lg:justify-end">
-                <div className="relative w-full max-w-[600px] xl:max-w-[700px]">
+              {/* Right Content - Device Mockup - edge-aligned right */}
+              <AnimatedSection delay={200} animation="scale-in" className="hidden lg:flex order-1 lg:order-2 justify-end">
+                <div className="relative w-full max-w-[550px] xl:max-w-[650px] 2xl:max-w-[720px]">
                   {/* Floating animation container */}
                   <motion.div
                     animate={{ y: [0, -12, 0] }}
