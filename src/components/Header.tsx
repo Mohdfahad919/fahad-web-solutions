@@ -42,7 +42,7 @@ export function Header() {
           : "bg-transparent py-4"
       )}
     >
-      <div className="w-full mx-auto" style={{ maxWidth: '1200px', paddingLeft: 'clamp(1rem, 4vw, 2rem)', paddingRight: 'clamp(1rem, 4vw, 2rem)' }}>
+      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-20 xl:px-32 2xl:px-40">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">

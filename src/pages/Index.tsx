@@ -259,12 +259,12 @@ const Index = () => {
     <div className="min-h-screen bg-background gradient-mesh">
       <Header />
       <main className="overflow-hidden">
-        {/* Hero Section */}
-        <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
+        {/* Hero Section - TRUE FULL WIDTH */}
+        <section className="relative min-h-[100svh] flex items-center overflow-hidden pt-20 sm:pt-24 w-full">
           {/* Animated gradient orbs - more subtle */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <motion.div 
-              className="absolute top-[15%] left-[5%] w-[400px] sm:w-[500px] h-[400px] sm:h-[500px] bg-gradient-to-r from-primary/20 to-gradient-blue/15 rounded-full blur-[100px] sm:blur-[120px]"
+              className="absolute top-[10%] left-[0%] w-[500px] sm:w-[700px] h-[500px] sm:h-[700px] bg-gradient-to-r from-primary/20 to-gradient-blue/15 rounded-full blur-[120px] sm:blur-[150px]"
               animate={{ 
                 scale: [1, 1.08, 1],
                 opacity: [0.3, 0.5, 0.3],
@@ -272,7 +272,7 @@ const Index = () => {
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             />
             <motion.div 
-              className="absolute bottom-[20%] right-[5%] w-[350px] sm:w-[450px] h-[350px] sm:h-[450px] bg-gradient-to-r from-accent/15 to-accent-secondary/10 rounded-full blur-[100px] sm:blur-[120px]"
+              className="absolute bottom-[10%] right-[0%] w-[450px] sm:w-[600px] h-[450px] sm:h-[600px] bg-gradient-to-r from-accent/15 to-accent-secondary/10 rounded-full blur-[120px] sm:blur-[150px]"
               animate={{ 
                 scale: [1.05, 1, 1.05],
                 opacity: [0.25, 0.4, 0.25],
@@ -281,13 +281,14 @@ const Index = () => {
             />
           </div>
 
-          <div className="relative z-10 section-container">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center py-8 sm:py-12 lg:py-16">
-              {/* Left Content */}
+          {/* Full-width container with large horizontal padding */}
+          <div className="relative z-10 w-full px-4 sm:px-8 md:px-16 lg:px-20 xl:px-32 2xl:px-40">
+            <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-12 xl:gap-20 items-center py-8 sm:py-12 lg:py-16">
+              {/* Left Content - ~45% */}
               <div className="text-center lg:text-left order-2 lg:order-1">
                 {/* Badge */}
                 <AnimatedSection>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-primary/20 mb-6">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-primary/20 mb-6 sm:mb-8">
                     <span className="relative flex h-2 w-2">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
@@ -296,9 +297,9 @@ const Index = () => {
                   </div>
                 </AnimatedSection>
 
-                {/* Heading - constrained width */}
+                {/* Heading - only text is constrained, not the section */}
                 <AnimatedSection delay={100}>
-                  <h1 className="font-display font-extrabold text-foreground mb-5 max-w-[650px] mx-auto lg:mx-0">
+                  <h1 className="font-display font-extrabold text-foreground mb-5 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl leading-[1.1] max-w-[700px]">
                     We build premium websites that{" "}
                     <span className="gradient-text">grow your business.</span>
                   </h1>
@@ -306,7 +307,7 @@ const Index = () => {
                 
                 {/* Subtitle */}
                 <AnimatedSection delay={200}>
-                  <p className="text-base sm:text-lg text-muted-foreground max-w-[500px] mx-auto lg:mx-0 mb-6 leading-relaxed">
+                  <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-[550px] mb-6 sm:mb-8 leading-relaxed">
                     Modern design, fast performance and high-converting websites for businesses. 
                     Affordable pricing starting at just <span className="text-primary font-semibold">₹1,999</span>.
                   </p>
@@ -314,12 +315,12 @@ const Index = () => {
                 
                 {/* CTA Buttons */}
                 <AnimatedSection delay={300}>
-                  <div className="flex flex-col xs:flex-row gap-3 justify-center lg:justify-start items-center mb-6">
-                    <Link to="/contact" className="btn-primary group inline-flex items-center gap-2 text-sm sm:text-base w-full xs:w-auto justify-center">
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center mb-8 sm:mb-10">
+                    <Link to="/contact" className="btn-primary group inline-flex items-center gap-2 text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto justify-center">
                       Start a Project
                       <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </Link>
-                    <Link to="/portfolio" className="btn-secondary inline-flex items-center gap-2 text-sm sm:text-base w-full xs:w-auto justify-center">
+                    <Link to="/portfolio" className="btn-secondary inline-flex items-center gap-2 text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto justify-center">
                       View Our Work
                     </Link>
                   </div>
@@ -327,18 +328,18 @@ const Index = () => {
 
                 {/* Trust Row */}
                 <AnimatedSection delay={400}>
-                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-5 mb-6">
+                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 mb-6 sm:mb-8">
                     <div className="flex items-center gap-2">
-                      <div className="flex -space-x-1.5">
+                      <div className="flex -space-x-2">
                         {[1, 2, 3, 4].map((i) => (
-                          <div key={i} className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-gradient-to-br from-primary to-gradient-blue border-2 border-background" />
+                          <div key={i} className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-primary to-gradient-blue border-2 border-background" />
                         ))}
                       </div>
                       <span className="text-foreground text-xs sm:text-sm font-medium">50+ businesses</span>
                     </div>
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1.5">
                       {[1, 2, 3, 4, 5].map((i) => (
-                        <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
+                        <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                       ))}
                       <span className="text-foreground text-xs sm:text-sm font-medium ml-1">4.9 Rated</span>
                     </div>
@@ -347,15 +348,15 @@ const Index = () => {
 
                 {/* Badges Row */}
                 <AnimatedSection delay={500}>
-                  <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+                  <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3">
                     {[
                       { icon: Zap, text: "Fast Delivery" },
                       { icon: Search, text: "SEO Ready" },
                       { icon: Smartphone, text: "Mobile Friendly" },
                       { icon: Headphones, text: "Support" },
                     ].map((badge) => (
-                      <div key={badge.text} className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-surface-elevated/50 border border-border/50 text-[10px] sm:text-xs font-medium text-muted-foreground">
-                        <badge.icon className="w-3 h-3 text-primary" />
+                      <div key={badge.text} className="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-elevated/50 border border-border/50 text-xs sm:text-sm font-medium text-muted-foreground">
+                        <badge.icon className="w-3.5 h-3.5 text-primary" />
                         {badge.text}
                       </div>
                     ))}
@@ -363,75 +364,75 @@ const Index = () => {
                 </AnimatedSection>
               </div>
 
-              {/* Right Content - Device Mockup */}
-              <AnimatedSection delay={200} animation="scale-in" className="hidden lg:block order-1 lg:order-2">
-                <div className="relative max-w-md mx-auto lg:max-w-none">
+              {/* Right Content - Device Mockup ~55% - LARGER and more impactful */}
+              <AnimatedSection delay={200} animation="scale-in" className="hidden lg:flex order-1 lg:order-2 justify-center lg:justify-end">
+                <div className="relative w-full max-w-[600px] xl:max-w-[700px]">
                   {/* Floating animation container */}
                   <motion.div
-                    animate={{ y: [0, -10, 0] }}
+                    animate={{ y: [0, -12, 0] }}
                     transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                     className="relative"
                   >
-                    {/* Laptop mockup */}
-                    <div className="relative z-10 glass-card p-2.5 rounded-2xl border border-border/30">
-                      <div className="bg-surface-elevated rounded-xl overflow-hidden">
-                        <div className="flex items-center gap-1.5 px-3 py-2 border-b border-border/30">
-                          <div className="flex gap-1">
-                            <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
-                            <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-                            <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
+                    {/* Laptop mockup - LARGER */}
+                    <div className="relative z-10 glass-card p-3 sm:p-4 rounded-2xl sm:rounded-3xl border border-border/30 shadow-2xl">
+                      <div className="bg-surface-elevated rounded-xl sm:rounded-2xl overflow-hidden">
+                        <div className="flex items-center gap-2 px-4 py-3 border-b border-border/30">
+                          <div className="flex gap-1.5">
+                            <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                            <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                            <div className="w-3 h-3 rounded-full bg-green-500/80" />
                           </div>
                           <div className="flex-1 flex justify-center">
-                            <div className="px-3 py-0.5 rounded-md bg-background/50 text-[10px] text-muted-foreground">
+                            <div className="px-4 py-1 rounded-lg bg-background/50 text-xs text-muted-foreground">
                               fahadwebservice.com
                             </div>
                           </div>
                         </div>
                         <div className="aspect-[16/10] bg-gradient-to-br from-primary/15 via-gradient-blue/10 to-accent/10 flex items-center justify-center">
-                          <div className="text-center p-6">
-                            <Monitor className="w-12 h-12 text-primary/30 mx-auto mb-3" />
-                            <p className="text-muted-foreground/50 text-xs">Your Premium Website</p>
+                          <div className="text-center p-8">
+                            <Monitor className="w-16 h-16 xl:w-20 xl:h-20 text-primary/40 mx-auto mb-4" />
+                            <p className="text-muted-foreground/60 text-sm">Your Premium Website</p>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Phone mockup - floating */}
+                    {/* Phone mockup - floating - LARGER */}
                     <motion.div
-                      animate={{ y: [0, 8, 0] }}
+                      animate={{ y: [0, 10, 0] }}
                       transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                      className="absolute -bottom-4 -right-4 z-20"
+                      className="absolute -bottom-6 -right-6 xl:-bottom-8 xl:-right-8 z-20"
                     >
-                      <div className="glass-card p-1.5 rounded-2xl border border-border/30 w-[100px] sm:w-[120px]">
+                      <div className="glass-card p-2 rounded-2xl border border-border/30 w-[130px] sm:w-[150px] xl:w-[170px] shadow-xl">
                         <div className="bg-surface-elevated rounded-xl overflow-hidden">
                           <div className="aspect-[9/16] bg-gradient-to-br from-accent/15 via-gradient-pink/10 to-primary/10 flex items-center justify-center">
-                            <Smartphone className="w-6 h-6 text-accent/30" />
+                            <Smartphone className="w-8 h-8 xl:w-10 xl:h-10 text-accent/40" />
                           </div>
                         </div>
                       </div>
                     </motion.div>
 
-                    {/* Subtle glow */}
-                    <div className="absolute inset-0 -z-10 blur-2xl opacity-20">
-                      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/30 to-transparent rounded-full" />
+                    {/* Subtle glow - larger */}
+                    <div className="absolute inset-0 -z-10 blur-3xl opacity-25">
+                      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/40 to-transparent rounded-full" />
                     </div>
                   </motion.div>
                 </div>
               </AnimatedSection>
             </div>
 
-            {/* Metrics */}
+            {/* Metrics - full width with proper spacing */}
             <AnimatedSection delay={600}>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto lg:mx-0 mt-8 lg:mt-12">
                 {[
                   { value: "120+", label: "Projects" },
                   { value: "7+", label: "Years" },
                   { value: "50+", label: "Clients" },
                   { value: "24/7", label: "Support" },
                 ].map((stat) => (
-                  <div key={stat.label} className="glass-card px-3 py-4 text-center hover:border-primary/30 transition-all duration-300">
-                    <p className="font-display font-bold text-xl sm:text-2xl gradient-text mb-0.5">{stat.value}</p>
-                    <p className="text-muted-foreground text-xs">{stat.label}</p>
+                  <div key={stat.label} className="glass-card px-4 py-5 text-center hover:border-primary/30 transition-all duration-300">
+                    <p className="font-display font-bold text-2xl sm:text-3xl gradient-text mb-1">{stat.value}</p>
+                    <p className="text-muted-foreground text-xs sm:text-sm">{stat.label}</p>
                   </div>
                 ))}
               </div>
