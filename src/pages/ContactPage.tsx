@@ -50,24 +50,25 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-background gradient-mesh">
+    <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="pt-32 pb-16">
-          <div className="section-container">
+        <section className="pt-32 pb-16 relative">
+          <div className="absolute inset-0 gradient-mesh" />
+          <div className="section-container relative z-10">
             <AnimatedSection className="text-center max-w-4xl mx-auto">
               <span className="section-badge mb-4"><MessageCircle className="w-4 h-4" />Contact Us</span>
-              <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-foreground mb-6">
+              <h1 className="text-foreground mb-6">
                 Let's <span className="gradient-text">build something amazing</span>
               </h1>
-              <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed mb-8">
+              <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed mb-10">
                 Book a free strategy call and get your quote instantly. No obligations.
               </p>
               
               {/* Trust badges */}
               <div className="flex flex-wrap justify-center gap-3">
                 {trustBadges.map((badge) => (
-                  <div key={badge.text} className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-primary font-medium">
+                  <div key={badge.text} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-accent/10 border border-accent/20 text-sm text-accent font-medium">
                     <badge.icon className="w-4 h-4" />
                     {badge.text}
                   </div>
@@ -156,14 +157,14 @@ export default function ContactPage() {
                       {contactDetails.map((item, index) => (
                         <div key={index} className="flex items-start gap-4 group">
                           <div className="icon-box w-12 h-12 flex-shrink-0">
-                            <item.icon className="w-5 h-5 text-primary group-hover:text-white transition-colors" />
+                            <item.icon className="w-5 h-5 text-accent group-hover:text-white transition-colors" />
                           </div>
                           <div>
                             <p className="font-bold text-foreground">{item.label}</p>
                             {item.href ? (
-                              <a href={item.href} className="text-primary hover:underline break-all">{item.value}</a>
+                              <a href={item.href} className="text-accent hover:underline break-all">{item.value}</a>
                             ) : item.onClick ? (
-                              <button onClick={item.onClick} className="text-primary hover:underline text-left">{item.value}</button>
+                              <button onClick={item.onClick} className="text-accent hover:underline text-left">{item.value}</button>
                             ) : (
                               <p className="text-foreground">{item.value}</p>
                             )}
@@ -185,13 +186,13 @@ export default function ContactPage() {
                   
                   <div className="glass-card p-6 flex items-center gap-4">
                     <div className="icon-box w-12 h-12">
-                      <Clock className="w-5 h-5 text-primary" />
+                      <Clock className="w-5 h-5 text-accent" />
                     </div>
                     <div>
                       <p className="font-bold text-foreground">Quick Response</p>
                       <p className="text-muted-foreground text-sm">We typically respond within 1-24 hours</p>
                     </div>
-                    <CheckCircle2 className="w-6 h-6 text-primary ml-auto" />
+                    <CheckCircle2 className="w-6 h-6 text-accent ml-auto" />
                   </div>
                 </div>
               </AnimatedSection>
