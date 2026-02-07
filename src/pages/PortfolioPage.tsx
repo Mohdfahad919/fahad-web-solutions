@@ -27,9 +27,10 @@ export default function PortfolioPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="pt-32 pb-16 relative">
+        <section className="w-full pt-32 pb-16 relative">
           <div className="absolute inset-0 gradient-mesh" />
-          <div className="section-container relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center max-w-4xl mx-auto">
               <span className="section-badge mb-4"><Briefcase className="w-4 h-4" />Our Work</span>
               <h1 className="text-foreground mb-6">
@@ -54,11 +55,13 @@ export default function PortfolioPage() {
                 ))}
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
 
-        <section className="py-10">
-          <div className="section-container">
+        <section className="w-full py-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="flex flex-wrap justify-center gap-3 mb-10">
               {filters.map((filter) => (
                 <button 
@@ -101,11 +104,13 @@ export default function PortfolioPage() {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
-        <section className="py-20">
-          <div className="section-container">
+        <section className="w-full py-20">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection>
               <div className="bg-primary rounded-3xl p-10 sm:p-16 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-[100px]" />
@@ -125,6 +130,7 @@ export default function PortfolioPage() {
                 </div>
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
       </main>

@@ -24,8 +24,9 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-primary text-white">
-      <div className="section-container py-16 lg:py-20">
+    <footer className="w-full bg-primary text-white">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 py-16 lg:py-20">
+        <div className="max-w-[1920px] mx-auto">
         {/* Main Footer Content */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12 pb-12 border-b border-white/10">
           {/* Brand */}
@@ -147,6 +148,7 @@ export function Footer() {
               <ArrowUp className="w-4 h-4" />
             </span>
           </button>
+        </div>
         </div>
       </div>
     </footer>
