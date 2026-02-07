@@ -53,9 +53,10 @@ export default function ContactPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="pt-32 pb-16 relative">
+        <section className="w-full pt-32 pb-16 relative">
           <div className="absolute inset-0 gradient-mesh" />
-          <div className="section-container relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center max-w-4xl mx-auto">
               <span className="section-badge mb-4"><MessageCircle className="w-4 h-4" />Contact Us</span>
               <h1 className="text-foreground mb-6">
@@ -75,12 +76,14 @@ export default function ContactPage() {
                 ))}
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
 
-        <section className="py-10 pb-24">
-          <div className="section-container">
-            <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <section className="w-full py-10 pb-24">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12">
               <AnimatedSection animation="slide-up">
                 <div className="glass-card p-8 lg:p-10">
                   <h2 className="font-display font-bold text-2xl text-foreground mb-2">Get Your Free Quote</h2>
@@ -196,6 +199,7 @@ export default function ContactPage() {
                   </div>
                 </div>
               </AnimatedSection>
+            </div>
             </div>
           </div>
         </section>

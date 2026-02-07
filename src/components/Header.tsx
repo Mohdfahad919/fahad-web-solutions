@@ -35,14 +35,14 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
         isScrolled
           ? "glass-header py-3 shadow-header"
           : "bg-transparent py-5"
       )}
     >
-      <div className="section-container">
-        <div className="flex items-center justify-between">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+        <div className="flex items-center justify-between max-w-[1920px] mx-auto">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-md transition-transform group-hover:scale-105">

@@ -24,9 +24,10 @@ export default function AboutPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="pt-32 pb-20 relative">
+        <section className="w-full pt-32 pb-20 relative">
           <div className="absolute inset-0 gradient-mesh" />
-          <div className="section-container relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center max-w-4xl mx-auto">
               <span className="section-badge mb-4"><Sparkles className="w-4 h-4" />About Us</span>
               <h1 className="text-foreground mb-6">
@@ -36,11 +37,13 @@ export default function AboutPage() {
                 A premium web development agency dedicated to helping businesses establish a powerful online presence.
               </p>
             </AnimatedSection>
+            </div>
           </div>
         </section>
 
-        <section className="py-20">
-          <div className="section-container">
+        <section className="w-full py-20">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <AnimatedSection animation="slide-up">
                 <h2 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-6">Building Digital Success Stories</h2>
@@ -70,11 +73,13 @@ export default function AboutPage() {
                 </div>
               </AnimatedSection>
             </div>
+            </div>
           </div>
         </section>
 
-        <section className="py-20 bg-secondary/30">
-          <div className="section-container">
+        <section className="w-full py-20 bg-secondary/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
               <AnimatedSection animation="slide-up">
                 <div className="glass-card p-8 h-full">
@@ -91,11 +96,13 @@ export default function AboutPage() {
                 </div>
               </AnimatedSection>
             </div>
+            </div>
           </div>
         </section>
 
-        <section className="py-20">
-          <div className="section-container">
+        <section className="w-full py-20">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center mb-14">
               <h2 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-4">Why Trust <span className="gradient-text">Us?</span></h2>
             </AnimatedSection>
@@ -110,11 +117,13 @@ export default function AboutPage() {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
-        <section className="py-20">
-          <div className="section-container">
+        <section className="w-full py-20">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection>
               <div className="bg-primary rounded-3xl p-10 sm:p-16 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-[100px]" />
@@ -127,6 +136,7 @@ export default function AboutPage() {
                 </div>
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
       </main>

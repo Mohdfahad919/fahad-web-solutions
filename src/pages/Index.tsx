@@ -185,8 +185,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="overflow-hidden">
-        {/* Hero Section */}
-        <section className="relative min-h-[100svh] flex items-center pt-24 sm:pt-28 pb-16 overflow-hidden">
+        <section className="w-full relative min-h-[100svh] flex items-center pt-24 sm:pt-28 pb-16 overflow-hidden">
           {/* Subtle background gradient */}
           <div className="absolute inset-0 gradient-mesh" />
           
@@ -194,7 +193,8 @@ const Index = () => {
           <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[100px]" />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-teal/5 rounded-full blur-[100px]" />
 
-          <div className="section-container relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+            <div className="max-w-[1920px] mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Content */}
               <div className="text-center lg:text-left">
@@ -356,12 +356,14 @@ const Index = () => {
                 ))}
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
 
         {/* Client Logos */}
-        <section className="py-12 border-y border-border bg-secondary/30">
-          <div className="section-container">
+        <section className="w-full py-12 border-y border-border bg-secondary/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <p className="text-center text-sm text-muted-foreground mb-8">Trusted by leading businesses</p>
             <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12">
               {clientLogos.map((logo) => (
@@ -370,12 +372,14 @@ const Index = () => {
                 </div>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
         {/* Services Section */}
-        <section className="section-padding relative">
-          <div className="section-container">
+        <section className="w-full section-padding relative">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center mb-14">
               <span className="section-badge mb-4">
                 <Layers className="w-4 h-4" />
@@ -402,12 +406,14 @@ const Index = () => {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
         {/* Website Types Section */}
-        <section id="website-types" className="section-padding relative bg-secondary/30">
-          <div className="section-container">
+        <section id="website-types" className="w-full section-padding relative bg-secondary/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center mb-14">
               <span className="section-badge mb-4">
                 <Monitor className="w-4 h-4" />
@@ -448,12 +454,14 @@ const Index = () => {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
         {/* Why Choose Us */}
-        <section className="section-padding relative">
-          <div className="section-container">
+        <section className="w-full section-padding relative">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <AnimatedSection>
                 <span className="section-badge mb-4">
@@ -495,12 +503,14 @@ const Index = () => {
                 ))}
               </div>
             </div>
+            </div>
           </div>
         </section>
 
         {/* Portfolio Section */}
-        <section className="section-padding relative bg-secondary/30">
-          <div className="section-container">
+        <section className="w-full section-padding relative bg-secondary/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center mb-12">
               <span className="section-badge mb-4">
                 <FileText className="w-4 h-4" />
@@ -572,12 +582,14 @@ const Index = () => {
                 View All Projects <ArrowRight className="w-4 h-4" />
               </Link>
             </AnimatedSection>
+            </div>
           </div>
         </section>
 
         {/* Process Section */}
-        <section className="section-padding relative">
-          <div className="section-container">
+        <section className="w-full section-padding relative">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center mb-14">
               <span className="section-badge mb-4">
                 <Rocket className="w-4 h-4" />
@@ -606,12 +618,14 @@ const Index = () => {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
         {/* Testimonials */}
-        <section className="section-padding relative bg-secondary/30">
-          <div className="section-container">
+        <section className="w-full section-padding relative bg-secondary/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center mb-14">
               <span className="section-badge mb-4">
                 <Quote className="w-4 h-4" />
@@ -645,12 +659,14 @@ const Index = () => {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
         {/* Pricing */}
-        <section className="section-padding relative">
-          <div className="section-container">
+        <section className="w-full section-padding relative">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center mb-6">
               <span className="section-badge mb-4">Pricing</span>
               <h2 className="text-foreground mb-4">
@@ -719,12 +735,14 @@ const Index = () => {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="section-padding relative bg-secondary/30">
-          <div className="section-container-narrow">
+        <section className="w-full section-padding relative bg-secondary/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[800px] mx-auto">
             <AnimatedSection className="text-center mb-12">
               <span className="section-badge mb-4">FAQ</span>
               <h2 className="text-foreground mb-4">
@@ -750,12 +768,14 @@ const Index = () => {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
         {/* Final CTA with Lead Form */}
-        <section className="section-padding relative">
-          <div className="section-container">
+        <section className="w-full section-padding relative">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection>
               <div className="bg-primary rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden">
                 {/* Decorative elements */}
@@ -874,6 +894,7 @@ const Index = () => {
                 </div>
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
       </main>

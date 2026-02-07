@@ -63,9 +63,10 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="pt-32 pb-20 relative">
+        <section className="w-full pt-32 pb-20 relative">
           <div className="absolute inset-0 gradient-mesh" />
-          <div className="section-container relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection className="text-center max-w-4xl mx-auto">
               <span className="section-badge mb-4"><Layers className="w-4 h-4" />Our Services</span>
               <h1 className="text-foreground mb-6">
@@ -85,11 +86,13 @@ export default function ServicesPage() {
                 ))}
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
 
-        <section className="py-20">
-          <div className="section-container">
+        <section className="w-full py-20">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
                 <AnimatedSection key={service.title} animation="slide-up" delay={index * 80}>
@@ -119,12 +122,14 @@ export default function ServicesPage() {
                 </AnimatedSection>
               ))}
             </div>
+            </div>
           </div>
         </section>
 
         {/* Pricing CTA */}
-        <section className="py-20 bg-secondary/30">
-          <div className="section-container max-w-4xl">
+        <section className="w-full py-20 bg-secondary/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-4xl mx-auto">
             <AnimatedSection>
               <div className="bg-card rounded-2xl p-8 sm:p-12 text-center border border-border shadow-lg">
                 <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-4">
@@ -145,12 +150,14 @@ export default function ServicesPage() {
                 </div>
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
 
         {/* Final CTA */}
-        <section className="py-20">
-          <div className="section-container">
+        <section className="w-full py-20">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1920px] mx-auto">
             <AnimatedSection>
               <div className="bg-primary rounded-3xl p-10 sm:p-16 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-[100px]" />
@@ -165,6 +172,7 @@ export default function ServicesPage() {
                 </div>
               </div>
             </AnimatedSection>
+            </div>
           </div>
         </section>
       </main>
