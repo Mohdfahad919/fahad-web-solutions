@@ -53,153 +53,152 @@ export default function ContactPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="w-full pt-32 pb-16 relative">
+        <section className="w-full pt-28 pb-14 relative">
           <div className="absolute inset-0 gradient-mesh" />
           <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
-            <div className="max-w-[1920px] mx-auto">
-            <AnimatedSection className="text-center max-w-4xl mx-auto">
-              <span className="section-badge mb-4"><MessageCircle className="w-4 h-4" />Contact Us</span>
-              <h1 className="text-foreground mb-6">
-                Let's <span className="gradient-text">build something amazing</span>
-              </h1>
-              <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed mb-10">
-                Book a free strategy call and get your quote instantly. No obligations.
-              </p>
-              
-              {/* Trust badges */}
-              <div className="flex flex-wrap justify-center gap-3">
-                {trustBadges.map((badge) => (
-                  <div key={badge.text} className="flex items-center gap-2 px-4 py-2 rounded-lg bg-accent/10 border border-accent/20 text-sm text-accent font-medium">
-                    <badge.icon className="w-4 h-4" />
-                    {badge.text}
-                  </div>
-                ))}
-              </div>
-            </AnimatedSection>
+            <div className="max-w-[1200px] mx-auto">
+              <AnimatedSection className="text-center max-w-3xl mx-auto">
+                <span className="section-badge mb-4"><MessageCircle className="w-3.5 h-3.5" />Contact Us</span>
+                <h1 className="text-foreground mb-5">
+                  Let's <span className="gradient-text">build something amazing</span>
+                </h1>
+                <p className="text-muted-foreground text-base leading-relaxed mb-8">
+                  Book a free strategy call and get your quote instantly. No obligations.
+                </p>
+                
+                <div className="flex flex-wrap justify-center gap-2">
+                  {trustBadges.map((badge) => (
+                    <div key={badge.text} className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-accent/6 border border-accent/10 text-xs text-accent font-medium">
+                      <badge.icon className="w-3.5 h-3.5" />
+                      {badge.text}
+                    </div>
+                  ))}
+                </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
 
-        <section className="w-full py-10 pb-24">
+        <section className="w-full py-8 pb-20">
           <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
-            <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12">
-              <AnimatedSection animation="slide-up">
-                <div className="glass-card p-8 lg:p-10">
-                  <h2 className="font-display font-bold text-2xl text-foreground mb-2">Get Your Free Quote</h2>
-                  <p className="text-muted-foreground mb-8">Fill out the form and we'll get back to you within 24 hours.</p>
-                  <form onSubmit={handleSubmit} className="space-y-5">
-                    <div className="grid sm:grid-cols-2 gap-5">
-                      <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">Name *</label>
-                        <input type="text" name="name" value={formData.name} onChange={handleChange} required className="input-premium" placeholder="Your name" />
-                      </div>
-                      <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">WhatsApp Number *</label>
-                        <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required className="input-premium" placeholder="Your WhatsApp number" />
-                      </div>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">Email</label>
-                      <input type="email" name="email" value={formData.email} onChange={handleChange} className="input-premium" placeholder="Your email (optional)" />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">Business Name</label>
-                      <input type="text" name="business" value={formData.business} onChange={handleChange} className="input-premium" placeholder="Your business name" />
-                    </div>
-                    <div className="grid sm:grid-cols-2 gap-5">
-                      <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">Website Type</label>
-                        <select name="websiteType" value={formData.websiteType} onChange={handleChange} className="select-premium">
-                          <option value="">Select type</option>
-                          <option value="Landing Page">Landing Page (₹1,999+)</option>
-                          <option value="Business Website">Business Website (₹4,999+)</option>
-                          <option value="E-commerce">E-commerce Store (₹8,999+)</option>
-                          <option value="Portfolio">Portfolio (₹2,999+)</option>
-                          <option value="Other">Other</option>
-                        </select>
-                      </div>
-                      <div>
-                        <label className="block text-sm font-semibold text-foreground mb-2">Budget</label>
-                        <select name="budget" value={formData.budget} onChange={handleChange} className="select-premium">
-                          <option value="">Select budget</option>
-                          <option value="₹1,999 - ₹2,999">₹1,999 - ₹2,999</option>
-                          <option value="₹4,999 - ₹6,999">₹4,999 - ₹6,999</option>
-                          <option value="₹8,999 - ₹12,999">₹8,999 - ₹12,999</option>
-                          <option value="₹12,999+">₹12,999+</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div>
-                      <label className="block text-sm font-semibold text-foreground mb-2">Message *</label>
-                      <textarea name="message" value={formData.message} onChange={handleChange} required rows={4} className="input-premium resize-none" placeholder="Tell us about your project..." />
-                    </div>
-                    <button type="submit" disabled={isSubmitting} className="btn-primary w-full flex items-center justify-center gap-2">
-                      {isSubmitting ? (
-                        <span className="flex items-center gap-2">
-                          <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                          Sending...
-                        </span>
-                      ) : (
-                        <>
-                          <Send className="w-5 h-5" />
-                          Send Message
-                          <ArrowRight className="w-5 h-5" />
-                        </>
-                      )}
-                    </button>
-                  </form>
-                </div>
-              </AnimatedSection>
-
-              <AnimatedSection animation="slide-up" delay={100}>
-                <div className="space-y-6">
-                  <div className="glass-card p-8">
-                    <h3 className="font-display font-bold text-xl text-foreground mb-6">Contact Information</h3>
-                    <div className="space-y-5">
-                      {contactDetails.map((item, index) => (
-                        <div key={index} className="flex items-start gap-4 group">
-                          <div className="icon-box w-12 h-12 flex-shrink-0">
-                            <item.icon className="w-5 h-5 text-accent group-hover:text-white transition-colors" />
-                          </div>
-                          <div>
-                            <p className="font-bold text-foreground">{item.label}</p>
-                            {item.href ? (
-                              <a href={item.href} className="text-accent hover:underline break-all">{item.value}</a>
-                            ) : item.onClick ? (
-                              <button onClick={item.onClick} className="text-accent hover:underline text-left">{item.value}</button>
-                            ) : (
-                              <p className="text-foreground">{item.value}</p>
-                            )}
-                          </div>
+            <div className="max-w-5xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-8">
+                <AnimatedSection animation="slide-up">
+                  <div className="glass-card p-6 lg:p-8">
+                    <h2 className="font-semibold text-xl text-foreground mb-1.5">Get Your Free Quote</h2>
+                    <p className="text-muted-foreground text-sm mb-6">Fill out the form and we'll get back within 24 hours.</p>
+                    <form onSubmit={handleSubmit} className="space-y-4">
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        <div>
+                          <label className="block text-xs font-medium text-foreground mb-1.5">Name *</label>
+                          <input type="text" name="name" value={formData.name} onChange={handleChange} required className="input-premium" placeholder="Your name" />
                         </div>
-                      ))}
+                        <div>
+                          <label className="block text-xs font-medium text-foreground mb-1.5">WhatsApp Number *</label>
+                          <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required className="input-premium" placeholder="Your WhatsApp number" />
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-medium text-foreground mb-1.5">Email</label>
+                        <input type="email" name="email" value={formData.email} onChange={handleChange} className="input-premium" placeholder="Your email (optional)" />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-medium text-foreground mb-1.5">Business Name</label>
+                        <input type="text" name="business" value={formData.business} onChange={handleChange} className="input-premium" placeholder="Your business name" />
+                      </div>
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        <div>
+                          <label className="block text-xs font-medium text-foreground mb-1.5">Website Type</label>
+                          <select name="websiteType" value={formData.websiteType} onChange={handleChange} className="select-premium">
+                            <option value="">Select type</option>
+                            <option value="Landing Page">Landing Page (₹1,999+)</option>
+                            <option value="Business Website">Business Website (₹4,999+)</option>
+                            <option value="E-commerce">E-commerce Store (₹8,999+)</option>
+                            <option value="Portfolio">Portfolio (₹2,999+)</option>
+                            <option value="Other">Other</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label className="block text-xs font-medium text-foreground mb-1.5">Budget</label>
+                          <select name="budget" value={formData.budget} onChange={handleChange} className="select-premium">
+                            <option value="">Select budget</option>
+                            <option value="₹1,999 - ₹2,999">₹1,999 - ₹2,999</option>
+                            <option value="₹4,999 - ₹6,999">₹4,999 - ₹6,999</option>
+                            <option value="₹8,999 - ₹12,999">₹8,999 - ₹12,999</option>
+                            <option value="₹12,999+">₹12,999+</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-medium text-foreground mb-1.5">Message *</label>
+                        <textarea name="message" value={formData.message} onChange={handleChange} required rows={4} className="input-premium resize-none" placeholder="Tell us about your project..." />
+                      </div>
+                      <button type="submit" disabled={isSubmitting} className="btn-primary w-full flex items-center justify-center gap-2">
+                        {isSubmitting ? (
+                          <span className="flex items-center gap-2">
+                            <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                            Sending...
+                          </span>
+                        ) : (
+                          <>
+                            <Send className="w-4 h-4" />
+                            Send Message
+                            <ArrowRight className="w-4 h-4" />
+                          </>
+                        )}
+                      </button>
+                    </form>
+                  </div>
+                </AnimatedSection>
+
+                <AnimatedSection animation="slide-up" delay={100}>
+                  <div className="space-y-5">
+                    <div className="glass-card p-6">
+                      <h3 className="font-semibold text-lg text-foreground mb-4">Contact Information</h3>
+                      <div className="space-y-4">
+                        {contactDetails.map((item, index) => (
+                          <div key={index} className="flex items-start gap-3 group">
+                            <div className="icon-box w-10 h-10 flex-shrink-0">
+                              <item.icon className="w-4 h-4 text-accent group-hover:text-white transition-colors" />
+                            </div>
+                            <div>
+                              <p className="font-medium text-sm text-foreground">{item.label}</p>
+                              {item.href ? (
+                                <a href={item.href} className="text-accent text-sm hover:underline break-all">{item.value}</a>
+                              ) : item.onClick ? (
+                                <button onClick={item.onClick} className="text-accent text-sm hover:underline text-left">{item.value}</button>
+                              ) : (
+                                <p className="text-foreground text-sm">{item.value}</p>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    
+                    <div className="glass-card p-6 border-2 border-whatsapp/20">
+                      <MessageCircle className="w-8 h-8 text-whatsapp mb-3" />
+                      <h3 className="font-semibold text-lg text-foreground mb-1.5">Prefer WhatsApp?</h3>
+                      <p className="text-muted-foreground text-sm mb-3">Get instant response. Most queries answered within 1 hour!</p>
+                      <button onClick={openWhatsApp} className="btn-accent w-full flex items-center justify-center gap-2">
+                        <MessageCircle className="w-4 h-4" />
+                        Chat on WhatsApp
+                      </button>
+                    </div>
+                    
+                    <div className="glass-card p-4 flex items-center gap-3">
+                      <div className="icon-box w-10 h-10">
+                        <Clock className="w-4 h-4 text-accent" />
+                      </div>
+                      <div>
+                        <p className="font-medium text-sm text-foreground">Quick Response</p>
+                        <p className="text-muted-foreground text-xs">We typically respond within 1-24 hours</p>
+                      </div>
+                      <CheckCircle2 className="w-5 h-5 text-accent ml-auto" />
                     </div>
                   </div>
-                  
-                  <div className="glass-card p-8 border-2 border-whatsapp/30">
-                    <MessageCircle className="w-10 h-10 text-whatsapp mb-4" />
-                    <h3 className="font-display font-bold text-xl text-foreground mb-2">Prefer WhatsApp?</h3>
-                    <p className="text-muted-foreground mb-4">Get instant response through WhatsApp. Most queries answered within 1 hour!</p>
-                    <button onClick={openWhatsApp} className="btn-accent w-full flex items-center justify-center gap-2">
-                      <MessageCircle className="w-5 h-5" />
-                      Chat on WhatsApp
-                    </button>
-                  </div>
-                  
-                  <div className="glass-card p-6 flex items-center gap-4">
-                    <div className="icon-box w-12 h-12">
-                      <Clock className="w-5 h-5 text-accent" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-foreground">Quick Response</p>
-                      <p className="text-muted-foreground text-sm">We typically respond within 1-24 hours</p>
-                    </div>
-                    <CheckCircle2 className="w-6 h-6 text-accent ml-auto" />
-                  </div>
-                </div>
-              </AnimatedSection>
-            </div>
+                </AnimatedSection>
+              </div>
             </div>
           </div>
         </section>
