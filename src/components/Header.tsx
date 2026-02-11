@@ -37,89 +37,89 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
         isScrolled
-          ? "glass-header py-4 shadow-header"
-          : "bg-transparent py-6"
+          ? "bg-primary shadow-lg py-3"
+          : "bg-primary py-4"
       )}
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
         <div className="flex items-center justify-between max-w-[1920px] mx-auto">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
-            <div className="w-11 h-11 rounded-xl bg-primary flex items-center justify-center shadow-md transition-transform group-hover:scale-105">
-              <span className="text-white font-bold text-xl">F</span>
+          <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
+            <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center transition-transform group-hover:scale-105">
+              <span className="text-white font-bold text-base">F</span>
             </div>
-            <span className="font-display font-bold text-xl text-foreground tracking-tight hidden sm:block">
+            <span className="font-sans font-semibold text-base text-white tracking-tight hidden sm:block">
               Fahad <span className="text-accent">WebService</span>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-2">
+          <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  "relative px-5 py-2.5 font-display text-base leading-relaxed transition-all duration-300 rounded-lg",
+                  "relative px-4 py-2 text-[15px] tracking-wide transition-all duration-200 rounded-md",
                   isActiveLink(link.href)
-                    ? "text-accent font-semibold"
-                    : "text-foreground/80 font-medium hover:text-foreground hover:bg-secondary/50"
+                    ? "text-white font-medium"
+                    : "text-white/60 font-normal hover:text-white"
                 )}
               >
                 {link.name}
                 {isActiveLink(link.href) && (
-                  <span className="absolute bottom-1 left-1/2 -translate-x-1/2 w-6 h-0.5 rounded-full bg-accent" />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-5 h-[2px] rounded-full bg-accent" />
                 )}
               </Link>
             ))}
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center">
             <Link
               to="/contact"
-              className="btn-primary text-base font-semibold inline-flex items-center gap-2 px-7 py-3"
+              className="bg-accent hover:bg-accent-hover text-white text-sm font-medium inline-flex items-center gap-2 px-5 py-2.5 rounded-lg transition-all duration-200 hover:-translate-y-px shadow-sm"
             >
-              Get Free Consultation
-              <ArrowRight className="w-4 h-4" />
+              Get Started
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2.5 rounded-lg text-foreground hover:bg-secondary transition-colors"
+            className="lg:hidden p-2 rounded-md text-white/80 hover:text-white hover:bg-white/10 transition-colors"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         <div className={cn(
           "lg:hidden overflow-hidden transition-all duration-300",
-          isMobileMenuOpen ? "max-h-[500px] opacity-100 mt-5 pb-4" : "max-h-0 opacity-0"
+          isMobileMenuOpen ? "max-h-[500px] opacity-100 mt-4 pb-4" : "max-h-0 opacity-0"
         )}>
-          <nav className="flex flex-col gap-1 bg-card rounded-2xl p-5 border border-border shadow-lg">
+          <nav className="flex flex-col gap-1 bg-primary-light rounded-xl p-4 border border-white/10">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  "py-3.5 px-5 rounded-xl font-display text-base transition-all duration-300",
+                  "py-3 px-4 rounded-lg text-sm transition-all duration-200",
                   isActiveLink(link.href)
-                    ? "text-accent font-semibold bg-accent/10"
-                    : "text-foreground/80 font-medium hover:text-foreground hover:bg-secondary"
+                    ? "text-white font-medium bg-white/10"
+                    : "text-white/60 hover:text-white hover:bg-white/5"
                 )}
               >
                 {link.name}
               </Link>
             ))}
-            <div className="pt-4 mt-3 border-t border-border">
+            <div className="pt-3 mt-2 border-t border-white/10">
               <Link
                 to="/contact"
-                className="btn-primary w-full text-center block text-base font-semibold py-3.5"
+                className="bg-accent hover:bg-accent-hover text-white w-full text-center block text-sm font-medium py-3 rounded-lg transition-all"
               >
-                Get Free Consultation
+                Get Started
               </Link>
             </div>
           </nav>

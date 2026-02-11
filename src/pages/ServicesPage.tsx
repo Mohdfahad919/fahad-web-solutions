@@ -63,115 +63,112 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="w-full pt-32 pb-20 relative">
+        <section className="w-full pt-28 pb-16 relative">
           <div className="absolute inset-0 gradient-mesh" />
           <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
-            <div className="max-w-[1920px] mx-auto">
-            <AnimatedSection className="text-center max-w-4xl mx-auto">
-              <span className="section-badge mb-4"><Layers className="w-4 h-4" />Our Services</span>
-              <h1 className="text-foreground mb-6">
-                Premium services at <span className="gradient-text">affordable prices</span>
-              </h1>
-              <p className="text-muted-foreground text-lg sm:text-xl leading-relaxed mb-10">
-                Comprehensive web solutions tailored to your business needs. Starting at just ₹1,999.
-              </p>
-              
-              {/* Trust badges */}
-              <div className="flex flex-wrap justify-center gap-4">
-                {whyChoose.map((item) => (
-                  <div key={item.title} className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-card border border-border text-sm">
-                    <item.icon className="w-4 h-4 text-accent" />
-                    <span className="text-foreground font-medium">{item.title}</span>
-                  </div>
+            <div className="max-w-[1200px] mx-auto">
+              <AnimatedSection className="text-center max-w-3xl mx-auto">
+                <span className="section-badge mb-4"><Layers className="w-3.5 h-3.5" />Our Services</span>
+                <h1 className="text-foreground mb-5">
+                  Premium services at <span className="gradient-text">affordable prices</span>
+                </h1>
+                <p className="text-muted-foreground text-base leading-relaxed mb-8">
+                  Comprehensive web solutions tailored to your business needs. Starting at just ₹1,999.
+                </p>
+                
+                <div className="flex flex-wrap justify-center gap-3">
+                  {whyChoose.map((item) => (
+                    <div key={item.title} className="flex items-center gap-1.5 px-3 py-2 rounded-md bg-card border border-border text-sm">
+                      <item.icon className="w-3.5 h-3.5 text-accent" />
+                      <span className="text-foreground font-medium text-sm">{item.title}</span>
+                    </div>
+                  ))}
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full section-padding">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {services.map((service, index) => (
+                  <AnimatedSection key={service.title} animation="slide-up" delay={index * 60}>
+                    <motion.div 
+                      className="glass-card p-6 h-full flex flex-col group"
+                      whileHover={{ y: -4 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <div className="icon-box w-10 h-10 mb-4">
+                        <service.icon className="w-4 h-4 text-accent group-hover:text-white transition-colors" />
+                      </div>
+                      <h3 className="font-semibold text-lg text-foreground mb-1">{service.title}</h3>
+                      <p className="text-accent font-bold text-base mb-3">{service.price}</p>
+                      <p className="text-muted-foreground text-sm mb-5 leading-relaxed">{service.description}</p>
+                      <div className="space-y-2 mb-6 flex-1">
+                        {service.features.map((feature) => (
+                          <div key={feature} className="flex items-center gap-2">
+                            <Check className="w-3.5 h-3.5 text-accent flex-shrink-0" />
+                            <span className="text-sm text-foreground">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                      <Link to="/contact" className="btn-secondary w-full text-center">
+                        Get Quote
+                      </Link>
+                    </motion.div>
+                  </AnimatedSection>
                 ))}
               </div>
-            </AnimatedSection>
             </div>
           </div>
         </section>
 
-        <section className="w-full py-20">
+        <section className="w-full section-padding bg-muted/30">
           <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
-            <div className="max-w-[1920px] mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service, index) => (
-                <AnimatedSection key={service.title} animation="slide-up" delay={index * 80}>
-                  <motion.div 
-                    className="glass-card neon-border p-8 h-full flex flex-col group"
-                    whileHover={{ y: -6 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <div className="icon-box w-12 h-12 mb-6">
-                      <service.icon className="w-5 h-5 text-accent group-hover:text-white transition-colors" />
-                    </div>
-                    <h3 className="font-display font-bold text-xl text-foreground mb-2">{service.title}</h3>
-                    <p className="text-accent font-bold text-lg mb-4">{service.price}</p>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
-                    <div className="space-y-3 mb-8 flex-1">
-                      {service.features.map((feature) => (
-                        <div key={feature} className="flex items-center gap-3">
-                          <Check className="w-4 h-4 text-accent flex-shrink-0" />
-                          <span className="text-sm text-foreground">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <Link to="/contact" className="btn-secondary w-full text-center">
-                      Get Quote
-                    </Link>
-                  </motion.div>
-                </AnimatedSection>
-              ))}
-            </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing CTA */}
-        <section className="w-full py-20 bg-secondary/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
-            <div className="max-w-4xl mx-auto">
-            <AnimatedSection>
-              <div className="bg-card rounded-2xl p-8 sm:p-12 text-center border border-border shadow-lg">
-                <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-4">
-                  Not sure which service you need?
-                </h2>
-                <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-                  Let's have a quick call to understand your requirements. We'll suggest the best solution for your budget.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="tel:9076669103" className="btn-primary inline-flex items-center justify-center gap-2">
-                    <Phone className="w-5 h-5" />
-                    Book Free Call
-                  </a>
-                  <a href="https://wa.me/9076669103" className="btn-accent inline-flex items-center justify-center gap-2">
-                    <MessageCircle className="w-5 h-5" />
-                    WhatsApp Us
-                  </a>
-                </div>
-              </div>
-            </AnimatedSection>
-            </div>
-          </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="w-full py-20">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
-            <div className="max-w-[1920px] mx-auto">
-            <AnimatedSection>
-              <div className="bg-primary rounded-3xl p-10 sm:p-16 text-center relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-[100px]" />
-                <div className="relative z-10">
-                  <h2 className="text-white mb-6">Ready to Start Your Project?</h2>
-                  <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-                    Contact us today for a free consultation and quote. No obligations, just a friendly chat about your project.
+            <div className="max-w-3xl mx-auto">
+              <AnimatedSection>
+                <div className="bg-card rounded-xl p-8 sm:p-10 text-center border border-border shadow-md">
+                  <h2 className="font-bold text-2xl text-foreground mb-3">
+                    Not sure which service you need?
+                  </h2>
+                  <p className="text-muted-foreground text-base mb-6 max-w-lg mx-auto">
+                    Let's have a quick call to understand your requirements.
                   </p>
-                  <Link to="/contact" className="bg-accent hover:bg-accent-hover text-white font-semibold px-8 py-4 rounded-xl inline-flex items-center gap-2 transition-all duration-300 shadow-lg">
-                    Get Free Quote <ArrowRight className="w-5 h-5" />
-                  </Link>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                    <a href="tel:9076669103" className="btn-primary inline-flex items-center justify-center gap-2">
+                      <Phone className="w-4 h-4" />
+                      Book Free Call
+                    </a>
+                    <a href="https://wa.me/9076669103" className="btn-accent inline-flex items-center justify-center gap-2">
+                      <MessageCircle className="w-4 h-4" />
+                      WhatsApp Us
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </AnimatedSection>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full section-padding">
+          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+            <div className="max-w-[1200px] mx-auto">
+              <AnimatedSection>
+                <div className="bg-primary rounded-2xl p-8 sm:p-12 text-center relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-accent/8 rounded-full blur-[80px]" />
+                  <div className="relative z-10">
+                    <h2 className="text-white mb-4">Ready to Start Your Project?</h2>
+                    <p className="text-white/60 text-base mb-6 max-w-xl mx-auto">
+                      Contact us today for a free consultation and quote.
+                    </p>
+                    <Link to="/contact" className="bg-accent hover:bg-accent-hover text-white text-sm font-medium px-6 py-3 rounded-lg inline-flex items-center gap-2 transition-all duration-200">
+                      Get Free Quote <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
