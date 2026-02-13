@@ -37,18 +37,18 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
         isScrolled
-          ? "bg-primary shadow-lg py-3.5"
-          : "bg-primary py-5"
+          ? "bg-primary shadow-lg py-3"
+          : "bg-primary py-4"
       )}
     >
-      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
-        <div className="flex items-center justify-between max-w-[1920px] mx-auto">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10">
+        <div className="flex items-center justify-between max-w-[1200px] mx-auto">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
-            <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center transition-transform group-hover:scale-105">
-              <span className="text-white font-bold text-base">F</span>
+          <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
+            <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center transition-transform group-hover:scale-105">
+              <span className="text-white font-bold text-sm">F</span>
             </div>
-            <span className="font-sans font-semibold text-base text-white tracking-tight hidden sm:block">
+            <span className="font-sans font-semibold text-sm text-white tracking-tight hidden sm:block">
               Fahad <span className="text-accent">WebService</span>
             </span>
           </Link>
@@ -78,10 +78,10 @@ export function Header() {
           <div className="hidden lg:flex items-center">
             <Link
               to="/contact"
-              className="bg-accent hover:bg-accent-hover text-white text-sm font-medium inline-flex items-center gap-2 px-5 py-2.5 rounded-lg transition-all duration-200 hover:-translate-y-px shadow-sm"
+              className="bg-accent hover:bg-accent-hover text-white text-[13px] font-medium inline-flex items-center gap-1.5 px-4 py-2 rounded-lg transition-all duration-200 hover:-translate-y-px"
             >
               Get Started
-              <ArrowRight className="w-3.5 h-3.5" />
+              <ArrowRight className="w-3 h-3" />
             </Link>
           </div>
 

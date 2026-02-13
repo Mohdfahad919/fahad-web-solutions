@@ -6,21 +6,21 @@
 
 @layer base {
   :root {
-    /* Ultra-Premium Agency Theme */
-    --background: 210 33% 98%;
-    --foreground: 222 47% 11%;
+    /* Premium SaaS Theme */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 7%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 222 47% 7%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 222 47% 7%;
 
     /* Primary: Deep Navy */
-    --primary: 220 50% 9%;
+    --primary: 222 47% 11%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 220 40% 14%;
-    --primary-dark: 220 50% 6%;
+    --primary-light: 222 40% 16%;
+    --primary-dark: 222 47% 8%;
 
     /* Secondary */
     --secondary: 210 40% 96%;
@@ -29,11 +29,11 @@
     --muted: 215 20% 94%;
     --muted-foreground: 215 16% 47%;
 
-    /* Accent: Electric Blue */
-    --accent: 217 91% 60%;
+    /* Accent: Blue */
+    --accent: 221 83% 53%;
     --accent-foreground: 0 0% 100%;
     --accent-hover: 224 76% 48%;
-    --accent-glow: 217 91% 65%;
+    --accent-glow: 221 83% 58%;
     --accent-secondary: 199 89% 48%;
 
     --destructive: 0 84% 60%;
@@ -41,9 +41,9 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --ring: 221 83% 53%;
 
-    --radius: 0.625rem;
+    --radius: 0.5rem;
 
     /* Surfaces */
     --surface-elevated: 0 0% 100%;
@@ -55,26 +55,26 @@
     --whatsapp-hover: 142 70% 38%;
     
     /* Gradient colors */
-    --gradient-navy: 220 50% 9%;
-    --gradient-blue: 217 91% 60%;
+    --gradient-navy: 222 47% 11%;
+    --gradient-blue: 221 83% 53%;
     --gradient-teal: 199 89% 48%;
     --gradient-slate: 215 25% 27%;
     
     /* Shadows */
-    --shadow-xs: 0 1px 2px 0 hsla(220, 50%, 9%, 0.03);
-    --shadow-sm: 0 1px 3px 0 hsla(220, 50%, 9%, 0.05), 0 1px 2px -1px hsla(220, 50%, 9%, 0.04);
-    --shadow-md: 0 4px 6px -1px hsla(220, 50%, 9%, 0.06), 0 2px 4px -2px hsla(220, 50%, 9%, 0.04);
-    --shadow-lg: 0 10px 15px -3px hsla(220, 50%, 9%, 0.07), 0 4px 6px -4px hsla(220, 50%, 9%, 0.05);
-    --shadow-xl: 0 20px 25px -5px hsla(220, 50%, 9%, 0.08), 0 8px 10px -6px hsla(220, 50%, 9%, 0.05);
-    --shadow-2xl: 0 25px 50px -12px hsla(220, 50%, 9%, 0.15);
+    --shadow-xs: 0 1px 2px 0 hsla(222, 47%, 11%, 0.03);
+    --shadow-sm: 0 1px 3px 0 hsla(222, 47%, 11%, 0.05), 0 1px 2px -1px hsla(222, 47%, 11%, 0.04);
+    --shadow-md: 0 4px 6px -1px hsla(222, 47%, 11%, 0.06), 0 2px 4px -2px hsla(222, 47%, 11%, 0.04);
+    --shadow-lg: 0 10px 15px -3px hsla(222, 47%, 11%, 0.07), 0 4px 6px -4px hsla(222, 47%, 11%, 0.05);
+    --shadow-xl: 0 20px 25px -5px hsla(222, 47%, 11%, 0.08), 0 8px 10px -6px hsla(222, 47%, 11%, 0.05);
+    --shadow-2xl: 0 25px 50px -12px hsla(222, 47%, 11%, 0.15);
     
-    --shadow-card: 0 1px 3px 0 hsla(220, 50%, 9%, 0.04), 0 1px 2px -1px hsla(220, 50%, 9%, 0.03);
-    --shadow-card-hover: 0 10px 40px -10px hsla(217, 91%, 60%, 0.12), 0 4px 6px -2px hsla(220, 50%, 9%, 0.04);
-    --shadow-header: 0 1px 3px 0 hsla(220, 50%, 9%, 0.08);
+    --shadow-card: 0 1px 3px 0 hsla(222, 47%, 11%, 0.04), 0 1px 2px -1px hsla(222, 47%, 11%, 0.03);
+    --shadow-card-hover: 0 10px 40px -10px hsla(221, 83%, 53%, 0.1), 0 4px 6px -2px hsla(222, 47%, 11%, 0.04);
+    --shadow-header: 0 1px 3px 0 hsla(222, 47%, 11%, 0.08);
     
-    --glow-primary: 0 0 40px -10px hsl(217 91% 60% / 0.25);
-    --glow-accent: 0 0 40px -10px hsl(217 91% 60% / 0.25);
-    --glow-neon: 0 0 20px -5px hsl(217 91% 60% / 0.15);
+    --glow-primary: 0 0 40px -10px hsl(221 83% 53% / 0.2);
+    --glow-accent: 0 0 40px -10px hsl(221 83% 53% / 0.2);
+    --glow-neon: 0 0 20px -5px hsl(221 83% 53% / 0.12);
   }
 }
 

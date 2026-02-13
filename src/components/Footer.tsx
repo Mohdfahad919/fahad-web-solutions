@@ -28,7 +28,7 @@ export function Footer() {
       {/* Subtle top border */}
       <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       
-      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 py-14 lg:py-16">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-14 lg:py-16">
         <div className="max-w-[1200px] mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12 pb-10 border-b border-white/8">
             {/* Brand */}
