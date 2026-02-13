@@ -29,7 +29,7 @@ export default function PortfolioPage() {
       <main>
         <section className="w-full pt-28 pb-14 relative">
           <div className="absolute inset-0 gradient-mesh" />
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><Briefcase className="w-3.5 h-3.5" />Our Work</span>
@@ -59,7 +59,7 @@ export default function PortfolioPage() {
         </section>
 
         <section className="w-full py-8">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="flex flex-wrap justify-center gap-2 mb-8">
                 {filters.map((filter) => (
@@ -108,7 +108,7 @@ export default function PortfolioPage() {
         </section>
 
         <section className="w-full section-padding">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection>
                 <div className="bg-primary rounded-2xl p-8 sm:p-12 text-center relative overflow-hidden">
