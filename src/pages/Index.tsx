@@ -350,7 +350,7 @@ const Index = () => {
 
         {/* Client Logos */}
         <section className="w-full py-10 border-y border-border bg-muted/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <p className="text-center text-xs text-muted-foreground mb-6 uppercase tracking-widest">Trusted by leading businesses</p>
               <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12">
@@ -366,7 +366,7 @@ const Index = () => {
 
         {/* Services Section */}
         <section className="w-full section-padding relative">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center mb-12">
                 <span className="section-badge mb-4">
@@ -400,7 +400,7 @@ const Index = () => {
 
         {/* Website Types Section */}
         <section id="website-types" className="w-full section-padding relative bg-muted/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center mb-12">
                 <span className="section-badge mb-4">
@@ -448,7 +448,7 @@ const Index = () => {
 
         {/* Why Choose Us */}
         <section className="w-full section-padding relative">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <AnimatedSection>
@@ -496,7 +496,7 @@ const Index = () => {
 
         {/* Portfolio Section */}
         <section className="w-full section-padding relative bg-muted/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center mb-10">
                 <span className="section-badge mb-4">
@@ -574,7 +574,7 @@ const Index = () => {
 
         {/* Process Section */}
         <section className="w-full section-padding relative">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center mb-12">
                 <span className="section-badge mb-4">
@@ -610,7 +610,7 @@ const Index = () => {
 
         {/* Testimonials */}
         <section className="w-full section-padding relative bg-muted/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center mb-12">
                 <span className="section-badge mb-4">
@@ -651,7 +651,7 @@ const Index = () => {
 
         {/* Pricing */}
         <section className="w-full section-padding relative">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center mb-5">
                 <span className="section-badge mb-4">Pricing</span>
@@ -726,7 +726,7 @@ const Index = () => {
 
         {/* FAQ */}
         <section className="w-full section-padding relative bg-muted/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[700px] mx-auto">
               <AnimatedSection className="text-center mb-10">
                 <span className="section-badge mb-4">FAQ</span>
@@ -759,7 +759,7 @@ const Index = () => {
 
         {/* Final CTA with Lead Form */}
         <section className="w-full section-padding relative">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection>
                 <div className="bg-primary rounded-2xl p-8 sm:p-10 lg:p-14 relative overflow-hidden">

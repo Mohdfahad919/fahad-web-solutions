@@ -161,8 +161,8 @@
   .section-container {
     @apply w-full mx-auto;
     max-width: 1200px;
-    padding-left: clamp(1rem, 3vw, 2.5rem);
-    padding-right: clamp(1rem, 3vw, 2.5rem);
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .section-container-wide {

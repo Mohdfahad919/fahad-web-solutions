@@ -65,7 +65,7 @@ export default function ServicesPage() {
       <main>
         <section className="w-full pt-28 pb-16 relative">
           <div className="absolute inset-0 gradient-mesh" />
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><Layers className="w-3.5 h-3.5" />Our Services</span>
@@ -90,7 +90,7 @@ export default function ServicesPage() {
         </section>
 
         <section className="w-full section-padding">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {services.map((service, index) => (
@@ -126,7 +126,7 @@ export default function ServicesPage() {
         </section>
 
         <section className="w-full section-padding bg-muted/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <AnimatedSection>
                 <div className="bg-card rounded-xl p-8 sm:p-10 text-center border border-border shadow-md">
@@ -153,7 +153,7 @@ export default function ServicesPage() {
         </section>
 
         <section className="w-full section-padding">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection>
                 <div className="bg-primary rounded-2xl p-8 sm:p-12 text-center relative overflow-hidden">

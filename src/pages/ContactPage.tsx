@@ -55,7 +55,7 @@ export default function ContactPage() {
       <main>
         <section className="w-full pt-28 pb-14 relative">
           <div className="absolute inset-0 gradient-mesh" />
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><MessageCircle className="w-3.5 h-3.5" />Contact Us</span>
@@ -80,7 +80,7 @@ export default function ContactPage() {
         </section>
 
         <section className="w-full py-8 pb-20">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-8">
                 <AnimatedSection animation="slide-up">

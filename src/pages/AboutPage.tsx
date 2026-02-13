@@ -26,7 +26,7 @@ export default function AboutPage() {
       <main>
         <section className="w-full pt-28 pb-16 relative">
           <div className="absolute inset-0 gradient-mesh" />
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><Sparkles className="w-3.5 h-3.5" />About Us</span>
@@ -42,7 +42,7 @@ export default function AboutPage() {
         </section>
 
         <section className="w-full section-padding">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <div className="grid lg:grid-cols-2 gap-10 items-center">
                 <AnimatedSection animation="slide-up">
@@ -78,7 +78,7 @@ export default function AboutPage() {
         </section>
 
         <section className="w-full section-padding bg-muted/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <div className="grid md:grid-cols-2 gap-5">
                 <AnimatedSection animation="slide-up">
@@ -101,7 +101,7 @@ export default function AboutPage() {
         </section>
 
         <section className="w-full section-padding">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center mb-10">
                 <h2 className="font-bold text-2xl sm:text-3xl text-foreground mb-3">Why Trust <span className="gradient-text">Us?</span></h2>
@@ -122,7 +122,7 @@ export default function AboutPage() {
         </section>
 
         <section className="w-full section-padding">
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection>
                 <div className="bg-primary rounded-2xl p-8 sm:p-12 text-center relative overflow-hidden">
