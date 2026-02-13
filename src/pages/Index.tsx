@@ -186,12 +186,12 @@ const Index = () => {
       <Header />
       <main className="overflow-hidden">
         {/* Hero Section */}
-        <section className="w-full relative min-h-[90svh] flex items-center pt-20 pb-16 overflow-hidden">
+        <section className="w-full relative min-h-[90svh] flex items-center pt-24 pb-20 overflow-hidden">
           <div className="absolute inset-0 gradient-mesh" />
           <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-accent/[0.03] rounded-full blur-[100px]" />
           <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-gradient-teal/[0.03] rounded-full blur-[100px]" />
 
-          <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+          <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-[1200px] mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 {/* Left Content */}
