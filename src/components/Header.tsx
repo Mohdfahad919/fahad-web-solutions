@@ -37,8 +37,8 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
         isScrolled
-          ? "bg-primary shadow-lg py-3"
-          : "bg-primary py-4"
+          ? "bg-primary shadow-lg py-3.5"
+          : "bg-primary py-5"
       )}
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12">
@@ -54,16 +54,16 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  "relative px-4 py-2 text-[15px] tracking-wide transition-all duration-200 rounded-md",
+                  "relative px-5 py-2 text-[15px] font-medium tracking-wide transition-all duration-200 rounded-md",
                   isActiveLink(link.href)
-                    ? "text-white font-medium"
-                    : "text-white/60 font-normal hover:text-white"
+                    ? "text-white"
+                    : "text-white/55 hover:text-white"
                 )}
               >
                 {link.name}
