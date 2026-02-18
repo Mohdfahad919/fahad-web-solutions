@@ -41,8 +41,8 @@ export function Header() {
           : "bg-primary py-4"
       )}
     >
-      <div className="w-full px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between max-w-[1200px] mx-auto">
+      <div className="w-full px-6 lg:px-8">
+        <div className="flex items-center justify-between max-w-[1440px] mx-auto">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
             <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center transition-transform group-hover:scale-105">
