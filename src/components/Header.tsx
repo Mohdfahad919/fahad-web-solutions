@@ -37,38 +37,38 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
         isScrolled
-          ? "bg-primary shadow-lg py-3"
-          : "bg-primary py-4"
+          ? "bg-primary py-[14px] shadow-[0_1px_3px_0_rgba(0,0,0,0.3),0_1px_2px_-1px_rgba(0,0,0,0.2)] border-b border-white/[0.06]"
+          : "bg-primary py-[18px] border-b border-white/[0.08]"
       )}
     >
       <div className="w-full px-6 lg:px-8">
         <div className="flex items-center justify-between max-w-[1440px] mx-auto">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group flex-shrink-0">
-            <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center transition-transform group-hover:scale-105">
-              <span className="text-white font-bold text-sm">F</span>
+          <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
+            <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center transition-transform group-hover:scale-105 shadow-[0_2px_8px_-2px_hsl(var(--accent)/0.4)]">
+              <span className="text-white font-bold text-base">F</span>
             </div>
-            <span className="font-sans font-semibold text-sm text-white tracking-tight hidden sm:block">
+            <span className="font-sans font-semibold text-[15px] text-white tracking-tight hidden sm:block">
               Fahad <span className="text-accent">WebService</span>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-0.5">
+          <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  "relative px-5 py-2 text-[15px] font-medium tracking-wide transition-all duration-200 rounded-md",
+                  "relative px-5 py-2 text-[15px] font-medium tracking-[0.01em] transition-all duration-200 rounded-md",
                   isActiveLink(link.href)
                     ? "text-white"
-                    : "text-white/55 hover:text-white"
+                    : "text-[#CBD5E1] hover:text-white"
                 )}
               >
                 {link.name}
                 {isActiveLink(link.href) && (
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-5 h-[2px] rounded-full bg-accent" />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-6 h-[1.5px] rounded-full bg-accent" />
                 )}
               </Link>
             ))}
@@ -78,10 +78,10 @@ export function Header() {
           <div className="hidden lg:flex items-center">
             <Link
               to="/contact"
-              className="bg-accent hover:bg-accent-hover text-white text-[13px] font-medium inline-flex items-center gap-1.5 px-4 py-2 rounded-lg transition-all duration-200 hover:-translate-y-px"
+              className="bg-accent hover:bg-accent-hover text-white text-sm font-semibold inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] transition-all duration-200 hover:-translate-y-px shadow-[0_2px_8px_-2px_hsl(var(--accent)/0.35)]"
             >
               Get Started
-              <ArrowRight className="w-3 h-3" />
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
