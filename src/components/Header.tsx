@@ -44,11 +44,11 @@ export function Header() {
       <div className="w-full px-6 lg:px-8">
         <div className="flex items-center justify-between max-w-[1440px] mx-auto">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 group flex-shrink-0">
-            <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center transition-transform group-hover:scale-105 shadow-[0_2px_8px_-2px_hsl(var(--accent)/0.4)]">
-              <span className="text-white font-bold text-base">F</span>
+          <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent to-accent-secondary flex items-center justify-center transition-transform group-hover:scale-105 shadow-[0_2px_12px_-3px_hsl(var(--accent)/0.5)]">
+              <span className="text-white font-bold text-lg tracking-tight">F</span>
             </div>
-            <span className="font-sans font-semibold text-[15px] text-white tracking-tight hidden sm:block">
+            <span className="font-sans font-semibold text-base text-white tracking-tight hidden sm:block">
               Fahad <span className="text-accent">WebService</span>
             </span>
           </Link>

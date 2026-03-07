@@ -234,20 +234,21 @@ const Index = () => {
                   </AnimatedSection>
 
                   <AnimatedSection delay={400}>
-                    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-5 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <div className="flex -space-x-1.5">
+                    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-3">
+                        <div className="flex -space-x-2">
                           {[1, 2, 3, 4].map((i) => (
-                            <div key={i} className="w-7 h-7 rounded-full bg-gradient-to-br from-accent to-accent-secondary border-2 border-background" />
+                            <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-accent to-accent-secondary border-2 border-background shadow-sm" />
                           ))}
                         </div>
-                        <span className="font-medium text-foreground text-sm">50+ clients</span>
+                        <span className="font-semibold text-foreground text-sm">50+ clients</span>
                       </div>
-                      <div className="flex items-center gap-1">
+                      <div className="h-5 w-px bg-border hidden sm:block" />
+                      <div className="flex items-center gap-1.5">
                         {[1, 2, 3, 4, 5].map((i) => (
-                          <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
+                          <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                         ))}
-                        <span className="font-medium text-foreground ml-1 text-sm">4.9 rated</span>
+                        <span className="font-semibold text-foreground ml-1.5 text-sm">4.9 rated</span>
                       </div>
                     </div>
                   </AnimatedSection>
@@ -261,7 +262,7 @@ const Index = () => {
                       transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                       className="relative"
                     >
-                      <div className="bg-card rounded-xl shadow-xl border border-border overflow-hidden">
+                      <div className="bg-card rounded-xl shadow-2xl border border-border overflow-hidden">
                         <div className="flex items-center gap-2 px-4 py-2.5 border-b border-border bg-muted/50">
                           <div className="flex gap-1.5">
                             <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
