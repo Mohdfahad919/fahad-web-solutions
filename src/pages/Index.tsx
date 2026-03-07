@@ -186,13 +186,14 @@ const Index = () => {
       <Header />
       <main className="overflow-hidden">
         {/* Hero Section */}
-        <section className="w-full relative min-h-[90svh] flex items-center pt-24 pb-20 overflow-hidden bg-background">
-          <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-accent/[0.03] rounded-full blur-[100px]" />
-          <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-accent/[0.02] rounded-full blur-[100px]" />
+        <section className="w-full relative min-h-[92svh] flex items-center pt-28 pb-20 overflow-hidden bg-background">
+          <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-accent/[0.03] rounded-full blur-[120px]" />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/[0.02] rounded-full blur-[120px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/[0.01] rounded-full blur-[150px]" />
 
-          <div className="w-full px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="w-full px-8 sm:px-8 lg:px-8 relative z-10">
             <div className="max-w-[1200px] mx-auto">
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
                 {/* Left Content */}
                 <div className="text-center lg:text-left">
                   <AnimatedSection>
@@ -206,27 +207,27 @@ const Index = () => {
                   </AnimatedSection>
 
                   <AnimatedSection delay={100}>
-                    <h1 className="text-foreground mb-5">
+                    <h1 className="text-foreground mb-6 leading-[1.08]">
                       We build websites that{" "}
                       <span className="gradient-text">drive real business growth</span>
                     </h1>
                   </AnimatedSection>
                   
                   <AnimatedSection delay={200}>
-                    <p className="text-base sm:text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed">
+                    <p className="text-base sm:text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
                       Premium web development for startups and businesses. 
                       Beautiful design, fast performance, results-focused.
                     </p>
                   </AnimatedSection>
                   
                   <AnimatedSection delay={300}>
-                    <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start items-center mb-8">
-                      <Link to="/contact" className="btn-primary group inline-flex items-center gap-2 w-full sm:w-auto justify-center">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
+                      <Link to="/contact" className="btn-primary group inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base px-7 py-3.5">
                         Get Free Consultation
-                        <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                       </Link>
-                      <Link to="/portfolio" className="btn-secondary inline-flex items-center gap-2 w-full sm:w-auto justify-center">
-                        <Play className="w-3.5 h-3.5" />
+                      <Link to="/portfolio" className="btn-secondary inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base px-7 py-3.5">
+                        <Play className="w-4 h-4" />
                         View Our Work
                       </Link>
                     </div>
@@ -329,16 +330,16 @@ const Index = () => {
 
               {/* Stats Row */}
               <AnimatedSection delay={500}>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-14 lg:mt-18">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-16 lg:mt-20">
                   {[
                     { value: "120+", label: "Projects Completed" },
                     { value: "50+", label: "Happy Clients" },
                     { value: "7+", label: "Years Experience" },
                     { value: "24/7", label: "Support Available" },
                   ].map((stat) => (
-                    <div key={stat.label} className="text-center p-5 rounded-xl bg-card border border-border hover:border-accent/20 hover:shadow-md transition-all duration-300">
-                      <p className="font-bold text-2xl sm:text-3xl gradient-text mb-1">{stat.value}</p>
-                      <p className="text-muted-foreground text-xs">{stat.label}</p>
+                    <div key={stat.label} className="text-center p-6 rounded-xl bg-card border border-border hover:border-accent/20 hover:shadow-lg transition-all duration-300">
+                      <p className="font-bold text-3xl sm:text-4xl gradient-text mb-1.5">{stat.value}</p>
+                      <p className="text-muted-foreground text-sm">{stat.label}</p>
                     </div>
                   ))}
                 </div>
@@ -349,9 +350,9 @@ const Index = () => {
 
         {/* Client Logos */}
         <section className="w-full py-10 border-y border-border bg-muted/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="w-full px-8 sm:px-8 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
-              <p className="text-center text-xs text-muted-foreground mb-6 uppercase tracking-widest">Trusted by leading businesses</p>
+              <p className="text-center text-xs text-muted-foreground mb-8 uppercase tracking-[0.15em] font-medium">Trusted by leading businesses</p>
               <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12">
                 {clientLogos.map((logo) => (
                   <div key={logo} className="text-muted-foreground/40 font-semibold text-base hover:text-foreground/60 transition-colors">
@@ -365,7 +366,7 @@ const Index = () => {
 
         {/* Services Section */}
         <section className="w-full section-padding relative">
-          <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="w-full px-8 sm:px-8 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center mb-12">
                 <span className="section-badge mb-4">
