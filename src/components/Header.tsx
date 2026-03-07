@@ -54,21 +54,21 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-2">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  "relative px-5 py-2 text-[15px] font-medium tracking-[0.01em] transition-all duration-200 rounded-md",
+                  "relative px-5 py-2.5 text-base font-medium tracking-[0.01em] transition-all duration-200 rounded-md",
                   isActiveLink(link.href)
-                    ? "text-white"
+                    ? "text-white font-semibold"
                     : "text-[#CBD5E1] hover:text-white"
                 )}
               >
                 {link.name}
                 {isActiveLink(link.href) && (
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-6 h-[1.5px] rounded-full bg-accent" />
+                  <span className="absolute bottom-0.5 left-1/2 -translate-x-1/2 w-6 h-[1px] rounded-full bg-accent" />
                 )}
               </Link>
             ))}
