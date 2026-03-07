@@ -350,9 +350,9 @@ const Index = () => {
 
         {/* Client Logos */}
         <section className="w-full py-10 border-y border-border bg-muted/30">
-          <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="w-full px-8 sm:px-8 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
-              <p className="text-center text-xs text-muted-foreground mb-6 uppercase tracking-widest">Trusted by leading businesses</p>
+              <p className="text-center text-xs text-muted-foreground mb-8 uppercase tracking-[0.15em] font-medium">Trusted by leading businesses</p>
               <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12">
                 {clientLogos.map((logo) => (
                   <div key={logo} className="text-muted-foreground/40 font-semibold text-base hover:text-foreground/60 transition-colors">
@@ -366,7 +366,7 @@ const Index = () => {
 
         {/* Services Section */}
         <section className="w-full section-padding relative">
-          <div className="w-full px-4 sm:px-6 lg:px-8">
+          <div className="w-full px-8 sm:px-8 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
               <AnimatedSection className="text-center mb-12">
                 <span className="section-badge mb-4">
