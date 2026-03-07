@@ -37,8 +37,8 @@ export function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300",
         isScrolled
-          ? "bg-primary py-[14px] shadow-[0_1px_3px_0_rgba(0,0,0,0.3),0_1px_2px_-1px_rgba(0,0,0,0.2)] border-b border-white/[0.06]"
-          : "bg-primary py-[18px] border-b border-white/[0.08]"
+          ? "bg-primary py-[14px] shadow-[0_4px_12px_-4px_rgba(0,0,0,0.25)] border-b border-[#1E293B]"
+          : "bg-primary py-[20px] border-b border-[#1E293B]"
       )}
     >
       <div className="w-full px-6 lg:px-8">
@@ -78,7 +78,7 @@ export function Header() {
           <div className="hidden lg:flex items-center">
             <Link
               to="/contact"
-              className="bg-accent hover:bg-accent-hover text-white text-sm font-semibold inline-flex items-center gap-1.5 px-5 py-2.5 rounded-[10px] transition-all duration-200 hover:-translate-y-px shadow-[0_2px_8px_-2px_hsl(var(--accent)/0.35)]"
+              className="bg-accent hover:bg-accent-hover text-white text-sm font-semibold inline-flex items-center gap-1.5 px-[22px] py-[10px] rounded-[10px] transition-all duration-200 hover:-translate-y-px shadow-[0_2px_10px_-2px_hsl(var(--accent)/0.4)]"
             >
               Get Started
               <ArrowRight className="w-3.5 h-3.5" />
