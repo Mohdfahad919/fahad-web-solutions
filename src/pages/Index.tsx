@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Link } from "react-router-dom";
@@ -183,6 +184,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Fahad WebService – Professional Website Development India | Web Design Services"
+        description="Premium website development and web design services in India. We build SEO-optimized, mobile-responsive business websites, e-commerce stores, and landing pages. Starting at ₹1,999."
+        keywords="website development India, web design services, ecommerce website India, SEO services India, professional website design, affordable web development India"
+        canonical="https://fahadwebservice.com/"
+      />
       <Header />
       <main className="overflow-hidden">
         {/* Hero Section */}
@@ -377,8 +384,8 @@ const Index = () => {
                 <h2 className="text-foreground mb-3">
                   Everything you need to <span className="gradient-text">succeed online</span>
                 </h2>
-                <p className="text-muted-foreground text-base max-w-xl mx-auto">
-                  Comprehensive digital solutions to grow your business.
+                <p className="text-muted-foreground text-base max-w-2xl mx-auto">
+                  From website design and development to SEO optimization and e-commerce solutions, we provide comprehensive digital services that help Indian businesses establish a powerful online presence and drive measurable growth.
                 </p>
               </AnimatedSection>
 
@@ -411,8 +418,8 @@ const Index = () => {
                 <h2 className="text-foreground mb-3">
                   Websites for <span className="gradient-text">every industry</span>
                 </h2>
-                <p className="text-muted-foreground text-base max-w-xl mx-auto">
-                  Tailored solutions for your specific needs.
+                <p className="text-muted-foreground text-base max-w-2xl mx-auto">
+                  Whether you need a business website, e-commerce store, portfolio, or landing page, we create tailored web solutions for every industry. Our websites are built with SEO best practices, fast loading speeds, and conversion-focused designs that help your business stand out in the competitive Indian market.
                 </p>
               </AnimatedSection>
 
@@ -462,7 +469,7 @@ const Index = () => {
                     <span className="gradient-text">We build growth engines.</span>
                   </h2>
                   <p className="text-muted-foreground text-base mb-6 max-w-lg">
-                    Every website we create is strategically designed to convert visitors into customers.
+                    Every website we create is strategically designed to convert visitors into customers. With 7+ years of experience in website development in India, we combine modern design with proven SEO strategies to deliver websites that rank higher on Google, load faster, and generate real business results for our clients.
                   </p>
                   <div className="flex flex-wrap gap-3 mb-6">
                     {["No Hidden Charges", "On-Time Delivery", "100% Satisfaction"].map((item) => (

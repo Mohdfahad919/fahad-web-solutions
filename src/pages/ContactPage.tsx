@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { SEOHead } from "@/components/SEOHead";
 import { Phone, Mail, MapPin, MessageCircle, Send, ArrowRight, Clock, CheckCircle2, Shield, Zap, BadgeCheck } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
@@ -51,6 +52,12 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Contact Fahad WebService – Get Free Website Consultation India"
+        description="Contact Fahad WebService for professional website development in India. Get a free consultation and quote. Call, email, or WhatsApp us. Fast response guaranteed."
+        keywords="contact web developer India, website development quote, free consultation web design, hire web developer India"
+        canonical="https://fahadwebservice.com/contact"
+      />
       <Header />
       <main>
         <section className="w-full pt-28 pb-14 relative">
@@ -60,10 +67,10 @@ export default function ContactPage() {
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><MessageCircle className="w-3.5 h-3.5" />Contact Us</span>
                 <h1 className="text-foreground mb-5">
-                  Let's <span className="gradient-text">build something amazing</span>
+                  Let's <span className="gradient-text">build something amazing</span> together
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed mb-8">
-                  Book a free strategy call and get your quote instantly. No obligations.
+                  Ready to take your business online? Book a free strategy call and get your personalized website quote instantly. Whether you need a business website, e-commerce store, or SEO services in India, our team is here to help you succeed. No obligations, no hidden charges.
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-2">

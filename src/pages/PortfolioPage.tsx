@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { ArrowRight, Briefcase, TrendingUp, Zap, Users, Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
@@ -25,6 +26,12 @@ export default function PortfolioPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Our Portfolio – Website Development Projects | Fahad WebService"
+        description="Explore our portfolio of 120+ successful website development projects. See real results from business websites, e-commerce stores, and web applications built for Indian businesses."
+        keywords="web development portfolio India, website design projects, ecommerce website examples, web agency portfolio"
+        canonical="https://fahadwebservice.com/portfolio"
+      />
       <Header />
       <main>
         <section className="w-full pt-28 pb-14 relative">
@@ -37,7 +44,7 @@ export default function PortfolioPage() {
                   Projects that <span className="gradient-text">deliver results</span>
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed mb-8">
-                  Real websites for real businesses with measurable outcomes.
+                  Explore our collection of 120+ successful website projects. From business websites and e-commerce stores to custom web applications, every project is designed to deliver measurable results for our clients across India.
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-4">

@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Palette, Code2, ShoppingCart, FileText, PenTool, Wrench, Check, ArrowRight, Layers, Zap, Shield, Clock, Star, Phone, MessageCircle, TrendingUp, Search } from "lucide-react";
@@ -10,43 +11,43 @@ const services = [
   {
     title: "Website Design",
     icon: Palette,
-    description: "Beautiful, intuitive interfaces that users love. We focus on user experience to maximize engagement and conversions.",
-    features: ["User Research", "Wireframing", "Prototype Design", "Mobile-First Approach", "Design System"],
+    description: "We create beautiful, intuitive website designs that capture your brand identity and engage your target audience. Our design process focuses on user experience (UX) principles, ensuring every element guides visitors toward taking action. From wireframes to final mockups, we deliver designs that look stunning on all devices and help your business stand out in the competitive Indian market.",
+    features: ["User Research & Wireframing", "Mobile-First Responsive Design", "Brand-Aligned Visual Identity", "Prototype & Design System", "Conversion-Optimized Layouts"],
     price: "₹2,999+"
   },
   {
     title: "Web Development",
     icon: Code2,
-    description: "Fast, secure, and scalable websites built with modern technologies. Optimized for performance and SEO.",
-    features: ["4-10 Custom Pages", "Mobile Responsive", "SEO Optimized", "Contact Forms", "Fast Loading"],
+    description: "Our web development team builds fast, secure, and scalable websites using modern technologies like React, Next.js, and Node.js. Every website we develop is optimized for search engines, loads in under 3 seconds, and provides a seamless experience across all devices. We follow industry best practices for clean code, performance, and security to ensure your website runs flawlessly.",
+    features: ["4-10 Custom Pages", "Mobile Responsive Design", "SEO Optimized Structure", "Contact & Lead Forms", "Fast Loading (Under 3s)"],
     price: "₹4,999+"
   },
   {
     title: "Landing Pages",
     icon: FileText,
-    description: "High-converting landing pages designed to capture leads and drive sales for your marketing campaigns.",
-    features: ["Single Page Design", "CTA Optimization", "Lead Capture Forms", "Fast Performance", "Mobile Optimized"],
+    description: "Our high-converting landing pages are designed specifically to capture leads and drive sales for your marketing campaigns. Each landing page is A/B tested, SEO-friendly, and optimized for maximum conversions. Whether you're running Google Ads, Facebook campaigns, or WhatsApp marketing, our landing pages ensure every rupee you spend on advertising delivers results.",
+    features: ["Conversion-Focused Design", "CTA Optimization", "Lead Capture Forms", "Fast Performance", "Mobile Optimized"],
     price: "₹1,999+"
   },
   {
     title: "E-commerce",
     icon: ShoppingCart,
-    description: "Complete online stores with payment integration, inventory management, and seamless checkout experience.",
-    features: ["Product Catalog", "Payment Gateway", "Order Management", "Inventory Tracking", "Customer Dashboard"],
+    description: "We build complete e-commerce websites that make online selling simple and profitable. From product catalog and shopping cart to secure payment gateway integration (Razorpay, PayU, Paytm), we handle everything. Our e-commerce solutions include inventory management, order tracking, customer dashboards, and automated email notifications to streamline your online business.",
+    features: ["Product Catalog & Search", "Payment Gateway Integration", "Order & Inventory Management", "Customer Dashboard", "Automated Notifications"],
     price: "₹8,999+"
   },
   {
     title: "SEO & Performance",
     icon: Search,
-    description: "Optimize your website for search engines and speed to rank higher and convert more visitors.",
-    features: ["Keyword Research", "On-Page SEO", "Speed Optimization", "Analytics Setup", "Monthly Reports"],
+    description: "Our SEO services help your website rank higher on Google and attract more organic traffic. We perform comprehensive keyword research, on-page optimization, technical SEO audits, and content strategy planning. We also optimize your website's loading speed and Core Web Vitals to ensure Google rewards your site with better rankings. Monthly reports keep you informed of your progress.",
+    features: ["Keyword Research & Strategy", "On-Page & Technical SEO", "Speed & Core Web Vitals", "Google Analytics Setup", "Monthly Performance Reports"],
     price: "₹1,999+"
   },
   {
     title: "Maintenance",
     icon: Wrench,
-    description: "Keep your website running smoothly with regular updates, security patches, and technical support.",
-    features: ["Regular Updates", "Security Monitoring", "Performance Optimization", "Content Updates", "Technical Support"],
+    description: "Keep your website running smoothly and securely with our maintenance packages. We handle regular software updates, security monitoring, performance optimization, content updates, and technical support. Our maintenance plans ensure your website stays fast, secure, and up-to-date so you can focus on growing your business without worrying about technical issues.",
+    features: ["Regular Software Updates", "Security Monitoring & Patches", "Performance Optimization", "Content Updates", "Priority Technical Support"],
     price: "₹499/month"
   }
 ];
@@ -61,6 +62,12 @@ const whyChoose = [
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Web Design & Development Services India | SEO, E-commerce | Fahad WebService"
+        description="Professional website development, e-commerce solutions, SEO services, and UI/UX design in India. Affordable packages starting at ₹1,999. Fast delivery, premium quality."
+        keywords="web design services India, website development services, ecommerce website India, SEO services India, UI UX design India, affordable web development"
+        canonical="https://fahadwebservice.com/services"
+      />
       <Header />
       <main>
         <section className="w-full pt-28 pb-16 relative">
@@ -70,10 +77,10 @@ export default function ServicesPage() {
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><Layers className="w-3.5 h-3.5" />Our Services</span>
                 <h1 className="text-foreground mb-5">
-                  Premium services at <span className="gradient-text">affordable prices</span>
+                  Professional web design & development <span className="gradient-text">services in India</span>
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed mb-8">
-                  Comprehensive web solutions tailored to your business needs. Starting at just ₹1,999.
+                  We offer comprehensive website development, e-commerce solutions, SEO optimization, and UI/UX design services tailored for Indian businesses. Our team combines modern design with technical expertise to create websites that rank higher on Google, load faster, and convert more visitors into customers. Every project is delivered on time with transparent pricing starting at just ₹1,999.
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-3">

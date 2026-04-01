@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
 
@@ -22,6 +23,12 @@ const stats = [
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="About Fahad WebService – Trusted Web Development Agency India"
+        description="Learn about Fahad WebService, a professional web development agency in India with 7+ years of experience. 120+ projects delivered, 50+ happy clients, 100% satisfaction rate."
+        keywords="web development agency India, about Fahad WebService, website development company, professional web designers India"
+        canonical="https://fahadwebservice.com/about"
+      />
       <Header />
       <main>
         <section className="w-full pt-28 pb-16 relative">
@@ -34,7 +41,7 @@ export default function AboutPage() {
                   About <span className="gradient-text">Fahad WebService</span>
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed">
-                  A premium web development agency helping businesses establish a powerful online presence.
+                  We are a premium web development agency based in India, specializing in creating professional, SEO-optimized websites for startups, small businesses, and growing enterprises. With over 7 years of experience and 120+ successful projects, we help businesses establish a powerful online presence that drives real growth and measurable results.
                 </p>
               </AnimatedSection>
             </div>
@@ -46,12 +53,15 @@ export default function AboutPage() {
             <div className="max-w-[1200px] mx-auto">
               <div className="grid lg:grid-cols-2 gap-10 items-center">
                 <AnimatedSection animation="slide-up">
-                  <h2 className="font-bold text-2xl sm:text-3xl text-foreground mb-5">Building Digital Success Stories</h2>
+                  <h2 className="font-bold text-2xl sm:text-3xl text-foreground mb-5">Building Digital Success Stories Across India</h2>
                   <p className="text-muted-foreground text-base leading-relaxed mb-3">
-                    Founded with a passion for web development and commitment to excellence, Fahad WebService has become a trusted partner for businesses seeking professional website solutions.
+                    Founded with a deep passion for web development and an unwavering commitment to excellence, Fahad WebService has grown into one of the most trusted web development partners for businesses across India. We specialize in website design, e-commerce development, SEO optimization, and UI/UX design that delivers tangible business results.
+                  </p>
+                  <p className="text-muted-foreground text-base leading-relaxed mb-3">
+                    Our team combines creativity with technical expertise to build websites that not only look stunning but also perform exceptionally well on search engines. Every website we create is mobile-responsive, fast-loading, and optimized for conversions. We believe that a great website should be an investment that pays for itself through increased leads and sales.
                   </p>
                   <p className="text-muted-foreground text-base leading-relaxed mb-6">
-                    We combine creativity with technical expertise to create websites that drive real business results.
+                    From small local businesses to ambitious startups, we've helped over 50 clients achieve their digital goals. Our transparent pricing model ensures there are no hidden charges, and our commitment to on-time delivery means your project is always completed on schedule.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     {["Clean Code", "Modern Design", "Fast Delivery", "24/7 Support"].map((item) => (
