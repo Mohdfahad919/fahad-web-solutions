@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
+import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
 
