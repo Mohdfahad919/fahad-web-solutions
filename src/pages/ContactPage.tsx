@@ -52,6 +52,12 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Contact Fahad WebService – Get Free Website Consultation India"
+        description="Contact Fahad WebService for professional website development in India. Get a free consultation and quote. Call, email, or WhatsApp us. Fast response guaranteed."
+        keywords="contact web developer India, website development quote, free consultation web design, hire web developer India"
+        canonical="https://fahadwebservice.com/contact"
+      />
       <Header />
       <main>
         <section className="w-full pt-28 pb-14 relative">
