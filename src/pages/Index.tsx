@@ -469,7 +469,7 @@ const Index = () => {
                     <span className="gradient-text">We build growth engines.</span>
                   </h2>
                   <p className="text-muted-foreground text-base mb-6 max-w-lg">
-                    Every website we create is strategically designed to convert visitors into customers.
+                    Every website we create is strategically designed to convert visitors into customers. With 7+ years of experience in website development in India, we combine modern design with proven SEO strategies to deliver websites that rank higher on Google, load faster, and generate real business results for our clients.
                   </p>
                   <div className="flex flex-wrap gap-3 mb-6">
                     {["No Hidden Charges", "On-Time Delivery", "100% Satisfaction"].map((item) => (
