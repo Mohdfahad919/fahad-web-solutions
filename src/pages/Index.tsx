@@ -384,8 +384,8 @@ const Index = () => {
                 <h2 className="text-foreground mb-3">
                   Everything you need to <span className="gradient-text">succeed online</span>
                 </h2>
-                <p className="text-muted-foreground text-base max-w-xl mx-auto">
-                  Comprehensive digital solutions to grow your business.
+                <p className="text-muted-foreground text-base max-w-2xl mx-auto">
+                  From website design and development to SEO optimization and e-commerce solutions, we provide comprehensive digital services that help Indian businesses establish a powerful online presence and drive measurable growth.
                 </p>
               </AnimatedSection>
 
