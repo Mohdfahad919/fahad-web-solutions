@@ -62,6 +62,12 @@ const whyChoose = [
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Web Design & Development Services India | SEO, E-commerce | Fahad WebService"
+        description="Professional website development, e-commerce solutions, SEO services, and UI/UX design in India. Affordable packages starting at ₹1,999. Fast delivery, premium quality."
+        keywords="web design services India, website development services, ecommerce website India, SEO services India, UI UX design India, affordable web development"
+        canonical="https://fahadwebservice.com/services"
+      />
       <Header />
       <main>
         <section className="w-full pt-28 pb-16 relative">
