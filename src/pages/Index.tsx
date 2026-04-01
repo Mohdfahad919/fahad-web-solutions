@@ -418,8 +418,8 @@ const Index = () => {
                 <h2 className="text-foreground mb-3">
                   Websites for <span className="gradient-text">every industry</span>
                 </h2>
-                <p className="text-muted-foreground text-base max-w-xl mx-auto">
-                  Tailored solutions for your specific needs.
+                <p className="text-muted-foreground text-base max-w-2xl mx-auto">
+                  Whether you need a business website, e-commerce store, portfolio, or landing page, we create tailored web solutions for every industry. Our websites are built with SEO best practices, fast loading speeds, and conversion-focused designs that help your business stand out in the competitive Indian market.
                 </p>
               </AnimatedSection>
 
