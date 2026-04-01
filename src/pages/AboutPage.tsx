@@ -41,7 +41,7 @@ export default function AboutPage() {
                   About <span className="gradient-text">Fahad WebService</span>
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed">
-                  A premium web development agency helping businesses establish a powerful online presence.
+                  We are a premium web development agency based in India, specializing in creating professional, SEO-optimized websites for startups, small businesses, and growing enterprises. With over 7 years of experience and 120+ successful projects, we help businesses establish a powerful online presence that drives real growth and measurable results.
                 </p>
               </AnimatedSection>
             </div>
