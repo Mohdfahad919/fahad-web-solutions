@@ -77,10 +77,10 @@ export default function ServicesPage() {
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><Layers className="w-3.5 h-3.5" />Our Services</span>
                 <h1 className="text-foreground mb-5">
-                  Premium services at <span className="gradient-text">affordable prices</span>
+                  Professional web design & development <span className="gradient-text">services in India</span>
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed mb-8">
-                  Comprehensive web solutions tailored to your business needs. Starting at just ₹1,999.
+                  We offer comprehensive website development, e-commerce solutions, SEO optimization, and UI/UX design services tailored for Indian businesses. Our team combines modern design with technical expertise to create websites that rank higher on Google, load faster, and convert more visitors into customers. Every project is delivered on time with transparent pricing starting at just ₹1,999.
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-3">

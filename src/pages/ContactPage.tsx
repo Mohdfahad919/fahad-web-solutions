@@ -67,10 +67,10 @@ export default function ContactPage() {
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><MessageCircle className="w-3.5 h-3.5" />Contact Us</span>
                 <h1 className="text-foreground mb-5">
-                  Let's <span className="gradient-text">build something amazing</span>
+                  Let's <span className="gradient-text">build something amazing</span> together
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed mb-8">
-                  Book a free strategy call and get your quote instantly. No obligations.
+                  Ready to take your business online? Book a free strategy call and get your personalized website quote instantly. Whether you need a business website, e-commerce store, or SEO services in India, our team is here to help you succeed. No obligations, no hidden charges.
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-2">

@@ -44,7 +44,7 @@ export default function PortfolioPage() {
                   Projects that <span className="gradient-text">deliver results</span>
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed mb-8">
-                  Real websites for real businesses with measurable outcomes.
+                  Explore our collection of 120+ successful website projects. From business websites and e-commerce stores to custom web applications, every project is designed to deliver measurable results for our clients across India.
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-4">
