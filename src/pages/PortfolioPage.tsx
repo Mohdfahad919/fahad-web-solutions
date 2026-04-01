@@ -26,6 +26,12 @@ export default function PortfolioPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Our Portfolio – Website Development Projects | Fahad WebService"
+        description="Explore our portfolio of 120+ successful website development projects. See real results from business websites, e-commerce stores, and web applications built for Indian businesses."
+        keywords="web development portfolio India, website design projects, ecommerce website examples, web agency portfolio"
+        canonical="https://fahadwebservice.com/portfolio"
+      />
       <Header />
       <main>
         <section className="w-full pt-28 pb-14 relative">
