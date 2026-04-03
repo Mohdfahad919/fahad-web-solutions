@@ -129,7 +129,7 @@ export function Footer() {
           {/* Copyright */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-center sm:text-left text-white/40 text-xs">
-              © 2025 Fahad WebService. All rights reserved.
+              © 2026 Fahad WebService. All rights reserved.
             </p>
 
             <button
