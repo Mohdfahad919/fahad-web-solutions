@@ -11,43 +11,43 @@ const services = [
   {
     title: "Website Design",
     icon: Palette,
-    description: "We create beautiful, intuitive website designs that capture your brand identity and engage your target audience. Our design process focuses on user experience (UX) principles, ensuring every element guides visitors toward taking action. From wireframes to final mockups, we deliver designs that look stunning on all devices and help your business stand out in the competitive Indian market.",
-    features: ["User Research & Wireframing", "Mobile-First Responsive Design", "Brand-Aligned Visual Identity", "Prototype & Design System", "Conversion-Optimized Layouts"],
+    description: "We design visually stunning, brand-aligned websites that make a lasting first impression. Our design process begins with in-depth discovery — understanding your industry, target audience, competitors, and business goals. We create detailed wireframes and high-fidelity mockups that prioritize user experience (UX) at every step. Every element, from colour palette and typography to spacing and visual hierarchy, is crafted to guide visitors toward taking action. Our designs are mobile-first and fully responsive, ensuring a flawless experience across all screen sizes. We follow modern design trends including clean layouts, strategic use of white space, micro-interactions, and accessibility-compliant interfaces. The result is a website that not only looks beautiful but actively drives conversions and builds customer trust in the competitive Indian market.",
+    features: ["User Research & Wireframing", "Mobile-First Responsive Design", "Brand-Aligned Visual Identity", "Prototype & Design System", "Conversion-Optimized Layouts", "Accessibility Compliance"],
     price: "₹2,999+"
   },
   {
     title: "Web Development",
     icon: Code2,
-    description: "Our web development team builds fast, secure, and scalable websites using modern technologies like React, Next.js, and Node.js. Every website we develop is optimized for search engines, loads in under 3 seconds, and provides a seamless experience across all devices. We follow industry best practices for clean code, performance, and security to ensure your website runs flawlessly.",
-    features: ["4-10 Custom Pages", "Mobile Responsive Design", "SEO Optimized Structure", "Contact & Lead Forms", "Fast Loading (Under 3s)"],
+    description: "Our development team builds fast, secure, and scalable websites using cutting-edge technologies like React, Next.js, TypeScript, and Node.js. Every line of code is written with performance, maintainability, and SEO in mind. We implement semantic HTML5 structure, proper heading hierarchy, and schema markup to ensure search engines understand and rank your content effectively. Our websites achieve sub-2-second load times through image optimization, code splitting, lazy loading, and CDN integration. We integrate essential business tools including contact forms with email notifications, WhatsApp chat buttons, Google Analytics, and Search Console. Security is built into every project with SSL certificates, input validation, and protection against common web vulnerabilities. Whether you need a business website, a portfolio, or a complex web application, we deliver code that runs flawlessly and scales with your business growth.",
+    features: ["4-10 Custom Pages", "Mobile Responsive Design", "SEO Optimized Structure", "Contact & Lead Forms", "Fast Loading (Under 2s)", "Google Analytics Integration"],
     price: "₹4,999+"
   },
   {
     title: "Landing Pages",
     icon: FileText,
-    description: "Our high-converting landing pages are designed specifically to capture leads and drive sales for your marketing campaigns. Each landing page is A/B tested, SEO-friendly, and optimized for maximum conversions. Whether you're running Google Ads, Facebook campaigns, or WhatsApp marketing, our landing pages ensure every rupee you spend on advertising delivers results.",
-    features: ["Conversion-Focused Design", "CTA Optimization", "Lead Capture Forms", "Fast Performance", "Mobile Optimized"],
+    description: "Our high-converting landing pages are engineered specifically to capture leads and maximize ROI from your marketing campaigns. Whether you are running Google Ads, Facebook campaigns, Instagram promotions, or WhatsApp marketing, a dedicated landing page ensures every rupee spent on advertising delivers measurable results. We design each landing page with a single, focused goal — whether that is collecting email signups, generating phone inquiries, or driving WhatsApp conversations. The design follows proven conversion frameworks including compelling headlines, benefit-focused copy, social proof elements, urgency triggers, and strategically placed call-to-action buttons. Every landing page we build is A/B tested, SEO-friendly, and optimized for both mobile and desktop users. We also set up conversion tracking so you can measure exactly how many leads each campaign generates.",
+    features: ["Conversion-Focused Design", "CTA Optimization", "Lead Capture Forms", "A/B Testing Ready", "Mobile Optimized", "Conversion Tracking"],
     price: "₹1,999+"
   },
   {
     title: "E-commerce",
     icon: ShoppingCart,
-    description: "We build complete e-commerce websites that make online selling simple and profitable. From product catalog and shopping cart to secure payment gateway integration (Razorpay, PayU, Paytm), we handle everything. Our e-commerce solutions include inventory management, order tracking, customer dashboards, and automated email notifications to streamline your online business.",
-    features: ["Product Catalog & Search", "Payment Gateway Integration", "Order & Inventory Management", "Customer Dashboard", "Automated Notifications"],
+    description: "We build complete, feature-rich e-commerce platforms that make online selling simple, secure, and profitable. From product catalogue management and advanced search filters to shopping cart functionality and secure checkout, every aspect of the buying journey is optimized for conversions. We integrate popular Indian payment gateways including Razorpay, PayU, and Paytm to ensure seamless transactions. Our e-commerce solutions include comprehensive inventory management, order tracking dashboards, automated email notifications for order confirmations and shipping updates, customer account management, and wishlist functionality. We implement product reviews, related product recommendations, and discount coupon systems to increase average order value. For businesses needing multi-vendor marketplaces or subscription-based models, we build custom solutions tailored to specific requirements. Every store we build is SEO-optimized with proper product schema markup, fast loading speeds, and mobile-responsive design.",
+    features: ["Product Catalog & Search", "Payment Gateway Integration", "Order & Inventory Management", "Customer Dashboard", "Automated Notifications", "Product Reviews & Ratings"],
     price: "₹8,999+"
   },
   {
     title: "SEO & Performance",
     icon: Search,
-    description: "Our SEO services help your website rank higher on Google and attract more organic traffic. We perform comprehensive keyword research, on-page optimization, technical SEO audits, and content strategy planning. We also optimize your website's loading speed and Core Web Vitals to ensure Google rewards your site with better rankings. Monthly reports keep you informed of your progress.",
-    features: ["Keyword Research & Strategy", "On-Page & Technical SEO", "Speed & Core Web Vitals", "Google Analytics Setup", "Monthly Performance Reports"],
+    description: "Our comprehensive SEO services help your website rank higher on Google, attract qualified organic traffic, and convert visitors into customers. We begin with thorough keyword research to identify the search terms your target audience uses, then build a content strategy around those keywords. Our on-page optimization covers title tags, meta descriptions, heading hierarchy, internal linking, image alt text, and content quality improvements. Technical SEO audits address page speed, mobile usability, crawlability, indexation issues, and Core Web Vitals compliance. We optimize your website's loading performance through image compression, code minification, browser caching, and CDN implementation. We set up Google Analytics, Search Console, and conversion tracking to provide clear, actionable monthly reports showing your ranking improvements, traffic growth, and lead generation metrics. For local businesses, we optimize Google Business Profiles and build local citations to dominate local search results.",
+    features: ["Keyword Research & Strategy", "On-Page & Technical SEO", "Speed & Core Web Vitals", "Google Analytics Setup", "Monthly Performance Reports", "Local SEO Optimization"],
     price: "₹1,999+"
   },
   {
     title: "Maintenance",
     icon: Wrench,
-    description: "Keep your website running smoothly and securely with our maintenance packages. We handle regular software updates, security monitoring, performance optimization, content updates, and technical support. Our maintenance plans ensure your website stays fast, secure, and up-to-date so you can focus on growing your business without worrying about technical issues.",
-    features: ["Regular Software Updates", "Security Monitoring & Patches", "Performance Optimization", "Content Updates", "Priority Technical Support"],
+    description: "Keep your website running at peak performance with our proactive maintenance and support packages. Websites are not a one-time project — they require regular attention to stay secure, fast, and effective. Our maintenance plans include timely software and plugin updates, proactive security monitoring with malware scanning and firewall management, regular performance optimization to maintain fast loading speeds, and content updates to keep your website fresh and relevant. We perform weekly backups so your data is always protected, and we monitor uptime to ensure your website is always accessible to customers. Our priority technical support means you get fast responses when issues arise. We also provide monthly reports detailing security status, performance metrics, and any updates performed. Whether you need occasional content updates or comprehensive ongoing management, we have a plan that fits your business needs and budget.",
+    features: ["Regular Software Updates", "Security Monitoring & Patches", "Performance Optimization", "Content Updates", "Priority Technical Support", "Weekly Backups"],
     price: "₹499/month"
   }
 ];

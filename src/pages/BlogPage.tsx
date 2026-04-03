@@ -8,6 +8,33 @@ import { Clock, ArrowRight, Sparkles, User } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "top-10-benefits-of-having-a-website",
+    title: "Top 10 Benefits of Having a Website for Your Business in 2026",
+    excerpt: "Discover the top reasons why every business needs a professional website. From credibility to 24/7 sales, learn how a website transforms your business growth.",
+    date: "April 1, 2026",
+    readTime: "9 min read",
+    category: "Business",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fm=webp",
+  },
+  {
+    slug: "how-small-businesses-grow-online-india",
+    title: "How Small Businesses Can Grow Online in India – 2026 Guide",
+    excerpt: "Practical, budget-friendly strategies for small business owners in India to build a strong online presence and attract more customers digitally.",
+    date: "March 28, 2026",
+    readTime: "10 min read",
+    category: "Marketing",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80&fm=webp",
+  },
+  {
+    slug: "why-every-business-needs-seo-2026",
+    title: "Why Every Business Needs SEO in 2026 – The Complete Guide",
+    excerpt: "SEO is no longer optional. Learn why search engine optimization is critical for business survival and growth in 2026, and how to get started.",
+    date: "March 20, 2026",
+    readTime: "8 min read",
+    category: "SEO",
+    image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=800&q=80&fm=webp",
+  },
+  {
     slug: "how-to-create-website-in-india",
     title: "How to Create a Website in India – Complete Guide 2025",
     excerpt: "Learn step-by-step how to create a professional website in India. From choosing a domain to launching your site, this guide covers everything you need to know.",
