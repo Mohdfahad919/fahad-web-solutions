@@ -60,6 +60,17 @@ const whyChoose = [
   { icon: Star, title: "Premium Quality", description: "Modern, professional designs" },
 ];
 
+const serviceFaqs = [
+  { question: "What technologies do you use for web development?", answer: "We use modern technologies including React, Next.js, TypeScript, Node.js, and Tailwind CSS. For e-commerce, we integrate payment gateways like Razorpay and PayU. All our websites are built with clean, optimized code for fast performance." },
+  { question: "Do you offer custom website designs or use templates?", answer: "Every website we build is custom-designed to match your brand identity and business goals. We don't use generic templates. Each project starts with discovery and wireframing to create a unique design tailored to your audience." },
+  { question: "Can you help with SEO after the website is built?", answer: "Yes! We offer ongoing SEO services starting at ₹1,999/month. This includes keyword research, on-page optimization, content strategy, technical SEO audits, and monthly performance reports with ranking improvements." },
+  { question: "Do you provide website maintenance services?", answer: "Yes. Our maintenance plans start at ₹499/month and include regular software updates, security monitoring, performance optimization, content updates, weekly backups, and priority technical support." },
+  { question: "What is included in your e-commerce website packages?", answer: "Our e-commerce packages include product catalog setup, payment gateway integration (Razorpay, PayU, Paytm), shopping cart and checkout, order management dashboard, inventory tracking, automated email notifications, and mobile-responsive design." },
+  { question: "How do I get started with a project?", answer: "Simply contact us via our contact form, WhatsApp, or phone. We'll schedule a free discovery call to understand your requirements, then provide a detailed quote within 24 hours. Once approved, we begin the design phase immediately." },
+  { question: "Do you work with clients outside of India?", answer: "Yes! While we're based in Lucknow, India, we serve clients internationally. Our process works seamlessly across time zones with regular updates and video calls to ensure smooth communication." },
+  { question: "What if I'm not satisfied with the design?", answer: "We include 2-5 design revisions in every package. We work collaboratively with you until you're 100% happy with the result. Our goal is your complete satisfaction." },
+];
+
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-background">
