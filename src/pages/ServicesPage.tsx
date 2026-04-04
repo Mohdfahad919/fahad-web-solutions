@@ -72,6 +72,8 @@ const serviceFaqs = [
 ];
 
 export default function ServicesPage() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
