@@ -128,11 +128,14 @@ const pricingPlans = [
 ];
 
 const faqs = [
-  { question: "How much does a website cost?", answer: "Our pricing starts from just ₹1,999 for basic websites. The cost depends on the number of pages, features, and complexity. We offer affordable packages for every budget with no hidden charges." },
-  { question: "How long does it take to build a website?", answer: "Basic websites take 2-4 days, standard websites take 4-7 days, and premium websites take 7-12 days. We always deliver on time!" },
+  { question: "How much does a website cost in India?", answer: "Our pricing starts from just ₹1,999 for basic landing pages. A standard business website costs ₹4,999+, and premium e-commerce websites start at ₹8,999. All packages include mobile responsiveness, basic SEO, and free support. No hidden charges." },
+  { question: "How long does it take to build a website?", answer: "Basic websites take 2-4 days, standard websites take 4-7 days, and premium websites take 7-12 days. We always deliver on time — guaranteed!" },
+  { question: "Do you provide SEO services?", answer: "Yes! Every website we build comes with basic SEO optimization. We also offer dedicated SEO services starting at ₹1,999/month, including keyword research, on-page optimization, and monthly performance reports." },
   { question: "Do you provide revisions?", answer: "Yes! Our packages include 2-5 revisions depending on the plan. We work until you're 100% satisfied with the result." },
   { question: "What about domain and hosting?", answer: "Domain and hosting are separate from website development. We can help you set up affordable hosting starting at ₹99/month or work with your existing setup." },
-  { question: "Do you provide support after delivery?", answer: "Yes! We offer 7-30 days of free support depending on your plan. After that, we have affordable maintenance packages." },
+  { question: "Do you build e-commerce websites?", answer: "Absolutely! We build complete e-commerce stores with product catalogs, payment gateway integration (Razorpay, PayU), order management, and inventory tracking. Starting at ₹8,999." },
+  { question: "Do you provide support after delivery?", answer: "Yes! We offer 7-30 days of free support depending on your plan. After that, we have affordable maintenance packages starting at ₹499/month." },
+  { question: "Can you help my website rank on Google?", answer: "Yes. We build every website with SEO best practices — proper heading structure, meta tags, fast loading, and mobile optimization. For competitive rankings, our monthly SEO services deliver measurable results within 3-6 months." },
 ];
 
 const clientLogos = [
@@ -185,9 +188,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Fahad WebService – Professional Website Development India | Web Design Services"
-        description="Premium website development and web design services in India. We build SEO-optimized, mobile-responsive business websites, e-commerce stores, and landing pages. Starting at ₹1,999."
-        keywords="website development India, web design services, ecommerce website India, SEO services India, professional website design, affordable web development India"
+        title="Professional Website Development India | Web Design Services Lucknow | Fahad WebService"
+        description="Premium website development and web design services in Lucknow, India. We build SEO-optimized, mobile-responsive business websites, e-commerce stores, and landing pages. Starting at ₹1,999. Trusted by 50+ businesses."
+        keywords="website development India, web design services, ecommerce website India, SEO services India, professional website design, affordable web development India, website development Lucknow, web design Lucknow"
         canonical="https://fahadwebservice.com/"
       />
       <Header />
@@ -215,8 +218,8 @@ const Index = () => {
 
                   <AnimatedSection delay={100}>
                     <h1 className="text-foreground mb-6 leading-[1.08]">
-                      We build websites that{" "}
-                      <span className="gradient-text">drive real business growth</span>
+                      Professional Website Development in India —{" "}
+                      <span className="gradient-text">Web Design Services in Lucknow</span>
                     </h1>
                   </AnimatedSection>
                   

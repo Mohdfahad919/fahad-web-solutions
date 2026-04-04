@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -5,7 +6,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Palette, Code2, ShoppingCart, FileText, PenTool, Wrench, Check, ArrowRight, Layers, Zap, Shield, Clock, Star, Phone, MessageCircle, TrendingUp, Search } from "lucide-react";
+import { Palette, Code2, ShoppingCart, FileText, PenTool, Wrench, Check, ArrowRight, Layers, Zap, Shield, Clock, Star, Phone, MessageCircle, TrendingUp, Search, ChevronDown } from "lucide-react";
 
 const services = [
   {
@@ -59,7 +60,20 @@ const whyChoose = [
   { icon: Star, title: "Premium Quality", description: "Modern, professional designs" },
 ];
 
+const serviceFaqs = [
+  { question: "What technologies do you use for web development?", answer: "We use modern technologies including React, Next.js, TypeScript, Node.js, and Tailwind CSS. For e-commerce, we integrate payment gateways like Razorpay and PayU. All our websites are built with clean, optimized code for fast performance." },
+  { question: "Do you offer custom website designs or use templates?", answer: "Every website we build is custom-designed to match your brand identity and business goals. We don't use generic templates. Each project starts with discovery and wireframing to create a unique design tailored to your audience." },
+  { question: "Can you help with SEO after the website is built?", answer: "Yes! We offer ongoing SEO services starting at ₹1,999/month. This includes keyword research, on-page optimization, content strategy, technical SEO audits, and monthly performance reports with ranking improvements." },
+  { question: "Do you provide website maintenance services?", answer: "Yes. Our maintenance plans start at ₹499/month and include regular software updates, security monitoring, performance optimization, content updates, weekly backups, and priority technical support." },
+  { question: "What is included in your e-commerce website packages?", answer: "Our e-commerce packages include product catalog setup, payment gateway integration (Razorpay, PayU, Paytm), shopping cart and checkout, order management dashboard, inventory tracking, automated email notifications, and mobile-responsive design." },
+  { question: "How do I get started with a project?", answer: "Simply contact us via our contact form, WhatsApp, or phone. We'll schedule a free discovery call to understand your requirements, then provide a detailed quote within 24 hours. Once approved, we begin the design phase immediately." },
+  { question: "Do you work with clients outside of India?", answer: "Yes! While we're based in Lucknow, India, we serve clients internationally. Our process works seamlessly across time zones with regular updates and video calls to ensure smooth communication." },
+  { question: "What if I'm not satisfied with the design?", answer: "We include 2-5 design revisions in every package. We work collaboratively with you until you're 100% happy with the result. Our goal is your complete satisfaction." },
+];
+
 export default function ServicesPage() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
@@ -159,6 +173,42 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="w-full section-padding bg-muted/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[700px] mx-auto">
+              <AnimatedSection className="text-center mb-10">
+                <span className="section-badge mb-4">FAQ</span>
+                <h2 className="text-foreground mb-3">
+                  Frequently asked <span className="gradient-text">questions</span>
+                </h2>
+                <p className="text-muted-foreground text-base max-w-lg mx-auto">
+                  Common questions about our website development, SEO, and design services.
+                </p>
+              </AnimatedSection>
+
+              <div className="space-y-3">
+                {serviceFaqs.map((faq, index) => (
+                  <AnimatedSection key={index} animation="slide-up" delay={index * 50}>
+                    <div className="glass-card overflow-hidden">
+                      <button
+                        onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                        className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 hover:bg-muted/30 transition-colors"
+                      >
+                        <span className="font-medium text-sm text-foreground">{faq.question}</span>
+                        <ChevronDown className={`w-4 h-4 text-accent transition-transform duration-200 flex-shrink-0 ${openFaq === index ? 'rotate-180' : ''}`} />
+                      </button>
+                      <div className={`overflow-hidden transition-all duration-300 ease-out ${openFaq === index ? 'max-h-48 pb-4 sm:pb-5' : 'max-h-0'}`}>
+                        <p className="px-4 sm:px-5 text-muted-foreground text-sm leading-relaxed">{faq.answer}</p>
+                      </div>
+                    </div>
+                  </AnimatedSection>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="w-full section-padding">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
@@ -168,10 +218,10 @@ export default function ServicesPage() {
                   <div className="relative z-10">
                     <h2 className="text-white mb-4">Ready to Start Your Project?</h2>
                     <p className="text-white/60 text-base mb-6 max-w-xl mx-auto">
-                      Contact us today for a free consultation and quote.
+                      Contact us today for a free consultation and quote. We respond within 24 hours.
                     </p>
                     <Link to="/contact" className="bg-accent hover:bg-accent-hover text-white text-sm font-medium px-6 py-3 rounded-lg inline-flex items-center gap-2 transition-all duration-200">
-                      Get Free Quote <ArrowRight className="w-4 h-4" />
+                      Get Free Consultation <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
                 </div>
