@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
-import { Phone, Mail, MapPin, MessageCircle, Send, ArrowRight, Clock, CheckCircle2, Shield, Zap, BadgeCheck } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Send, ArrowRight, Clock, CheckCircle2, Shield, Zap, BadgeCheck, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -41,7 +41,7 @@ export default function ContactPage() {
     { icon: Phone, label: "Phone", value: "+91 9076669103", href: "tel:9076669103" },
     { icon: Mail, label: "Email", value: "fahadshaikh9076669103@gmail.com", href: "mailto:fahadshaikh9076669103@gmail.com" },
     { icon: MessageCircle, label: "WhatsApp", value: "+91 9076669103", onClick: openWhatsApp },
-    { icon: MapPin, label: "Location", value: "India" },
+    { icon: MapPin, label: "Location", value: "Lucknow, India" },
   ];
 
   const trustBadges = [
@@ -53,9 +53,9 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Contact Fahad WebService – Get Free Website Consultation India"
-        description="Contact Fahad WebService for professional website development in India. Get a free consultation and quote. Call, email, or WhatsApp us. Fast response guaranteed."
-        keywords="contact web developer India, website development quote, free consultation web design, hire web developer India"
+        title="Contact Fahad WebService – Get Free Website Consultation | Website Development Lucknow"
+        description="Contact Fahad WebService for professional website development in Lucknow, India. Get a free consultation and quote. We respond within 24 hours. Call, email, or WhatsApp us."
+        keywords="contact web developer India, website development quote, free consultation web design, hire web developer India, website development Lucknow"
         canonical="https://fahadwebservice.com/contact"
       />
       <Header />
@@ -67,10 +67,14 @@ export default function ContactPage() {
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><MessageCircle className="w-3.5 h-3.5" />Contact Us</span>
                 <h1 className="text-foreground mb-5">
-                  Let's <span className="gradient-text">build something amazing</span> together
+                  Get Your Free <span className="gradient-text">Consultation Today</span>
                 </h1>
-                <p className="text-muted-foreground text-base leading-relaxed mb-8">
+                <p className="text-muted-foreground text-base leading-relaxed mb-4">
                   Ready to take your business online? Book a free strategy call and get your personalized website quote instantly. Whether you need a business website, e-commerce store, or SEO services in India, our team is here to help you succeed. No obligations, no hidden charges.
+                </p>
+                <p className="text-accent font-medium text-sm mb-8 flex items-center justify-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  We respond within 24 hours — guaranteed
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-2">
@@ -86,14 +90,14 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="w-full py-8 pb-20">
+        <section className="w-full py-8 pb-12">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-8">
                 <AnimatedSection animation="slide-up">
                   <div className="glass-card p-6 lg:p-8">
                     <h2 className="font-semibold text-xl text-foreground mb-1.5">Get Your Free Quote</h2>
-                    <p className="text-muted-foreground text-sm mb-6">Fill out the form and we'll get back within 24 hours.</p>
+                    <p className="text-muted-foreground text-sm mb-6">Fill out the form and we'll get back within 24 hours with a custom quote.</p>
                     <form onSubmit={handleSubmit} className="space-y-4">
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
@@ -149,7 +153,7 @@ export default function ContactPage() {
                         ) : (
                           <>
                             <Send className="w-4 h-4" />
-                            Send Message
+                            Get Free Consultation
                             <ArrowRight className="w-4 h-4" />
                           </>
                         )}
@@ -198,14 +202,53 @@ export default function ContactPage() {
                         <Clock className="w-4 h-4 text-accent" />
                       </div>
                       <div>
-                        <p className="font-medium text-sm text-foreground">Quick Response</p>
+                        <p className="font-medium text-sm text-foreground">Quick Response Guaranteed</p>
                         <p className="text-muted-foreground text-xs">We typically respond within 1-24 hours</p>
                       </div>
                       <CheckCircle2 className="w-5 h-5 text-accent ml-auto" />
                     </div>
+
+                    {/* Trust testimonial */}
+                    <div className="glass-card p-5">
+                      <div className="flex gap-0.5 mb-2">
+                        {[1,2,3,4,5].map(i => <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />)}
+                      </div>
+                      <p className="text-foreground text-sm leading-relaxed mb-3">"Fahad WebService built our website in just 5 days. Great quality, fast delivery, and excellent support!"</p>
+                      <p className="text-muted-foreground text-xs font-medium">— Priya Sharma, TechStart Solutions</p>
+                    </div>
                   </div>
                 </AnimatedSection>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Google Map Section */}
+        <section className="w-full pb-12">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <AnimatedSection>
+                <div className="glass-card overflow-hidden">
+                  <div className="p-5 border-b border-border">
+                    <h3 className="font-semibold text-lg text-foreground flex items-center gap-2">
+                      <MapPin className="w-4 h-4 text-accent" />
+                      Our Location — Lucknow, India
+                    </h3>
+                    <p className="text-muted-foreground text-sm mt-1">We serve clients across India and internationally</p>
+                  </div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.38256945466!2d80.7716382!3d26.8466937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Fahad WebService location in Lucknow, India"
+                    className="w-full"
+                  />
+                </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
