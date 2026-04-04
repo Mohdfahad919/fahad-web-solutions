@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -5,7 +6,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Palette, Code2, ShoppingCart, FileText, PenTool, Wrench, Check, ArrowRight, Layers, Zap, Shield, Clock, Star, Phone, MessageCircle, TrendingUp, Search } from "lucide-react";
+import { Palette, Code2, ShoppingCart, FileText, PenTool, Wrench, Check, ArrowRight, Layers, Zap, Shield, Clock, Star, Phone, MessageCircle, TrendingUp, Search, ChevronDown } from "lucide-react";
 
 const services = [
   {
