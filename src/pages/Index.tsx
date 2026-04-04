@@ -188,9 +188,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Fahad WebService – Professional Website Development India | Web Design Services"
-        description="Premium website development and web design services in India. We build SEO-optimized, mobile-responsive business websites, e-commerce stores, and landing pages. Starting at ₹1,999."
-        keywords="website development India, web design services, ecommerce website India, SEO services India, professional website design, affordable web development India"
+        title="Professional Website Development India | Web Design Services Lucknow | Fahad WebService"
+        description="Premium website development and web design services in Lucknow, India. We build SEO-optimized, mobile-responsive business websites, e-commerce stores, and landing pages. Starting at ₹1,999. Trusted by 50+ businesses."
+        keywords="website development India, web design services, ecommerce website India, SEO services India, professional website design, affordable web development India, website development Lucknow, web design Lucknow"
         canonical="https://fahadwebservice.com/"
       />
       <Header />
