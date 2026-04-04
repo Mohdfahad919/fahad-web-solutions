@@ -173,6 +173,42 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="w-full section-padding bg-muted/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[700px] mx-auto">
+              <AnimatedSection className="text-center mb-10">
+                <span className="section-badge mb-4">FAQ</span>
+                <h2 className="text-foreground mb-3">
+                  Frequently asked <span className="gradient-text">questions</span>
+                </h2>
+                <p className="text-muted-foreground text-base max-w-lg mx-auto">
+                  Common questions about our website development, SEO, and design services.
+                </p>
+              </AnimatedSection>
+
+              <div className="space-y-3">
+                {serviceFaqs.map((faq, index) => (
+                  <AnimatedSection key={index} animation="slide-up" delay={index * 50}>
+                    <div className="glass-card overflow-hidden">
+                      <button
+                        onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                        className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 hover:bg-muted/30 transition-colors"
+                      >
+                        <span className="font-medium text-sm text-foreground">{faq.question}</span>
+                        <ChevronDown className={`w-4 h-4 text-accent transition-transform duration-200 flex-shrink-0 ${openFaq === index ? 'rotate-180' : ''}`} />
+                      </button>
+                      <div className={`overflow-hidden transition-all duration-300 ease-out ${openFaq === index ? 'max-h-48 pb-4 sm:pb-5' : 'max-h-0'}`}>
+                        <p className="px-4 sm:px-5 text-muted-foreground text-sm leading-relaxed">{faq.answer}</p>
+                      </div>
+                    </div>
+                  </AnimatedSection>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="w-full section-padding">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
@@ -182,10 +218,10 @@ export default function ServicesPage() {
                   <div className="relative z-10">
                     <h2 className="text-white mb-4">Ready to Start Your Project?</h2>
                     <p className="text-white/60 text-base mb-6 max-w-xl mx-auto">
-                      Contact us today for a free consultation and quote.
+                      Contact us today for a free consultation and quote. We respond within 24 hours.
                     </p>
                     <Link to="/contact" className="bg-accent hover:bg-accent-hover text-white text-sm font-medium px-6 py-3 rounded-lg inline-flex items-center gap-2 transition-all duration-200">
-                      Get Free Quote <ArrowRight className="w-4 h-4" />
+                      Get Free Consultation <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
                 </div>
