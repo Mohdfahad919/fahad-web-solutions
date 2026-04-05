@@ -77,9 +77,9 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Web Design & Development Services India | SEO, E-commerce | Fahad WebService"
-        description="Professional website development, e-commerce solutions, SEO services, and UI/UX design in India. Affordable packages starting at ₹1,999. Fast delivery, premium quality."
-        keywords="web design services India, website development services, ecommerce website India, SEO services India, UI UX design India, affordable web development"
+        title="Affordable Web Design & Development Services India | SEO for Local Businesses | Fahad WebService"
+        description="Best website development services in Lucknow. Affordable web design for small businesses, ecommerce website development for startups, SEO services for local businesses India. Starting ₹1,999."
+        keywords="affordable web design services India, small business website development India, ecommerce website development for startups, SEO services for local businesses India, website development in Lucknow, web design services Lucknow"
         canonical="https://fahadwebservice.com/services"
       />
       <Header />
