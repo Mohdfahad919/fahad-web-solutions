@@ -218,8 +218,8 @@ const Index = () => {
 
                   <AnimatedSection delay={100}>
                     <h1 className="text-foreground mb-6 leading-[1.08]">
-                      Professional Website Development in India —{" "}
-                      <span className="gradient-text">Web Design Services in Lucknow</span>
+                      Professional Website Development in Lucknow —{" "}
+                      <span className="gradient-text">Affordable Web Design India</span>
                     </h1>
                   </AnimatedSection>
                   
