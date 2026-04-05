@@ -77,9 +77,9 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Web Design & Development Services India | SEO, E-commerce | Fahad WebService"
-        description="Professional website development, e-commerce solutions, SEO services, and UI/UX design in India. Affordable packages starting at ₹1,999. Fast delivery, premium quality."
-        keywords="web design services India, website development services, ecommerce website India, SEO services India, UI UX design India, affordable web development"
+        title="Affordable Web Design & Development Services India | SEO for Local Businesses | Fahad WebService"
+        description="Best website development services in Lucknow. Affordable web design for small businesses, ecommerce website development for startups, SEO services for local businesses India. Starting ₹1,999."
+        keywords="affordable web design services India, small business website development India, ecommerce website development for startups, SEO services for local businesses India, website development in Lucknow, web design services Lucknow"
         canonical="https://fahadwebservice.com/services"
       />
       <Header />
@@ -91,10 +91,10 @@ export default function ServicesPage() {
               <AnimatedSection className="text-center max-w-3xl mx-auto">
                 <span className="section-badge mb-4"><Layers className="w-3.5 h-3.5" />Our Services</span>
                 <h1 className="text-foreground mb-5">
-                  Professional web design & development <span className="gradient-text">services in India</span>
+                  Affordable web design & development <span className="gradient-text">services in Lucknow, India</span>
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed mb-8">
-                  We offer comprehensive website development, e-commerce solutions, SEO optimization, and UI/UX design services tailored for Indian businesses. Our team combines modern design with technical expertise to create websites that rank higher on Google, load faster, and convert more visitors into customers. Every project is delivered on time with transparent pricing starting at just ₹1,999.
+                  Looking for affordable web design services in India? We offer small business website development, ecommerce website development for startups, and SEO services for local businesses. Our team in Lucknow combines modern design with technical expertise to create websites that rank higher on Google, load faster, and convert visitors into customers. Transparent pricing starting at just ₹1,999.
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-3">
