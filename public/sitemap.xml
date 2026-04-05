@@ -1,45 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sitemap for Fahad WebService -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://fahadwebservice.com/</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://fahadwebservice.com/services</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fahadwebservice.com/portfolio</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fahadwebservice.com/about</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fahadwebservice.com/contact</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://fahadwebservice.com/blog</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fahadwebservice.com/blog/top-10-benefits-of-having-a-website</loc>
+    <loc>https://fahadwebservice.com/blog/best-website-development-services-lucknow</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fahadwebservice.com/blog/website-development-cost-india-2026</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fahadwebservice.com/blog/step-by-step-build-business-website-india</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fahadwebservice.com/blog/top-seo-strategies-small-businesses-india</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fahadwebservice.com/blog/how-to-get-clients-online-using-website</loc>
     <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fahadwebservice.com/blog/top-10-benefits-of-having-a-website</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -55,6 +84,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
     <loc>https://fahadwebservice.com/blog/how-to-create-website-in-india</loc>
     <lastmod>2025-03-15</lastmod>
     <changefreq>monthly</changefreq>

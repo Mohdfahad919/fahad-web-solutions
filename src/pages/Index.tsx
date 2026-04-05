@@ -225,8 +225,8 @@ const Index = () => {
                   
                   <AnimatedSection delay={200}>
                     <p className="text-base sm:text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
-                      Premium web development for startups and businesses. 
-                      Beautiful design, fast performance, results-focused.
+                      Affordable small business website development India. E-commerce solutions for startups, 
+                      SEO services for local businesses. Beautiful design, fast performance, real results.
                     </p>
                   </AnimatedSection>
                   
