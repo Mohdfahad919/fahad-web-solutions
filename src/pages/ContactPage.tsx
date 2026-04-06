@@ -164,6 +164,7 @@ export default function ContactPage() {
 
                 <AnimatedSection animation="slide-up" delay={100}>
                   <div className="space-y-5">
+                    {/* Contact Information */}
                     <div className="glass-card p-6">
                       <h3 className="font-semibold text-lg text-foreground mb-4">Contact Information</h3>
                       <div className="space-y-4">
@@ -186,18 +187,42 @@ export default function ContactPage() {
                         ))}
                       </div>
                     </div>
+
+                    {/* Other Ways to Reach Us */}
+                    <div className="glass-card p-6">
+                      <h3 className="font-semibold text-lg text-foreground mb-4">Other Ways to Reach Us</h3>
+                      <div className="space-y-3">
+                        <button
+                          onClick={openWhatsApp}
+                          className="w-full flex items-center gap-3 p-3.5 rounded-xl border border-whatsapp/20 bg-whatsapp/5 hover:bg-whatsapp/10 transition-all duration-200 group"
+                        >
+                          <div className="w-10 h-10 rounded-lg bg-whatsapp/10 flex items-center justify-center flex-shrink-0 group-hover:bg-whatsapp/20 transition-colors">
+                            <MessageCircle className="w-5 h-5 text-whatsapp" />
+                          </div>
+                          <div className="text-left flex-1">
+                            <p className="font-medium text-sm text-foreground">Chat on WhatsApp</p>
+                            <p className="text-muted-foreground text-xs">Get a quick response anytime</p>
+                          </div>
+                          <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-whatsapp transition-colors" />
+                        </button>
+
+                        <a
+                          href="tel:9076669103"
+                          className="w-full flex items-center gap-3 p-3.5 rounded-xl border border-accent/20 bg-accent/5 hover:bg-accent/10 transition-all duration-200 group"
+                        >
+                          <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+                            <Phone className="w-5 h-5 text-accent" />
+                          </div>
+                          <div className="text-left flex-1">
+                            <p className="font-medium text-sm text-foreground">Call Us Directly</p>
+                            <p className="text-muted-foreground text-xs">+91 9076669103</p>
+                          </div>
+                          <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-accent transition-colors" />
+                        </a>
+                      </div>
+                    </div>
                     
-                     <div className="glass-card p-6 border-2 border-whatsapp/20 bg-gradient-to-br from-whatsapp/5 to-transparent">
-                       <MessageCircle className="w-10 h-10 text-whatsapp mb-3" />
-                       <h3 className="font-semibold text-xl text-foreground mb-1.5">Get Instant Quote on WhatsApp 🚀</h3>
-                       <p className="text-muted-foreground text-sm mb-4">Skip the form — get a personalized quote within minutes! Most queries answered instantly.</p>
-                       <button onClick={openWhatsApp} className="bg-whatsapp hover:bg-whatsapp-hover text-white w-full py-3.5 rounded-xl font-semibold text-base flex items-center justify-center gap-2 transition-all duration-200 shadow-lg shadow-whatsapp/20">
-                         <MessageCircle className="w-5 h-5" />
-                         Get Instant Quote on WhatsApp 🚀
-                       </button>
-                       <p className="text-center text-muted-foreground text-xs mt-3">✓ No waiting · ✓ Free consultation · ✓ Instant response</p>
-                     </div>
-                    
+                    {/* Response Guarantee */}
                     <div className="glass-card p-4 flex items-center gap-3">
                       <div className="icon-box w-10 h-10">
                         <Clock className="w-4 h-4 text-accent" />
