@@ -169,7 +169,7 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: JSON.stringify({
         from: "FAHAD WEB SERVICE <onboarding@resend.dev>",
-        to: ["fahadwebservice@gmail.com"],
+        to: ["fahadshaikh9076669103@gmail.com"],
         subject: `New Project Inquiry from ${safeName}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
