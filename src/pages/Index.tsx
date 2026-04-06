@@ -695,7 +695,7 @@ const Index = () => {
                 ))}
               </AnimatedSection>
 
-              <div className="grid md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
                 {pricingPlans.map((plan, index) => (
                   <AnimatedSection key={plan.name} animation="slide-up" delay={index * 80}>
                     <div className={`glass-card p-6 h-full flex flex-col relative ${plan.popular ? 'pricing-popular ring-1 ring-accent/30' : ''}`}>
