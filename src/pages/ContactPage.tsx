@@ -187,15 +187,16 @@ export default function ContactPage() {
                       </div>
                     </div>
                     
-                    <div className="glass-card p-6 border-2 border-whatsapp/20">
-                      <MessageCircle className="w-8 h-8 text-whatsapp mb-3" />
-                      <h3 className="font-semibold text-lg text-foreground mb-1.5">Prefer WhatsApp?</h3>
-                      <p className="text-muted-foreground text-sm mb-3">Get instant response. Most queries answered within 1 hour!</p>
-                      <button onClick={openWhatsApp} className="btn-accent w-full flex items-center justify-center gap-2">
-                        <MessageCircle className="w-4 h-4" />
-                        Chat on WhatsApp
-                      </button>
-                    </div>
+                     <div className="glass-card p-6 border-2 border-whatsapp/20 bg-gradient-to-br from-whatsapp/5 to-transparent">
+                       <MessageCircle className="w-10 h-10 text-whatsapp mb-3" />
+                       <h3 className="font-semibold text-xl text-foreground mb-1.5">Get Instant Quote on WhatsApp 🚀</h3>
+                       <p className="text-muted-foreground text-sm mb-4">Skip the form — get a personalized quote within minutes! Most queries answered instantly.</p>
+                       <button onClick={openWhatsApp} className="bg-whatsapp hover:bg-whatsapp-hover text-white w-full py-3.5 rounded-xl font-semibold text-base flex items-center justify-center gap-2 transition-all duration-200 shadow-lg shadow-whatsapp/20">
+                         <MessageCircle className="w-5 h-5" />
+                         Get Instant Quote on WhatsApp 🚀
+                       </button>
+                       <p className="text-center text-muted-foreground text-xs mt-3">✓ No waiting · ✓ Free consultation · ✓ Instant response</p>
+                     </div>
                     
                     <div className="glass-card p-4 flex items-center gap-3">
                       <div className="icon-box w-10 h-10">
