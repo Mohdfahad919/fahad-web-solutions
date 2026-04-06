@@ -103,26 +103,34 @@ const pricingPlans = [
   {
     name: "Starter",
     price: "₹1,999",
-    tagline: "Perfect for small business",
-    features: ["1–2 Pages", "Mobile Responsive", "Contact Form", "WhatsApp Button", "Basic Design", "2 Revisions"],
-    delivery: "2–4 Days",
+    tagline: "Perfect for getting started",
+    features: ["1–2 Pages Website", "Mobile Responsive", "Basic Design"],
+    delivery: "2–3 Days",
     popular: false,
   },
   {
-    name: "Professional",
+    name: "Basic",
+    price: "₹2,999",
+    tagline: "Great for small businesses",
+    features: ["3–5 Pages", "Contact Form", "WhatsApp Integration"],
+    delivery: "3–5 Days",
+    popular: false,
+  },
+  {
+    name: "Standard",
     price: "₹4,999",
     tagline: "Best for growing businesses",
-    features: ["4–5 Pages", "Premium UI Design", "SEO Setup", "Speed Optimized", "Contact Forms", "3 Revisions"],
-    delivery: "4–7 Days",
+    features: ["5–7 Pages", "Better UI Design", "Basic SEO", "Fast Loading"],
+    delivery: "5–7 Days",
     popular: true,
     badge: "MOST POPULAR",
   },
   {
-    name: "Enterprise",
-    price: "₹8,999",
+    name: "Premium",
+    price: "₹7,999",
     tagline: "For premium brands",
-    features: ["8–10 Pages", "Advanced Animations", "Full SEO Setup", "Lead Capture", "Premium Support", "5 Revisions"],
-    delivery: "7–12 Days",
+    features: ["8–12 Pages", "Premium Design", "Blog Setup", "SEO Optimization"],
+    delivery: "7–10 Days",
     popular: false,
   },
 ];
@@ -687,7 +695,7 @@ const Index = () => {
                 ))}
               </AnimatedSection>
 
-              <div className="grid md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
                 {pricingPlans.map((plan, index) => (
                   <AnimatedSection key={plan.name} animation="slide-up" delay={index * 80}>
                     <div className={`glass-card p-6 h-full flex flex-col relative ${plan.popular ? 'pricing-popular ring-1 ring-accent/30' : ''}`}>

@@ -39,7 +39,7 @@ export default function ContactPage() {
 
   const contactDetails = [
     { icon: Phone, label: "Phone", value: "+91 9076669103", href: "tel:9076669103" },
-    { icon: Mail, label: "Email", value: "fahadshaikh9076669103@gmail.com", href: "mailto:fahadshaikh9076669103@gmail.com" },
+    { icon: Mail, label: "Email", value: "fahadwebservice@gmail.com", href: "mailto:fahadwebservice@gmail.com" },
     { icon: MessageCircle, label: "WhatsApp", value: "+91 9076669103", onClick: openWhatsApp },
     { icon: MapPin, label: "Location", value: "Lucknow, India" },
   ];

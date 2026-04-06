@@ -57,7 +57,7 @@ export function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="mailto:fahadshaikh9076669103@gmail.com"
+                  href="mailto:fahadwebservice@gmail.com"
                   className="w-9 h-9 rounded-lg bg-white/6 flex items-center justify-center text-white/50 hover:text-accent hover:bg-white/10 transition-all duration-200"
                 >
                   <Mail className="w-4 h-4" />
@@ -107,9 +107,9 @@ export function Footer() {
                   <Phone className="w-3.5 h-3.5 text-accent/70" />
                   <span className="text-sm">+91 9076669103</span>
                 </a>
-                <a href="mailto:fahadshaikh9076669103@gmail.com" className="flex items-center gap-2.5 text-white/50 hover:text-accent transition-colors">
+                <a href="mailto:fahadwebservice@gmail.com" className="flex items-center gap-2.5 text-white/50 hover:text-accent transition-colors">
                   <Mail className="w-3.5 h-3.5 text-accent/70" />
-                  <span className="text-sm break-all">fahadshaikh9076669103@gmail.com</span>
+                  <span className="text-sm break-all">fahadwebservice@gmail.com</span>
                 </a>
                 <div className="flex items-center gap-2.5 text-white/50">
                   <MapPin className="w-3.5 h-3.5 text-accent/70" />
