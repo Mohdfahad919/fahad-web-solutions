@@ -107,9 +107,9 @@ export function Footer() {
                   <Phone className="w-3.5 h-3.5 text-accent/70" />
                   <span className="text-sm">+91 9076669103</span>
                 </a>
-                <a href="mailto:fahadshaikh9076669103@gmail.com" className="flex items-center gap-2.5 text-white/50 hover:text-accent transition-colors">
+                <a href="mailto:fahadwebservice@gmail.com" className="flex items-center gap-2.5 text-white/50 hover:text-accent transition-colors">
                   <Mail className="w-3.5 h-3.5 text-accent/70" />
-                  <span className="text-sm break-all">fahadshaikh9076669103@gmail.com</span>
+                  <span className="text-sm break-all">fahadwebservice@gmail.com</span>
                 </a>
                 <div className="flex items-center gap-2.5 text-white/50">
                   <MapPin className="w-3.5 h-3.5 text-accent/70" />

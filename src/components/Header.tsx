@@ -49,7 +49,7 @@ export function Header() {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent to-accent-secondary flex items-center justify-center transition-transform group-hover:scale-105 shadow-[0_2px_12px_-3px_hsl(var(--accent)/0.5)]">
               <span className="text-white font-bold text-lg tracking-tight">F</span>
             </div>
-            <span className="font-sans font-semibold text-base text-white tracking-tight hidden sm:block">
+            <span className="font-sans font-semibold text-sm sm:text-base text-white tracking-tight">
               Fahad <span className="text-accent">WebService</span>
             </span>
           </Link>
