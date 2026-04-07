@@ -204,124 +204,136 @@ const Index = () => {
       <Header />
       <main className="overflow-hidden">
         {/* Hero Section */}
-        <section className="w-full relative min-h-[92svh] flex items-center pt-28 pb-20 overflow-hidden bg-background">
-          <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-accent/[0.03] rounded-full blur-[120px]" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/[0.02] rounded-full blur-[120px]" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/[0.01] rounded-full blur-[150px]" />
+        <section className="w-full relative min-h-[92svh] flex items-center pt-28 pb-20 overflow-hidden" style={{ background: 'linear-gradient(135deg, hsl(var(--background)) 0%, hsl(222 47% 8%) 50%, hsl(var(--background)) 100%)' }}>
+          {/* Ambient glow effects */}
+          <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-accent/[0.06] rounded-full blur-[150px]" />
+          <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-accent/[0.04] rounded-full blur-[130px]" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
 
-          <div className="w-full px-8 sm:px-8 lg:px-8 relative z-10">
+          <div className="w-full px-6 sm:px-8 lg:px-8 relative z-10">
             <div className="max-w-[1200px] mx-auto">
-              <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 {/* Left Content */}
                 <div className="text-center lg:text-left">
                   <AnimatedSection>
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/8 border border-accent/12 mb-6">
-                      <span className="relative flex h-1.5 w-1.5">
+                    <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-accent/8 border border-accent/15 mb-8 backdrop-blur-sm">
+                      <span className="relative flex h-2 w-2">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-accent"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
                       </span>
-                      <span className="text-accent text-xs font-medium">Now accepting new clients</span>
+                      <span className="text-accent text-xs font-semibold tracking-wide uppercase">Now Accepting New Projects</span>
                     </div>
                   </AnimatedSection>
 
                   <AnimatedSection delay={100}>
-                    <h1 className="text-foreground mb-4 leading-[1.08]">
-                      Affordable Website Development in Lucknow{" "}
-                      <span className="gradient-text">🚀</span>
+                    <h1 className="text-foreground mb-5 leading-[1.06] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold tracking-tight">
+                      Affordable Website{" "}
+                      <br className="hidden sm:block" />
+                      Development in{" "}
+                      <span className="gradient-text">Lucknow</span>{" "}
+                      <span className="inline-block">🚀</span>
                     </h1>
-                    <p className="text-lg sm:text-xl font-semibold text-foreground/80 mb-6">
-                      Get Your Business Website Starting at ₹1,999
+                  </AnimatedSection>
+
+                  <AnimatedSection delay={150}>
+                    <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                      We build fast, modern, and SEO-optimized websites for your business to grow online. Get your professional website starting at just <span className="text-accent font-bold">₹1,999</span>.
                     </p>
                   </AnimatedSection>
                   
-                  <AnimatedSection delay={200}>
-                    <p className="text-base sm:text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
-                      We help small businesses, startups, and local shops build professional websites that attract customers and grow revenue. Best web design company in India with affordable pricing and fast delivery.
-                    </p>
-                  </AnimatedSection>
-                  
-                  <AnimatedSection delay={300}>
+                  <AnimatedSection delay={250}>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
-                      <Link to="/contact" className="btn-primary group inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base px-7 py-3.5">
-                        Get Started Now
-                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                      <Link to="/contact" className="group relative inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl bg-accent text-accent-foreground shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:scale-[1.02] transition-all duration-300">
+                        Get Started <Rocket className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </Link>
-                      <a href="https://wa.me/9076669103" className="btn-secondary inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base px-7 py-3.5">
-                        <MessageCircle className="w-4 h-4" />
-                        Contact on WhatsApp
+                      <a href="https://wa.me/9076669103" className="group inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl border border-border bg-card/50 text-foreground backdrop-blur-sm hover:border-accent/30 hover:bg-card hover:shadow-lg transition-all duration-300">
+                        <MessageCircle className="w-4 h-4 text-accent" />
+                        Chat on WhatsApp
                       </a>
                     </div>
                   </AnimatedSection>
 
-                  <AnimatedSection delay={400}>
-                    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 text-sm text-muted-foreground">
+                  <AnimatedSection delay={350}>
+                    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8">
                       <div className="flex items-center gap-3">
-                        <div className="flex -space-x-2">
-                          {[1, 2, 3, 4].map((i) => (
-                            <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-accent to-accent-secondary border-2 border-background shadow-sm" />
+                        <div className="flex -space-x-2.5">
+                          {[
+                            "from-accent to-blue-400",
+                            "from-violet-500 to-purple-400",
+                            "from-emerald-500 to-teal-400",
+                            "from-orange-500 to-amber-400",
+                          ].map((gradient, i) => (
+                            <div key={i} className={`w-9 h-9 rounded-full bg-gradient-to-br ${gradient} border-2 border-background shadow-sm ring-1 ring-border/50`} />
                           ))}
                         </div>
-                        <span className="font-semibold text-foreground text-sm">50+ clients</span>
+                        <span className="font-semibold text-foreground text-sm">50+ Happy Clients</span>
                       </div>
-                      <div className="h-5 w-px bg-border hidden sm:block" />
+                      <div className="h-5 w-px bg-border/50 hidden sm:block" />
                       <div className="flex items-center gap-1.5">
                         {[1, 2, 3, 4, 5].map((i) => (
                           <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                         ))}
-                        <span className="font-semibold text-foreground ml-1.5 text-sm">4.9 rated</span>
+                        <span className="font-semibold text-foreground ml-1.5 text-sm">4.9/5 Rated</span>
                       </div>
                     </div>
                   </AnimatedSection>
                 </div>
 
-                {/* Right Content - Dashboard Visual */}
+                {/* Right Content - Premium Dashboard Mockup */}
                 <AnimatedSection delay={200} animation="scale-in" className="hidden lg:block">
                   <div className="relative">
                     <motion.div
-                      animate={{ y: [0, -6, 0] }}
+                      animate={{ y: [0, -8, 0] }}
                       transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                       className="relative"
                     >
-                      <div className="bg-card rounded-xl shadow-2xl border border-border overflow-hidden">
-                        <div className="flex items-center gap-2 px-4 py-2.5 border-b border-border bg-muted/50">
-                          <div className="flex gap-1.5">
-                            <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
-                            <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
-                            <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                      {/* Browser mockup */}
+                      <div className="bg-card rounded-2xl shadow-2xl shadow-accent/5 border border-border/80 overflow-hidden">
+                        <div className="flex items-center gap-2 px-5 py-3 border-b border-border bg-muted/40">
+                          <div className="flex gap-2">
+                            <div className="w-3 h-3 rounded-full bg-red-400/80" />
+                            <div className="w-3 h-3 rounded-full bg-amber-400/80" />
+                            <div className="w-3 h-3 rounded-full bg-emerald-400/80" />
                           </div>
                           <div className="flex-1 flex justify-center">
-                            <div className="px-3 py-1 rounded-md bg-background text-xs text-muted-foreground">
+                            <div className="px-4 py-1.5 rounded-lg bg-background/80 border border-border/50 text-xs text-muted-foreground flex items-center gap-2">
+                              <Shield className="w-3 h-3 text-emerald-400" />
                               yourbusiness.com
                             </div>
                           </div>
                         </div>
                         
-                        <div className="p-5 bg-gradient-to-br from-accent/[0.03] to-transparent">
-                          <div className="grid grid-cols-3 gap-3 mb-4">
+                        <div className="p-6 bg-gradient-to-br from-accent/[0.04] via-transparent to-accent/[0.02]">
+                          {/* Stats row */}
+                          <div className="grid grid-cols-3 gap-3 mb-5">
                             {[
-                              { icon: TrendingUp, label: "Traffic", value: "+180%" },
-                              { icon: BarChart3, label: "Conversions", value: "+95%" },
-                              { icon: Globe, label: "Reach", value: "Global" },
+                              { icon: TrendingUp, label: "Traffic", value: "+180%", color: "text-emerald-400" },
+                              { icon: BarChart3, label: "Conversions", value: "+95%", color: "text-accent" },
+                              { icon: Globe, label: "Reach", value: "Global", color: "text-violet-400" },
                             ].map((stat) => (
-                              <div key={stat.label} className="bg-card p-3 rounded-lg border border-border">
-                                <stat.icon className="w-4 h-4 text-accent mb-1.5" />
-                                <p className="text-base font-bold text-foreground">{stat.value}</p>
+                              <div key={stat.label} className="bg-background/60 backdrop-blur-sm p-3.5 rounded-xl border border-border/60 hover:border-accent/20 transition-colors">
+                                <stat.icon className={`w-4 h-4 ${stat.color} mb-2`} />
+                                <p className="text-lg font-bold text-foreground">{stat.value}</p>
                                 <p className="text-xs text-muted-foreground">{stat.label}</p>
                               </div>
                             ))}
                           </div>
                           
-                          <div className="bg-card rounded-lg border border-border p-3">
-                            <div className="flex items-center justify-between mb-3">
-                              <span className="text-xs font-medium text-foreground">Performance</span>
-                              <span className="text-xs text-accent font-medium">+24%</span>
+                          {/* Chart */}
+                          <div className="bg-background/60 backdrop-blur-sm rounded-xl border border-border/60 p-4">
+                            <div className="flex items-center justify-between mb-4">
+                              <span className="text-sm font-semibold text-foreground">Performance Overview</span>
+                              <span className="text-xs text-accent font-semibold bg-accent/10 px-2.5 py-1 rounded-full">+24% ↑</span>
                             </div>
-                            <div className="flex items-end gap-1.5 h-20">
-                              {[40, 65, 45, 80, 55, 90, 75, 95, 85, 100].map((height, i) => (
+                            <div className="flex items-end gap-2 h-24">
+                              {[35, 55, 40, 70, 50, 85, 65, 90, 78, 95, 88, 100].map((height, i) => (
                                 <div 
                                   key={i} 
-                                  className="flex-1 bg-accent/15 rounded-t-sm transition-all hover:bg-accent/30"
-                                  style={{ height: `${height}%` }}
+                                  className="flex-1 rounded-t transition-all duration-500 hover:bg-accent/40"
+                                  style={{ 
+                                    height: `${height}%`,
+                                    background: `linear-gradient(to top, hsl(var(--accent) / 0.1), hsl(var(--accent) / ${0.15 + (height / 400)}))`
+                                  }}
                                 />
                               ))}
                             </div>
@@ -329,36 +341,76 @@ const Index = () => {
                         </div>
                       </div>
 
+                      {/* Floating badge - bottom left */}
                       <motion.div
                         animate={{ y: [0, 6, 0] }}
                         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                        className="absolute -bottom-4 -left-4 bg-card rounded-lg shadow-lg border border-border p-3"
+                        className="absolute -bottom-5 -left-5 bg-card rounded-xl shadow-xl shadow-accent/5 border border-border/80 p-3.5 backdrop-blur-sm"
                       >
-                        <div className="flex items-center gap-2.5">
-                          <div className="w-8 h-8 rounded-md bg-accent/10 flex items-center justify-center">
-                            <Layers className="w-4 h-4 text-accent" />
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+                            <Layers className="w-5 h-5 text-accent" />
                           </div>
                           <div>
-                            <p className="text-xs font-semibold text-foreground">120+ Projects</p>
-                            <p className="text-[11px] text-muted-foreground">Delivered successfully</p>
+                            <p className="text-sm font-bold text-foreground">120+ Projects</p>
+                            <p className="text-xs text-muted-foreground">Delivered on time</p>
+                          </div>
+                        </div>
+                      </motion.div>
+
+                      {/* Floating badge - top right */}
+                      <motion.div
+                        animate={{ y: [0, -5, 0] }}
+                        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                        className="absolute -top-3 -right-3 bg-card rounded-xl shadow-xl shadow-accent/5 border border-border/80 p-3 backdrop-blur-sm"
+                      >
+                        <div className="flex items-center gap-2.5">
+                          <div className="w-8 h-8 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+                            <BadgeCheck className="w-4 h-4 text-emerald-400" />
+                          </div>
+                          <div>
+                            <p className="text-xs font-bold text-foreground">100% Satisfaction</p>
+                            <p className="text-[10px] text-muted-foreground">Guaranteed</p>
                           </div>
                         </div>
                       </motion.div>
                     </motion.div>
                   </div>
                 </AnimatedSection>
+
+                {/* Mobile hero image */}
+                <div className="block lg:hidden">
+                  <AnimatedSection delay={200}>
+                    <div className="bg-card rounded-2xl border border-border p-5 shadow-xl">
+                      <div className="grid grid-cols-3 gap-3">
+                        {[
+                          { icon: TrendingUp, label: "Traffic", value: "+180%" },
+                          { icon: BarChart3, label: "Sales", value: "+95%" },
+                          { icon: Globe, label: "Reach", value: "Global" },
+                        ].map((stat) => (
+                          <div key={stat.label} className="text-center p-3 rounded-xl bg-muted/30 border border-border/50">
+                            <stat.icon className="w-5 h-5 text-accent mx-auto mb-1.5" />
+                            <p className="text-base font-bold text-foreground">{stat.value}</p>
+                            <p className="text-[11px] text-muted-foreground">{stat.label}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </AnimatedSection>
+                </div>
               </div>
 
               {/* Stats Row */}
               <AnimatedSection delay={500}>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mt-16 lg:mt-20">
                   {[
-                    { value: "120+", label: "Projects Completed" },
-                    { value: "50+", label: "Happy Clients" },
-                    { value: "7+", label: "Years Experience" },
-                    { value: "24/7", label: "Support Available" },
+                    { value: "120+", label: "Projects Completed", icon: Rocket },
+                    { value: "50+", label: "Happy Clients", icon: User },
+                    { value: "7+", label: "Years Experience", icon: Clock },
+                    { value: "24/7", label: "Support Available", icon: Shield },
                   ].map((stat) => (
-                    <div key={stat.label} className="text-center p-6 rounded-xl bg-card border border-border hover:border-accent/20 hover:shadow-lg transition-all duration-300">
+                    <div key={stat.label} className="text-center p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/60 hover:border-accent/25 hover:shadow-xl hover:shadow-accent/5 transition-all duration-300 group">
+                      <stat.icon className="w-5 h-5 text-accent mx-auto mb-3 group-hover:scale-110 transition-transform" />
                       <p className="font-bold text-3xl sm:text-4xl gradient-text mb-1.5">{stat.value}</p>
                       <p className="text-muted-foreground text-sm">{stat.label}</p>
                     </div>
