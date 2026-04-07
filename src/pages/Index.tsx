@@ -225,29 +225,31 @@ const Index = () => {
                   </AnimatedSection>
 
                   <AnimatedSection delay={100}>
-                    <h1 className="text-foreground mb-6 leading-[1.08]">
-                      Professional Website Development in Lucknow —{" "}
-                      <span className="gradient-text">Affordable Web Design India</span>
+                    <h1 className="text-foreground mb-4 leading-[1.08]">
+                      Affordable Website Development in Lucknow{" "}
+                      <span className="gradient-text">🚀</span>
                     </h1>
+                    <p className="text-lg sm:text-xl font-semibold text-foreground/80 mb-6">
+                      Get Your Business Website Starting at ₹1,999
+                    </p>
                   </AnimatedSection>
                   
                   <AnimatedSection delay={200}>
                     <p className="text-base sm:text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
-                      Affordable small business website development India. E-commerce solutions for startups, 
-                      SEO services for local businesses. Beautiful design, fast performance, real results.
+                      We help small businesses, startups, and local shops build professional websites that attract customers and grow revenue. Best web design company in India with affordable pricing and fast delivery.
                     </p>
                   </AnimatedSection>
                   
                   <AnimatedSection delay={300}>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
                       <Link to="/contact" className="btn-primary group inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base px-7 py-3.5">
-                        Get Free Consultation
+                        Get Started Now
                         <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                       </Link>
-                      <Link to="/portfolio" className="btn-secondary inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base px-7 py-3.5">
-                        <Play className="w-4 h-4" />
-                        View Our Work
-                      </Link>
+                      <a href="https://wa.me/9076669103" className="btn-secondary inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base px-7 py-3.5">
+                        <MessageCircle className="w-4 h-4" />
+                        Contact on WhatsApp
+                      </a>
                     </div>
                   </AnimatedSection>
 

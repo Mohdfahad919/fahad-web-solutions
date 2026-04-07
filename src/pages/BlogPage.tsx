@@ -124,6 +124,15 @@ const blogPosts = [
     category: "Marketing",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fm=webp",
   },
+  {
+    slug: "how-professional-website-increases-sales",
+    title: "How a Professional Website Can Increase Your Sales and Leads",
+    excerpt: "Discover proven ways a professional website drives more sales, builds trust, and generates qualified leads for your business around the clock.",
+    date: "April 6, 2026",
+    readTime: "14 min read",
+    category: "Business",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&fm=webp",
+  },
 ];
 
 export default function BlogPage() {
