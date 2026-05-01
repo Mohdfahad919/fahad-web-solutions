@@ -4,8 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { 
+import {
   ArrowRight, 
   Check,
   Star,
