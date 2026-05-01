@@ -25,7 +25,6 @@ import {
   Rocket,
   Clock,
   Monitor,
-  Smartphone,
   Building2,
   User,
   UtensilsCrossed,
@@ -35,9 +34,6 @@ import {
   Newspaper,
   Settings,
   Send,
-  Play,
-  BarChart3,
-  Globe,
   Layers
 } from "lucide-react";
 import { useState } from "react";
