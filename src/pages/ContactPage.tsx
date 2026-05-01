@@ -39,7 +39,7 @@ export default function ContactPage() {
 
   const contactDetails = [
     { icon: Phone, label: "Phone", value: "+91 9076669103", href: "tel:9076669103" },
-    { icon: Mail, label: "Email", value: "fahadshaikh9076669103@gmail.com", href: "mailto:fahadshaikh9076669103@gmail.com" },
+    { icon: Mail, label: "Email", value: "fahadwebservice@gmail.com", href: "mailto:fahadwebservice@gmail.com" },
     { icon: MessageCircle, label: "WhatsApp", value: "+91 9076669103", onClick: openWhatsApp },
     { icon: MapPin, label: "Location", value: "Lucknow, India" },
   ];
@@ -249,30 +249,17 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Google Map Section */}
+        {/* Location Info */}
         <section className="w-full pb-12">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <AnimatedSection>
-                <div className="glass-card overflow-hidden">
-                  <div className="p-5 border-b border-border">
-                    <h3 className="font-semibold text-lg text-foreground flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-accent" />
-                      Our Location — Lucknow, India
-                    </h3>
-                    <p className="text-muted-foreground text-sm mt-1">We serve clients across India and internationally</p>
-                  </div>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.38256945466!2d80.7716382!3d26.8466937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                    width="100%"
-                    height="300"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Fahad WebService location in Lucknow, India"
-                    className="w-full"
-                  />
+                <div className="glass-card p-6 sm:p-8 text-center">
+                  <MapPin className="w-8 h-8 text-accent mx-auto mb-3" />
+                  <h3 className="font-semibold text-lg text-foreground mb-2">Based in Lucknow, Serving All India</h3>
+                  <p className="text-muted-foreground text-sm max-w-lg mx-auto">
+                    We work with clients across India and internationally. Whether you're in Lucknow, Delhi, Mumbai, or anywhere else — we deliver premium websites remotely.
+                  </p>
                 </div>
               </AnimatedSection>
             </div>
