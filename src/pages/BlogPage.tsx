@@ -32,7 +32,7 @@ const blogPosts = [
     date: "April 3, 2026",
     readTime: "13 min read",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80&fm=webp",
   },
   {
     slug: "top-seo-strategies-small-businesses-india",
@@ -95,7 +95,7 @@ const blogPosts = [
     date: "March 10, 2025",
     readTime: "7 min read",
     category: "Business",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80&fm=webp",
   },
   {
     slug: "what-is-seo-how-it-works",
@@ -104,7 +104,7 @@ const blogPosts = [
     date: "March 5, 2025",
     readTime: "10 min read",
     category: "SEO",
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=800&q=80&fm=webp",
   },
   {
     slug: "best-website-design-tips",
