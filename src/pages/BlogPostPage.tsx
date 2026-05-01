@@ -2087,8 +2087,8 @@ export default function BlogPostPage() {
                 <div className="bg-primary rounded-xl p-6 sm:p-8 text-center relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-48 h-48 bg-accent/8 rounded-full blur-[60px]" />
                   <div className="relative z-10">
-                    <h3 className="text-white font-bold text-lg mb-2">Need Professional Website Development?</h3>
-                    <p className="text-white/60 text-sm mb-5 max-w-md mx-auto">Get a free consultation and quote for your project. Premium websites starting at ₹1,999.</p>
+                     <h3 className="text-white font-bold text-lg mb-2">Start your website today with Fahad WebService 🚀</h3>
+                     <p className="text-white/60 text-sm mb-5 max-w-md mx-auto">Contact us now for a free consultation. Premium websites starting at ₹1,999.</p>
                     <Link to="/contact" className="bg-accent hover:bg-accent-hover text-white text-sm font-medium px-6 py-3 rounded-lg inline-flex items-center gap-2 transition-all duration-200">
                       Get Free Consultation <ArrowRight className="w-4 h-4" />
                     </Link>
