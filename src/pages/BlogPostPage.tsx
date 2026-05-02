@@ -2016,6 +2016,7 @@ export default function BlogPostPage() {
         canonical={`https://fahadwebservice.com/blog/${slug}`}
       />
       <Header />
+      <Breadcrumbs />
       <main>
         <section className="w-full pt-28 pb-10 relative">
           <div className="absolute inset-0 gradient-mesh" />
