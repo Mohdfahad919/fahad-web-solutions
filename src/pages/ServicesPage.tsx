@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Palette, Code2, ShoppingCart, FileText, PenTool, Wrench, Check, ArrowRight, Layers, Zap, Shield, Clock, Star, Phone, MessageCircle, TrendingUp, Search, ChevronDown } from "lucide-react";
@@ -77,12 +78,13 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Affordable Web Design & Development Services India | SEO for Local Businesses | Fahad WebService"
-        description="Best website development services in Lucknow. Affordable web design for small businesses, ecommerce website development for startups, SEO services for local businesses India. Starting ₹1,999."
-        keywords="affordable web design services India, small business website development India, ecommerce website development for startups, SEO services for local businesses India, website development in Lucknow, web design services Lucknow"
+        title="Web Development Services India | Fahad WebService"
+        description="Affordable web design & development in Lucknow. Website design, SEO, e-commerce for small businesses and startups. Starting ₹1,999. Fast delivery."
+        keywords="web development services India, website design Lucknow, SEO website developer, affordable web design India"
         canonical="https://fahadwebservice.com/services"
       />
       <Header />
+      <Breadcrumbs />
       <main>
         <section className="w-full pt-28 pb-16 relative">
           <div className="absolute inset-0 gradient-mesh" />

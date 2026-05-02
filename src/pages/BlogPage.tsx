@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { Clock, ArrowRight, Sparkles, User } from "lucide-react";
 
@@ -139,12 +140,13 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Blog – Web Development & SEO Tips | Fahad WebService"
-        description="Read expert articles on website development, SEO strategies, web design tips, and how to grow your business online in India."
-        keywords="web development blog, SEO tips India, website design tips, digital marketing India, how to create website"
+        title="Blog | Web Development & SEO Tips | Fahad WebService"
+        description="Expert articles on website development, SEO strategies, and web design tips. Learn how to grow your business online in India."
+        keywords="web development blog, SEO tips India, website design tips, digital marketing India"
         canonical="https://fahadwebservice.com/blog"
       />
       <Header />
+      <Breadcrumbs />
       <main>
         <section className="w-full pt-28 pb-16 relative">
           <div className="absolute inset-0 gradient-mesh" />

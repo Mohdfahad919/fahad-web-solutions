@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ArrowLeft, Clock, User, Calendar, ArrowRight, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -2015,6 +2016,7 @@ export default function BlogPostPage() {
         canonical={`https://fahadwebservice.com/blog/${slug}`}
       />
       <Header />
+      <Breadcrumbs />
       <main>
         <section className="w-full pt-28 pb-10 relative">
           <div className="absolute inset-0 gradient-mesh" />

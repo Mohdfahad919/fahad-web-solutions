@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { ArrowRight, Briefcase, TrendingUp, Zap, Users, Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
@@ -27,12 +28,13 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Our Portfolio – Website Development Projects | Fahad WebService"
-        description="Explore our portfolio of 120+ successful website development projects. See real results from business websites, e-commerce stores, and web applications built for Indian businesses."
-        keywords="web development portfolio India, website design projects, ecommerce website examples, web agency portfolio"
+        title="Portfolio | Website Projects | Fahad WebService"
+        description="Explore 120+ successful web development projects. Business websites, e-commerce stores, and web apps built for Indian businesses with real results."
+        keywords="web development portfolio India, website design projects, ecommerce website examples"
         canonical="https://fahadwebservice.com/portfolio"
       />
       <Header />
+      <Breadcrumbs />
       <main>
         <section className="w-full pt-28 pb-14 relative">
           <div className="absolute inset-0 gradient-mesh" />
