@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
 
@@ -24,12 +25,13 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="About Fahad WebService – Trusted Web Development Agency India"
-        description="Learn about Fahad WebService, a professional web development agency in India with 7+ years of experience. 120+ projects delivered, 50+ happy clients, 100% satisfaction rate."
-        keywords="web development agency India, about Fahad WebService, website development company, professional web designers India"
+        title="About Fahad WebService | Web Agency India"
+        description="Trusted web development agency in India. 7+ years experience, 120+ projects, 50+ happy clients. Professional website design and SEO services."
+        keywords="web development agency India, about Fahad WebService, website development company"
         canonical="https://fahadwebservice.com/about"
       />
       <Header />
+      <Breadcrumbs />
       <main>
         <section className="w-full pt-28 pb-16 relative">
           <div className="absolute inset-0 gradient-mesh" />

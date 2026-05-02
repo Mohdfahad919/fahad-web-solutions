@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Phone, Mail, MapPin, MessageCircle, Send, ArrowRight, Clock, CheckCircle2, Shield, Zap, BadgeCheck, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
@@ -53,12 +54,13 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Contact Fahad WebService – Get Free Website Consultation | Website Development Lucknow"
-        description="Contact Fahad WebService for professional website development in Lucknow, India. Get a free consultation and quote. We respond within 24 hours. Call, email, or WhatsApp us."
-        keywords="contact web developer India, website development quote, free consultation web design, hire web developer India, website development Lucknow"
+        title="Contact Us | Free Website Quote | Fahad WebService"
+        description="Get a free website consultation and quote from Fahad WebService. Professional web development in Lucknow, India. We respond within 24 hours."
+        keywords="contact web developer India, website development quote, hire web developer India"
         canonical="https://fahadwebservice.com/contact"
       />
       <Header />
+      <Breadcrumbs />
       <main>
         <section className="w-full pt-28 pb-14 relative">
           <div className="absolute inset-0 gradient-mesh" />
