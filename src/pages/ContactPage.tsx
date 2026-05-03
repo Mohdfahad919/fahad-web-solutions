@@ -55,8 +55,8 @@ export default function ContactPage() {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact Us | Free Website Quote | Fahad WebService"
-        description="Get a free website consultation and quote from Fahad WebService. Professional web development in Lucknow, India. We respond within 24 hours."
-        keywords="contact web developer India, website development quote, hire web developer India"
+        description="Get a free website consultation from Fahad WebService, Lucknow. Affordable web design services India. SEO services for small businesses. Reply in 24hrs."
+        keywords="contact web developer Lucknow, website development in Lucknow, affordable web design services India, SEO services for small businesses India"
         canonical="https://fahadwebservice.com/contact"
       />
       <Header />

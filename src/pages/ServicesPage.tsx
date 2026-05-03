@@ -78,9 +78,9 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Web Development Services India | Fahad WebService"
-        description="Affordable web design & development in Lucknow. Website design, SEO, e-commerce for small businesses and startups. Starting ₹1,999. Fast delivery."
-        keywords="web development services India, website design Lucknow, SEO website developer, affordable web design India"
+        title="Affordable Web Design Services India | Fahad WebService"
+        description="Professional web design & development services in Lucknow, India. SEO services for small businesses, e-commerce websites & landing pages from ₹1,999."
+        keywords="affordable web design services India, website development in Lucknow, SEO services for small businesses India, ecommerce website development"
         canonical="https://fahadwebservice.com/services"
       />
       <Header />
@@ -211,6 +211,32 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* Internal Links Section */}
+        <section className="w-full section-padding">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1200px] mx-auto">
+              <AnimatedSection className="text-center mb-8">
+                <h2 className="font-bold text-2xl text-foreground mb-3">Learn More From Our <span className="gradient-text">Blog</span></h2>
+                <p className="text-muted-foreground text-sm">Explore expert tips on web development, SEO, and growing your business online in India.</p>
+              </AnimatedSection>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <Link to="/blog/best-website-development-services-lucknow" className="glass-card p-5 group hover:border-accent/20 transition-all">
+                  <h3 className="font-semibold text-sm text-foreground group-hover:text-accent transition-colors mb-2">Best Website Development Services in Lucknow</h3>
+                  <p className="text-muted-foreground text-xs">Find the best affordable website development services for small businesses.</p>
+                </Link>
+                <Link to="/blog/top-seo-strategies-small-businesses-india" className="glass-card p-5 group hover:border-accent/20 transition-all">
+                  <h3 className="font-semibold text-sm text-foreground group-hover:text-accent transition-colors mb-2">Top SEO Strategies for Small Businesses</h3>
+                  <p className="text-muted-foreground text-xs">Learn how to rank higher on Google without breaking the bank.</p>
+                </Link>
+                <Link to="/blog/website-development-cost-india-2026" className="glass-card p-5 group hover:border-accent/20 transition-all">
+                  <h3 className="font-semibold text-sm text-foreground group-hover:text-accent transition-colors mb-2">Website Development Cost in India 2026</h3>
+                  <p className="text-muted-foreground text-xs">Complete pricing guide for websites in India.</p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="w-full section-padding">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
@@ -222,9 +248,15 @@ export default function ServicesPage() {
                     <p className="text-white/60 text-base mb-6 max-w-xl mx-auto">
                       Contact us today for a free consultation and quote. We respond within 24 hours.
                     </p>
-                    <Link to="/contact" className="bg-accent hover:bg-accent-hover text-white text-sm font-medium px-6 py-3 rounded-lg inline-flex items-center gap-2 transition-all duration-200">
-                      Get Free Consultation <ArrowRight className="w-4 h-4" />
-                    </Link>
+                    <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                      <Link to="/contact" className="bg-accent hover:bg-accent-hover text-white text-sm font-medium px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-all duration-200">
+                        Get Started <ArrowRight className="w-4 h-4" />
+                      </Link>
+                      <a href="https://wa.me/9076669103" className="bg-white/8 hover:bg-white/12 text-white text-sm font-medium px-6 py-3 rounded-lg border border-white/12 inline-flex items-center justify-center gap-2 transition-all duration-200">
+                        <MessageCircle className="w-4 h-4" />
+                        Chat on WhatsApp
+                      </a>
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>
