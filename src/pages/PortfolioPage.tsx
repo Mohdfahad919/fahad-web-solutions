@@ -28,9 +28,9 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Portfolio | Website Projects | Fahad WebService"
-        description="Explore 120+ successful web development projects. Business websites, e-commerce stores, and web apps built for Indian businesses with real results."
-        keywords="web development portfolio India, website design projects, ecommerce website examples"
+        title="Portfolio | Web Development Projects | Fahad WebService"
+        description="120+ successful website development projects in Lucknow & India. Business websites, e-commerce stores & SEO results. See real client case studies."
+        keywords="web development portfolio India, website development in Lucknow, ecommerce website examples, affordable web design services India"
         canonical="https://fahadwebservice.com/portfolio"
       />
       <Header />

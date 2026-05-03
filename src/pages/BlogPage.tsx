@@ -140,9 +140,9 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Blog | Web Development & SEO Tips | Fahad WebService"
-        description="Expert articles on website development, SEO strategies, and web design tips. Learn how to grow your business online in India."
-        keywords="web development blog, SEO tips India, website design tips, digital marketing India"
+        title="Blog | SEO & Web Design Tips India | Fahad WebService"
+        description="Expert articles on website development in Lucknow, SEO services for small businesses India, and affordable web design tips. Grow your business online."
+        keywords="web development blog India, SEO services for small businesses India, website development in Lucknow, affordable web design tips"
         canonical="https://fahadwebservice.com/blog"
       />
       <Header />

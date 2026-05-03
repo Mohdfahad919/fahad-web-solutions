@@ -25,9 +25,9 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="About Fahad WebService | Web Agency India"
-        description="Trusted web development agency in India. 7+ years experience, 120+ projects, 50+ happy clients. Professional website design and SEO services."
-        keywords="web development agency India, about Fahad WebService, website development company"
+        title="About Fahad WebService | Web Development Agency Lucknow"
+        description="Trusted website development agency in Lucknow, India. 7+ years, 120+ projects, 50+ clients. Affordable web design & SEO services for small businesses."
+        keywords="web development agency Lucknow, about Fahad WebService, website development in Lucknow, affordable web design services India"
         canonical="https://fahadwebservice.com/about"
       />
       <Header />
