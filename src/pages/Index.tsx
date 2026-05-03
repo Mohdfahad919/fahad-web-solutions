@@ -205,71 +205,61 @@ const Index = () => {
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 {/* Left Content */}
                 <div className="text-center lg:text-left">
-                  <AnimatedSection>
-                    <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-accent/8 border border-accent/15 mb-8">
-                      <span className="relative flex h-2 w-2">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
-                      </span>
-                      <span className="text-accent text-xs font-semibold tracking-wide uppercase">Now Accepting New Projects</span>
-                    </div>
-                  </AnimatedSection>
+                  <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-accent/8 border border-accent/15 mb-8">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                    </span>
+                    <span className="text-accent text-xs font-semibold tracking-wide uppercase">Now Accepting New Projects</span>
+                  </div>
 
-                  <AnimatedSection delay={100}>
-                    <h1 className="text-foreground mb-5 leading-[1.1] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold tracking-tight">
-                      Affordable Website{" "}
-                      <br className="hidden sm:block" />
-                      Development in{" "}
-                      <span className="gradient-text">Lucknow</span>
-                    </h1>
-                  </AnimatedSection>
+                  <h1 className="text-foreground mb-5 leading-[1.1] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold tracking-tight">
+                    Affordable Website{" "}
+                    <br className="hidden sm:block" />
+                    Development in{" "}
+                    <span className="gradient-text">Lucknow</span>
+                  </h1>
 
-                  <AnimatedSection delay={150}>
-                    <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-                      We build modern, fast, and SEO-optimized websites for your business. Get your professional website starting at just <span className="text-accent font-bold">₹1,999</span>.
-                    </p>
-                  </AnimatedSection>
+                  <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                    We build modern, fast, and SEO-optimized websites for your business. Get your professional website starting at just <span className="text-accent font-bold">₹1,999</span>.
+                  </p>
                   
-                  <AnimatedSection delay={250}>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
-                      <Link to="/contact" className="group relative inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl bg-accent text-accent-foreground shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:scale-[1.02] transition-all duration-300">
-                        Get Started <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
-                      </Link>
-                      <a href="https://wa.me/9076669103" className="group inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl border border-border bg-card text-foreground hover:border-accent/30 hover:shadow-lg transition-all duration-300">
-                        <MessageCircle className="w-4 h-4 text-accent" />
-                        Chat on WhatsApp
-                      </a>
-                    </div>
-                  </AnimatedSection>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
+                    <Link to="/contact" className="group relative inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl bg-accent text-accent-foreground shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:scale-[1.02] transition-all duration-300">
+                      Get Started <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                    </Link>
+                    <a href="https://wa.me/9076669103" className="group inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl border border-border bg-card text-foreground hover:border-accent/30 hover:shadow-lg transition-all duration-300">
+                      <MessageCircle className="w-4 h-4 text-accent" />
+                      Chat on WhatsApp
+                    </a>
+                  </div>
 
-                  <AnimatedSection delay={350}>
-                    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8">
-                      <div className="flex items-center gap-3">
-                        <div className="flex -space-x-2.5">
-                          {[
-                            "from-accent to-blue-400",
-                            "from-violet-500 to-purple-400",
-                            "from-emerald-500 to-teal-400",
-                            "from-orange-500 to-amber-400",
-                          ].map((gradient, i) => (
-                            <div key={i} className={`w-9 h-9 rounded-full bg-gradient-to-br ${gradient} border-2 border-background shadow-sm`} />
-                          ))}
-                        </div>
-                        <span className="font-semibold text-foreground text-sm">50+ Happy Clients</span>
-                      </div>
-                      <div className="h-5 w-px bg-border hidden sm:block" />
-                      <div className="flex items-center gap-1.5">
-                        {[1, 2, 3, 4, 5].map((i) => (
-                          <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8">
+                    <div className="flex items-center gap-3">
+                      <div className="flex -space-x-2.5">
+                        {[
+                          "from-accent to-blue-400",
+                          "from-violet-500 to-purple-400",
+                          "from-emerald-500 to-teal-400",
+                          "from-orange-500 to-amber-400",
+                        ].map((gradient, i) => (
+                          <div key={i} className={`w-9 h-9 rounded-full bg-gradient-to-br ${gradient} border-2 border-background shadow-sm`} />
                         ))}
-                        <span className="font-semibold text-foreground ml-1.5 text-sm">4.9/5 Rated</span>
                       </div>
+                      <span className="font-semibold text-foreground text-sm">50+ Happy Clients</span>
                     </div>
-                  </AnimatedSection>
+                    <div className="h-5 w-px bg-border hidden sm:block" />
+                    <div className="flex items-center gap-1.5">
+                      {[1, 2, 3, 4, 5].map((i) => (
+                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                      ))}
+                      <span className="font-semibold text-foreground ml-1.5 text-sm">4.9/5 Rated</span>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Right Content - Hero Image */}
-                <AnimatedSection delay={200} animation="scale-in" className="hidden lg:block">
+                <div className="hidden lg:block">
                   <div className="relative">
                     <img 
                       src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fm=webp" 
@@ -279,18 +269,16 @@ const Index = () => {
                       fetchPriority="high"
                     />
                   </div>
-                </AnimatedSection>
+                </div>
 
                 {/* Mobile hero image */}
                 <div className="block lg:hidden">
-                  <AnimatedSection delay={200}>
-                    <img 
-                      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80&fm=webp" 
-                      alt="Web design services India - affordable website development"
-                      className="w-full h-auto rounded-xl shadow-lg border border-border"
-                      loading="eager"
-                    />
-                  </AnimatedSection>
+                  <img 
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80&fm=webp" 
+                    alt="Web design services India - affordable website development"
+                    className="w-full h-auto rounded-xl shadow-lg border border-border"
+                    loading="eager"
+                  />
                 </div>
               </div>
 
