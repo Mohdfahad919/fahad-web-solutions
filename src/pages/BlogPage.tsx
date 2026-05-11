@@ -177,7 +177,7 @@ export default function BlogPage() {
                           src={post.image}
                           alt={post.title}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          loading="lazy"
+                          loading="lazy" decoding="async"
                         />
                         <span className="absolute top-3 left-3 px-2.5 py-1 bg-card rounded-md text-xs font-medium text-foreground border border-border">
                           {post.category}

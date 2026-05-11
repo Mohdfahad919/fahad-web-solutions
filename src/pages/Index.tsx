@@ -491,7 +491,7 @@ const Index = () => {
                           src={project.image}
                           alt={project.alt}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          loading="lazy"
+                          loading="lazy" decoding="async"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-5">
                           <Link to="/contact" className="btn-primary text-xs px-4 py-2">
