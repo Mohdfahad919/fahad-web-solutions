@@ -70,12 +70,12 @@ const benefits = [
 ];
 
 const projects = [
-  { title: "TechStart Solutions", category: "Website", result: "+180% traffic increase", tags: ["React", "SEO"], image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fm=webp", alt: "Business website development project - SEO optimized web design India" },
-  { title: "StyleHub Fashion", category: "E-commerce", result: "₹2L+ monthly sales", tags: ["E-commerce", "UI/UX"], image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80&fm=webp", alt: "E-commerce website design India - online store development" },
-  { title: "HealthFirst Clinic", category: "Website", result: "+250 appointments/mo", tags: ["Healthcare", "Booking"], image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80&fm=webp", alt: "Healthcare website development - doctor appointment booking system" },
-  { title: "FoodieBox Delivery", category: "E-commerce", result: "5000+ orders processed", tags: ["Food", "Delivery"], image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80&fm=webp", alt: "Food delivery e-commerce website design India" },
-  { title: "EduLearn Academy", category: "UI/UX", result: "+95% user satisfaction", tags: ["Education", "LMS"], image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80&fm=webp", alt: "Education website development - online learning platform design" },
-  { title: "PropertyHub Realty", category: "Website", result: "+320% lead generation", tags: ["Real Estate", "Leads"], image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80&fm=webp", alt: "Real estate website design India - property listing web development" },
+  { title: "TechStart Solutions", category: "Website", result: "+180% traffic increase", tags: ["React", "SEO"], image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=72&fm=webp&auto=format", alt: "Business website development project - SEO optimized web design India" },
+  { title: "StyleHub Fashion", category: "E-commerce", result: "₹2L+ monthly sales", tags: ["E-commerce", "UI/UX"], image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=72&fm=webp&auto=format", alt: "E-commerce website design India - online store development" },
+  { title: "HealthFirst Clinic", category: "Website", result: "+250 appointments/mo", tags: ["Healthcare", "Booking"], image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=72&fm=webp&auto=format", alt: "Healthcare website development - doctor appointment booking system" },
+  { title: "FoodieBox Delivery", category: "E-commerce", result: "5000+ orders processed", tags: ["Food", "Delivery"], image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=72&fm=webp&auto=format", alt: "Food delivery e-commerce website design India" },
+  { title: "EduLearn Academy", category: "UI/UX", result: "+95% user satisfaction", tags: ["Education", "LMS"], image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&q=72&fm=webp&auto=format", alt: "Education website development - online learning platform design" },
+  { title: "PropertyHub Realty", category: "Website", result: "+320% lead generation", tags: ["Real Estate", "Leads"], image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=72&fm=webp&auto=format", alt: "Real estate website design India - property listing web development" },
 ];
 
 const processSteps = [
@@ -491,7 +491,7 @@ const Index = () => {
                           src={project.image}
                           alt={project.alt}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          loading="lazy"
+                          loading="lazy" decoding="async"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-5">
                           <Link to="/contact" className="btn-primary text-xs px-4 py-2">

@@ -15,7 +15,7 @@ const blogPosts = [
     date: "April 5, 2026",
     readTime: "11 min read",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "website-development-cost-india-2026",
@@ -24,7 +24,7 @@ const blogPosts = [
     date: "April 4, 2026",
     readTime: "12 min read",
     category: "Business",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "step-by-step-build-business-website-india",
@@ -33,7 +33,7 @@ const blogPosts = [
     date: "April 3, 2026",
     readTime: "13 min read",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "top-seo-strategies-small-businesses-india",
@@ -42,7 +42,7 @@ const blogPosts = [
     date: "April 2, 2026",
     readTime: "11 min read",
     category: "SEO",
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "how-to-get-clients-online-using-website",
@@ -51,7 +51,7 @@ const blogPosts = [
     date: "April 1, 2026",
     readTime: "10 min read",
     category: "Marketing",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "top-10-benefits-of-having-a-website",
@@ -60,7 +60,7 @@ const blogPosts = [
     date: "March 30, 2026",
     readTime: "9 min read",
     category: "Business",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "how-small-businesses-grow-online-india",
@@ -69,7 +69,7 @@ const blogPosts = [
     date: "March 28, 2026",
     readTime: "10 min read",
     category: "Marketing",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "why-every-business-needs-seo-2026",
@@ -78,7 +78,7 @@ const blogPosts = [
     date: "March 20, 2026",
     readTime: "8 min read",
     category: "SEO",
-    image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "how-to-create-website-in-india",
@@ -87,7 +87,7 @@ const blogPosts = [
     date: "March 15, 2025",
     readTime: "8 min read",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "website-development-cost-india",
@@ -96,7 +96,7 @@ const blogPosts = [
     date: "March 10, 2025",
     readTime: "7 min read",
     category: "Business",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "what-is-seo-how-it-works",
@@ -105,7 +105,7 @@ const blogPosts = [
     date: "March 5, 2025",
     readTime: "10 min read",
     category: "SEO",
-    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "best-website-design-tips",
@@ -114,7 +114,7 @@ const blogPosts = [
     date: "February 28, 2025",
     readTime: "6 min read",
     category: "Design",
-    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "how-to-grow-business-online",
@@ -123,7 +123,7 @@ const blogPosts = [
     date: "February 20, 2025",
     readTime: "9 min read",
     category: "Marketing",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "how-professional-website-increases-sales",
@@ -132,7 +132,7 @@ const blogPosts = [
     date: "April 6, 2026",
     readTime: "14 min read",
     category: "Business",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=72&fm=webp&auto=format",
   },
 ];
 
@@ -177,7 +177,7 @@ export default function BlogPage() {
                           src={post.image}
                           alt={post.title}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                          loading="lazy"
+                          loading="lazy" decoding="async"
                         />
                         <span className="absolute top-3 left-3 px-2.5 py-1 bg-card rounded-md text-xs font-medium text-foreground border border-border">
                           {post.category}

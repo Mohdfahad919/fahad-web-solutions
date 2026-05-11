@@ -1964,7 +1964,7 @@ export default function BlogPostPage() {
         if (imgMatch) {
           elements.push(
             <figure key={i} className="my-6">
-              <img src={imgMatch[2]} alt={imgMatch[1]} className="w-full rounded-lg shadow-md" loading="lazy" />
+              <img src={imgMatch[2]} alt={imgMatch[1]} className="w-full rounded-lg shadow-md" loading="lazy" decoding="async" />
               <figcaption className="text-xs text-muted-foreground mt-2 text-center">{imgMatch[1]}</figcaption>
             </figure>
           );
@@ -2106,7 +2106,7 @@ export default function BlogPostPage() {
                     {otherPosts.map(([postSlug, postData]) => (
                       <Link key={postSlug} to={`/blog/${postSlug}`} className="glass-card group overflow-hidden">
                         <div className="h-32 overflow-hidden">
-                          <img src={postData.image} alt={postData.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                          <img src={postData.image} alt={postData.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
                         </div>
                         <div className="p-3">
                           <h4 className="font-medium text-sm text-foreground group-hover:text-accent transition-colors leading-snug line-clamp-2">{postData.title}</h4>
