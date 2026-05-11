@@ -262,7 +262,7 @@ const Index = () => {
                 <div className="hidden lg:block">
                   <div className="relative">
                     <img 
-                      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=72&fm=webp&auto=format" 
+                      src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fm=webp" 
                       alt="Professional website development in Lucknow - modern web design services"
                       className="w-full h-auto rounded-2xl shadow-2xl border border-border"
                       loading="eager"
