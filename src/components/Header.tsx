@@ -99,7 +99,7 @@ export function Header() {
         </div>
 
         {/* Mobile Navigation */}
-        <div className={cn(
+        <div id="mobile-menu" className={cn(
           "lg:hidden overflow-hidden transition-all duration-300",
           isMobileMenuOpen ? "max-h-[500px] opacity-100 mt-4 pb-4" : "max-h-0 opacity-0"
         )}>
