@@ -28,7 +28,7 @@ export default function AboutPage() {
         title="About Fahad WebService | Web Development Agency Lucknow"
         description="Trusted website development agency in Lucknow, India. 7+ years, 120+ projects, 50+ clients. Affordable web design & SEO services for small businesses."
         keywords="web development agency Lucknow, about Fahad WebService, website development in Lucknow, affordable web design services India"
-        canonical="https://fahadwebservice.com/about"
+        canonical="https://fahadwebservicecom.lovable.app/about"
       />
       <Header />
       <Breadcrumbs />

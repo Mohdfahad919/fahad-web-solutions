@@ -2013,7 +2013,7 @@ export default function BlogPostPage() {
         title={post.title + " | Fahad WebService"}
         description={post.description}
         keywords={post.keywords}
-        canonical={`https://fahadwebservice.com/blog/${slug}`}
+        canonical={`https://fahadwebservicecom.lovable.app/blog/${slug}`}
       />
       <Header />
       <Breadcrumbs />

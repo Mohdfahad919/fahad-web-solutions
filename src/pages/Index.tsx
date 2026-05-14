@@ -194,7 +194,7 @@ const Index = () => {
         title="Website Development in Lucknow | Fahad WebService"
         description="Affordable website development in Lucknow, India. Professional web design, SEO & e-commerce services for small businesses. Starting ₹1,999. 120+ projects."
         keywords="website development in Lucknow, affordable web design services India, SEO services for small businesses India, web developer Lucknow"
-        canonical="https://fahadwebservice.com/"
+        canonical="https://fahadwebservicecom.lovable.app/"
       />
       <Header />
       <main className="overflow-hidden">
