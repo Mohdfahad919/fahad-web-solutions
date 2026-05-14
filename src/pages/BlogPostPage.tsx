@@ -2007,14 +2007,44 @@ export default function BlogPostPage() {
     .filter(([s]) => s !== slug)
     .slice(0, 3);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    image: post.image,
+    datePublished: post.date,
+    author: { "@type": "Person", name: "Fahad" },
+    publisher: {
+      "@type": "Organization",
+      name: "Fahad WebService",
+      logo: { "@type": "ImageObject", url: "https://fahadwebservicecom.lovable.app/favicon.ico" },
+    },
+    mainEntityOfPage: `https://fahadwebservicecom.lovable.app/blog/${slug}`,
+  };
+  const faqJsonLd = post.faqs && post.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: post.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  } : null;
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={post.title + " | Fahad WebService"}
+        title={post.title}
         description={post.description}
         keywords={post.keywords}
         canonical={`https://fahadwebservicecom.lovable.app/blog/${slug}`}
+        ogType="article"
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      {faqJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      )}
       <Header />
       <Breadcrumbs />
       <main>
