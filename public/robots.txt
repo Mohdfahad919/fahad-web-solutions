@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fahadwebservice.com/sitemap.xml
+Sitemap: https://fahadwebservicecom.lovable.app/sitemap.xml

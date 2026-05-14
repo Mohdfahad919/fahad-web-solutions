@@ -31,7 +31,7 @@ export default function PortfolioPage() {
         title="Portfolio | Web Development Projects | Fahad WebService"
         description="120+ successful website development projects in Lucknow & India. Business websites, e-commerce stores & SEO results. See real client case studies."
         keywords="web development portfolio India, website development in Lucknow, ecommerce website examples, affordable web design services India"
-        canonical="https://fahadwebservice.com/portfolio"
+        canonical="https://fahadwebservicecom.lovable.app/portfolio"
       />
       <Header />
       <Breadcrumbs />
@@ -70,6 +70,14 @@ export default function PortfolioPage() {
         <section className="w-full py-8">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
+              <AnimatedSection className="text-center mb-6">
+                <h2 className="text-foreground mb-3">
+                  Featured <span className="gradient-text">projects</span>
+                </h2>
+                <p className="text-muted-foreground text-base max-w-2xl mx-auto">
+                  Real client work across websites, e-commerce, UI/UX, and branding.
+                </p>
+              </AnimatedSection>
               <AnimatedSection className="flex flex-wrap justify-center gap-2 mb-8">
                 {filters.map((filter) => (
                   <button 

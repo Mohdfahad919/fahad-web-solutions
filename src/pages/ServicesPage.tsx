@@ -75,14 +75,25 @@ const serviceFaqs = [
 export default function ServicesPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: serviceFaqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Affordable Web Design Services India | Fahad WebService"
         description="Professional web design & development services in Lucknow, India. SEO services for small businesses, e-commerce websites & landing pages from ₹1,999."
         keywords="affordable web design services India, website development in Lucknow, SEO services for small businesses India, ecommerce website development"
-        canonical="https://fahadwebservice.com/services"
+        canonical="https://fahadwebservicecom.lovable.app/services"
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <Breadcrumbs />
       <main>
@@ -115,6 +126,14 @@ export default function ServicesPage() {
         <section className="w-full section-padding">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
+              <AnimatedSection className="text-center mb-10">
+                <h2 className="text-foreground mb-3">
+                  Our <span className="gradient-text">services</span>
+                </h2>
+                <p className="text-muted-foreground text-base max-w-2xl mx-auto">
+                  End-to-end web design, development, e-commerce and SEO services tailored for Indian businesses.
+                </p>
+              </AnimatedSection>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {services.map((service, index) => (
                   <AnimatedSection key={service.title} animation="slide-up" delay={index * 60}>

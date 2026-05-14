@@ -89,6 +89,9 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
             className="lg:hidden p-2 rounded-md text-white/80 hover:text-white hover:bg-white/10 transition-colors"
           >
             {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -96,7 +99,7 @@ export function Header() {
         </div>
 
         {/* Mobile Navigation */}
-        <div className={cn(
+        <div id="mobile-menu" className={cn(
           "lg:hidden overflow-hidden transition-all duration-300",
           isMobileMenuOpen ? "max-h-[500px] opacity-100 mt-4 pb-4" : "max-h-0 opacity-0"
         )}>

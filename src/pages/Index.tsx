@@ -188,14 +188,25 @@ const Index = () => {
     setLeadForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Website Development in Lucknow | Fahad WebService"
+        title="Website Development Lucknow | Fahad WebService"
         description="Affordable website development in Lucknow, India. Professional web design, SEO & e-commerce services for small businesses. Starting ₹1,999. 120+ projects."
         keywords="website development in Lucknow, affordable web design services India, SEO services for small businesses India, web developer Lucknow"
-        canonical="https://fahadwebservice.com/"
+        canonical="https://fahadwebservicecom.lovable.app/"
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main className="overflow-hidden">
         {/* Hero Section */}
@@ -749,11 +760,11 @@ const Index = () => {
                     <div className="bg-card rounded-xl p-5 sm:p-6 shadow-xl">
                       <h3 className="font-semibold text-lg text-foreground mb-5 text-center">Get Your Free Quote</h3>
                       <form onSubmit={handleLeadFormSubmit} className="space-y-3">
-                        <input type="text" name="name" value={leadForm.name} onChange={handleLeadFormChange} placeholder="Your Name *" className="input-premium" required />
-                        <input type="tel" name="phone" value={leadForm.phone} onChange={handleLeadFormChange} placeholder="WhatsApp Number *" className="input-premium" required />
-                        <input type="text" name="business" value={leadForm.business} onChange={handleLeadFormChange} placeholder="Business Name" className="input-premium" />
+                        <input type="text" name="name" aria-label="Your name" value={leadForm.name} onChange={handleLeadFormChange} placeholder="Your Name *" className="input-premium" required />
+                        <input type="tel" name="phone" aria-label="WhatsApp number" value={leadForm.phone} onChange={handleLeadFormChange} placeholder="WhatsApp Number *" className="input-premium" required />
+                        <input type="text" name="business" aria-label="Business name" value={leadForm.business} onChange={handleLeadFormChange} placeholder="Business Name" className="input-premium" />
                         <div className="grid grid-cols-2 gap-3">
-                          <select name="websiteType" value={leadForm.websiteType} onChange={handleLeadFormChange} className="select-premium">
+                          <select name="websiteType" aria-label="Website type" value={leadForm.websiteType} onChange={handleLeadFormChange} className="select-premium">
                             <option value="">Website Type</option>
                             <option value="Business Website">Business Website</option>
                             <option value="E-commerce Store">E-commerce Store</option>
@@ -761,14 +772,14 @@ const Index = () => {
                             <option value="Portfolio">Portfolio</option>
                             <option value="Other">Other</option>
                           </select>
-                          <select name="budget" value={leadForm.budget} onChange={handleLeadFormChange} className="select-premium">
+                          <select name="budget" aria-label="Project budget" value={leadForm.budget} onChange={handleLeadFormChange} className="select-premium">
                             <option value="">Budget</option>
                             <option value="₹1,999 - ₹2,999">₹1,999 - ₹2,999</option>
                             <option value="₹4,999 - ₹6,999">₹4,999 - ₹6,999</option>
                             <option value="₹8,999+">₹8,999+</option>
                           </select>
                         </div>
-                        <textarea name="message" value={leadForm.message} onChange={handleLeadFormChange} placeholder="Tell us about your project..." rows={3} className="input-premium resize-none" />
+                        <textarea name="message" aria-label="Project details" value={leadForm.message} onChange={handleLeadFormChange} placeholder="Tell us about your project..." rows={3} className="input-premium resize-none" />
                         <button type="submit" disabled={isSubmitting} className="btn-primary w-full flex items-center justify-center gap-2">
                           {isSubmitting ? (
                             <span className="flex items-center gap-2">
