@@ -1,0 +1,35 @@
+# Fahad WebService
+
+> Professional website development, web design, e-commerce, and SEO services in Lucknow, India — delivering 120+ projects starting at ₹1,999.
+
+Fahad WebService is a premium digital agency based in Lucknow, India, specializing in affordable, high-quality website solutions for small businesses, startups, and e-commerce brands across India. The agency offers end-to-end web development, responsive design, search engine optimization, and custom e-commerce store development with a focus on conversion and growth.
+
+## Pages
+
+- [Home](/): Hero, trust badges, service categories, pricing tiers, testimonials, FAQ, and contact CTA.
+- [Services](/services): Detailed breakdown of 10 service categories including business websites, e-commerce, SEO, portfolio sites, and custom web apps.
+- [Portfolio](/portfolio): Showcase of past client projects with case studies and results.
+- [About](/about): Agency story, mission, values, and the team behind Fahad WebService.
+- [Contact](/contact): Contact form, WhatsApp direct chat, email, and location details for Lucknow.
+- [Blog](/blog): SEO-focused articles on web development, design, SEO strategies, and online business growth in India.
+
+## Blog
+
+- [Best Website Development Services in Lucknow for Small Businesses](/blog/best-website-development-services-lucknow): Guide to choosing affordable web development in Lucknow.
+- [How Much Does Website Development Cost in India (2026 Guide)](/blog/website-development-cost-india-2026): Complete pricing breakdown for Indian businesses.
+- [Step-by-Step Guide to Build a Business Website in India](/blog/step-by-step-build-business-website-india): Full roadmap from planning to launch.
+- [Top SEO Strategies for Small Businesses in India](/blog/top-seo-strategies-small-businesses-india): Actionable SEO tips for Indian SMBs.
+- [How to Get Clients Online Using a Website](/blog/how-to-get-clients-online-using-website): Lead generation and conversion strategies.
+- [Top 10 Benefits of Having a Website for Your Business in 2026](/blog/top-10-benefits-of-having-a-website): Why every business needs a professional website.
+- [How Small Businesses Can Grow Online in India – 2026 Guide](/blog/how-small-businesses-grow-online-india): Budget-friendly digital growth strategies.
+- [Why Every Business Needs SEO in 2026 – The Complete Guide](/blog/why-every-business-needs-seo-2026): Critical SEO insights for business survival.
+- [How to Create a Website in India – Complete Guide 2025](/blog/how-to-create-website-in-india): Step-by-step website creation for Indian entrepreneurs.
+- [Website Development Cost in India – Pricing Guide 2025](/blog/website-development-cost-india): Detailed cost analysis for different website types.
+- [What is SEO and How Does It Work? A Beginner's Guide](/blog/what-is-seo-how-it-works): Fundamentals of search engine optimization explained.
+- [10 Best Website Design Tips for a Professional Look](/blog/best-website-design-tips): Proven design principles for high-converting websites.
+- [How to Grow Your Business Online in India](/blog/how-to-grow-business-online): Strategies for expanding digital presence and revenue.
+
+## Optional
+
+- [Privacy Policy](/privacy): Data handling and privacy practices.
+- [Terms of Service](/terms): Service agreements and usage terms.
