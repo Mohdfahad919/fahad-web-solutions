@@ -75,6 +75,16 @@ const serviceFaqs = [
 export default function ServicesPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: serviceFaqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
@@ -83,6 +93,7 @@ export default function ServicesPage() {
         keywords="affordable web design services India, website development in Lucknow, SEO services for small businesses India, ecommerce website development"
         canonical="https://fahadwebservicecom.lovable.app/services"
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <Breadcrumbs />
       <main>

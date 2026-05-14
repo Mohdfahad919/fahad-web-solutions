@@ -188,14 +188,25 @@ const Index = () => {
     setLeadForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Website Development in Lucknow | Fahad WebService"
+        title="Website Development Lucknow | Fahad WebService"
         description="Affordable website development in Lucknow, India. Professional web design, SEO & e-commerce services for small businesses. Starting ₹1,999. 120+ projects."
         keywords="website development in Lucknow, affordable web design services India, SEO services for small businesses India, web developer Lucknow"
         canonical="https://fahadwebservicecom.lovable.app/"
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />
       <main className="overflow-hidden">
         {/* Hero Section */}
