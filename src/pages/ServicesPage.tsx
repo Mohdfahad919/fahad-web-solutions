@@ -115,6 +115,14 @@ export default function ServicesPage() {
         <section className="w-full section-padding">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
+              <AnimatedSection className="text-center mb-10">
+                <h2 className="text-foreground mb-3">
+                  Our <span className="gradient-text">services</span>
+                </h2>
+                <p className="text-muted-foreground text-base max-w-2xl mx-auto">
+                  End-to-end web design, development, e-commerce and SEO services tailored for Indian businesses.
+                </p>
+              </AnimatedSection>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {services.map((service, index) => (
                   <AnimatedSection key={service.title} animation="slide-up" delay={index * 60}>
