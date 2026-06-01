@@ -6,9 +6,10 @@ interface SEOHeadProps {
   keywords?: string;
   canonical?: string;
   ogType?: "website" | "article";
+  ogImage?: string;
 }
 
-export function SEOHead({ title, description, keywords, canonical, ogType = "website" }: SEOHeadProps) {
+export function SEOHead({ title, description, keywords, canonical, ogType = "website", ogImage }: SEOHeadProps) {
   useEffect(() => {
     document.title = title;
 
@@ -38,9 +39,13 @@ export function SEOHead({ title, description, keywords, canonical, ogType = "web
       }
       link.href = canonical;
     }
+    if (ogImage) {
+      setMeta("og:image", ogImage, true);
+      setMeta("twitter:image", ogImage);
+    }
     setMeta("twitter:title", title);
     setMeta("twitter:description", description);
-  }, [title, description, keywords, canonical, ogType]);
+  }, [title, description, keywords, canonical, ogType, ogImage]);
 
   return null;
 }
