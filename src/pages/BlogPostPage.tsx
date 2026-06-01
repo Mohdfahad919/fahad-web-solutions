@@ -794,6 +794,7 @@ The businesses that succeed online are those that invest in a professional websi
   },
   "top-10-benefits-of-having-a-website": {
     title: "Top 10 Benefits of Having a Website for Your Business in 2026",
+    seoTitle: "10 Benefits of Having a Business Website in 2026",
     description: "Discover the top 10 reasons every business needs a professional website in 2026. From building credibility to generating leads 24/7.",
     keywords: "benefits of website, why business needs website, website advantages India, professional website benefits, website development India",
     date: "April 1, 2026",
@@ -2010,13 +2011,19 @@ export default function BlogPostPage() {
     .filter(([s]) => s !== slug)
     .slice(0, 3);
 
+  const toISODate = (d: string) => {
+    const parsed = new Date(d);
+    return isNaN(parsed.getTime()) ? d : parsed.toISOString().slice(0, 10);
+  };
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.description,
     image: post.image,
-    datePublished: post.date,
+    datePublished: toISODate(post.date),
+    dateModified: toISODate(post.date),
     author: { "@type": "Person", name: "Fahad" },
     publisher: {
       "@type": "Organization",
@@ -2043,6 +2050,7 @@ export default function BlogPostPage() {
         keywords={post.keywords}
         canonical={`https://fahadwebservicecom.lovable.app/blog/${slug}`}
         ogType="article"
+        ogImage={post.image}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       {faqJsonLd && (
