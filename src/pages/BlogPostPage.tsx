@@ -15,6 +15,7 @@ interface BlogFAQ {
 
 const blogContent: Record<string, {
   title: string;
+  seoTitle?: string;
   description: string;
   keywords: string;
   date: string;
