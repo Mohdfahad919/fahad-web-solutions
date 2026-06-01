@@ -103,26 +103,26 @@ export default function ContactPage() {
                     <form onSubmit={handleSubmit} className="space-y-4">
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
-                          <label className="block text-xs font-medium text-foreground mb-1.5">Name *</label>
-                          <input type="text" name="name" value={formData.name} onChange={handleChange} required className="input-premium" placeholder="Your name" />
+                          <label htmlFor="contact-name" className="block text-xs font-medium text-foreground mb-1.5">Name *</label>
+                          <input id="contact-name" type="text" name="name" value={formData.name} onChange={handleChange} required className="input-premium" placeholder="Your name" aria-label="Name" />
                         </div>
                         <div>
-                          <label className="block text-xs font-medium text-foreground mb-1.5">WhatsApp Number *</label>
-                          <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required className="input-premium" placeholder="Your WhatsApp number" />
+                          <label htmlFor="contact-phone" className="block text-xs font-medium text-foreground mb-1.5">WhatsApp Number *</label>
+                          <input id="contact-phone" type="tel" name="phone" value={formData.phone} onChange={handleChange} required className="input-premium" placeholder="Your WhatsApp number" aria-label="WhatsApp number" />
                         </div>
                       </div>
                       <div>
-                        <label className="block text-xs font-medium text-foreground mb-1.5">Email</label>
-                        <input type="email" name="email" value={formData.email} onChange={handleChange} className="input-premium" placeholder="Your email (optional)" />
+                        <label htmlFor="contact-email" className="block text-xs font-medium text-foreground mb-1.5">Email</label>
+                        <input id="contact-email" type="email" name="email" value={formData.email} onChange={handleChange} className="input-premium" placeholder="Your email (optional)" aria-label="Email address" />
                       </div>
                       <div>
-                        <label className="block text-xs font-medium text-foreground mb-1.5">Business Name</label>
-                        <input type="text" name="business" value={formData.business} onChange={handleChange} className="input-premium" placeholder="Your business name" />
+                        <label htmlFor="contact-business" className="block text-xs font-medium text-foreground mb-1.5">Business Name</label>
+                        <input id="contact-business" type="text" name="business" value={formData.business} onChange={handleChange} className="input-premium" placeholder="Your business name" aria-label="Business name" />
                       </div>
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
-                          <label className="block text-xs font-medium text-foreground mb-1.5">Website Type</label>
-                          <select name="websiteType" value={formData.websiteType} onChange={handleChange} className="select-premium">
+                          <label htmlFor="contact-website-type" className="block text-xs font-medium text-foreground mb-1.5">Website Type</label>
+                          <select id="contact-website-type" name="websiteType" value={formData.websiteType} onChange={handleChange} className="select-premium" aria-label="Website type">
                             <option value="">Select type</option>
                             <option value="Landing Page">Landing Page (₹1,999+)</option>
                             <option value="Business Website">Business Website (₹4,999+)</option>
@@ -132,8 +132,8 @@ export default function ContactPage() {
                           </select>
                         </div>
                         <div>
-                          <label className="block text-xs font-medium text-foreground mb-1.5">Budget</label>
-                          <select name="budget" value={formData.budget} onChange={handleChange} className="select-premium">
+                          <label htmlFor="contact-budget" className="block text-xs font-medium text-foreground mb-1.5">Budget</label>
+                          <select id="contact-budget" name="budget" value={formData.budget} onChange={handleChange} className="select-premium" aria-label="Budget">
                             <option value="">Select budget</option>
                             <option value="₹1,999 - ₹2,999">₹1,999 - ₹2,999</option>
                             <option value="₹4,999 - ₹6,999">₹4,999 - ₹6,999</option>
@@ -143,8 +143,8 @@ export default function ContactPage() {
                         </div>
                       </div>
                       <div>
-                        <label className="block text-xs font-medium text-foreground mb-1.5">Message *</label>
-                        <textarea name="message" value={formData.message} onChange={handleChange} required rows={4} className="input-premium resize-none" placeholder="Tell us about your project..." />
+                        <label htmlFor="contact-message" className="block text-xs font-medium text-foreground mb-1.5">Message *</label>
+                        <textarea id="contact-message" name="message" value={formData.message} onChange={handleChange} required rows={4} className="input-premium resize-none" placeholder="Tell us about your project..." aria-label="Message" />
                       </div>
                       <button type="submit" disabled={isSubmitting} className="btn-primary w-full flex items-center justify-center gap-2">
                         {isSubmitting ? (

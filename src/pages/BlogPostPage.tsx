@@ -15,6 +15,7 @@ interface BlogFAQ {
 
 const blogContent: Record<string, {
   title: string;
+  seoTitle?: string;
   description: string;
   keywords: string;
   date: string;
@@ -26,7 +27,8 @@ const blogContent: Record<string, {
 }> = {
   "best-website-development-services-lucknow": {
     title: "Best Website Development Services in Lucknow for Small Businesses",
-    description: "Find the best affordable website development services in Lucknow for small businesses and startups. Professional web design, SEO, and e-commerce solutions.",
+    seoTitle: "Best Website Development in Lucknow for SMBs",
+    description: "Affordable website development in Lucknow for small businesses. Pro web design, SEO and e-commerce that converts visitors into customers.",
     keywords: "website development in Lucknow, best web design Lucknow, affordable website development Lucknow, small business website Lucknow, web developer Lucknow",
     date: "April 5, 2026",
     readTime: "11 min read",
@@ -154,6 +156,7 @@ Whether you need a simple landing page or a full e-commerce store, choosing the 
   },
   "website-development-cost-india-2026": {
     title: "How Much Does Website Development Cost in India (2026 Guide)",
+    seoTitle: "Website Development Cost in India — 2026 Guide",
     description: "Complete 2026 pricing guide for website development in India. Learn costs for landing pages, business websites, e-commerce stores, and custom web apps.",
     keywords: "website development cost India 2026, how much website cost India, web design pricing India, affordable website India, website development pricing guide",
     date: "April 4, 2026",
@@ -2035,7 +2038,7 @@ export default function BlogPostPage() {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={post.title}
+        title={post.seoTitle ?? post.title}
         description={post.description}
         keywords={post.keywords}
         canonical={`https://fahadwebservicecom.lovable.app/blog/${slug}`}
