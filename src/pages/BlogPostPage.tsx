@@ -2011,9 +2011,10 @@ export default function BlogPostPage() {
     return elements;
   };
 
-  const otherPosts = Object.entries(blogContent)
+  const otherPosts = Object.entries(allPosts)
     .filter(([s]) => s !== slug)
     .slice(0, 3);
+
 
   const toISODate = (d: string) => {
     const parsed = new Date(d);
