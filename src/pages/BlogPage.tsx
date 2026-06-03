@@ -150,6 +150,8 @@ const blogPosts = [
   { slug: "voice-search-seo-2026", title: "Voice Search SEO: Optimize for 'Hey Google' in India (2026)", excerpt: "Voice search is 30% of mobile searches in India. Learn how to optimize content, schema and pages for voice queries.", date: "June 3, 2026", readTime: "9 min read", category: "SEO", image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?w=600&q=72&fm=webp&auto=format" },
   { slug: "ai-search-optimization-guide", title: "AI Search Optimization: Rank in ChatGPT, Perplexity & Google AI Overviews", excerpt: "AI search is the new SEO. Learn how to get cited in ChatGPT, Perplexity, Gemini and Google AI Overviews. EEAT, structure, schema.", date: "June 3, 2026", readTime: "13 min read", category: "AI SEO", image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=72&fm=webp&auto=format" },
   { slug: "web-design-trends-2026", title: "Web Design Trends 2026: What's In, What's Out", excerpt: "The web design trends shaping 2026: glassmorphism, AI-generated visuals, bold typography, micro-animations, dark mode by default.", date: "June 3, 2026", readTime: "10 min read", category: "Design", image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=72&fm=webp&auto=format" },
+];
+
 
 export default function BlogPage() {
   return (
