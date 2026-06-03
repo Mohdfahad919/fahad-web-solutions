@@ -1,35 +1,39 @@
 # Fahad WebService
 
-> Professional website development, web design, e-commerce, and SEO services in Lucknow, India — delivering 120+ projects starting at ₹1,999.
+> Premium website development, web design, e-commerce and SEO services in Lucknow, India. Modern, fast, conversion-focused websites starting at ₹1,999.
 
-Fahad WebService is a premium digital agency based in Lucknow, India, specializing in affordable, high-quality website solutions for small businesses, startups, and e-commerce brands across India. The agency offers end-to-end web development, responsive design, search engine optimization, and custom e-commerce store development with a focus on conversion and growth.
+Fahad WebService is a Lucknow-based digital agency building custom websites, e-commerce stores, and ranking SEO campaigns for businesses across India. Founded 2023. 120+ projects delivered. 4.9-star rating across 50+ reviews.
+
+Contact: fahadshaikh9076669103@gmail.com | +91 9076669103 | WhatsApp: wa.me/9076669103
 
 ## Pages
 
-- [Home](/): Hero, trust badges, service categories, pricing tiers, testimonials, FAQ, and contact CTA.
-- [Services](/services): Detailed breakdown of 10 service categories including business websites, e-commerce, SEO, portfolio sites, and custom web apps.
-- [Portfolio](/portfolio): Showcase of past client projects with case studies and results.
-- [About](/about): Agency story, mission, values, and the team behind Fahad WebService.
-- [Contact](/contact): Contact form, WhatsApp direct chat, email, and location details for Lucknow.
-- [Blog](/blog): SEO-focused articles on web development, design, SEO strategies, and online business growth in India.
+- [Home](/): Premium website development & SEO services in Lucknow, India.
+- [Services](/services): Overview of all services — web design, development, e-commerce, SEO, maintenance.
+- [Portfolio](/portfolio): Recent client projects with results.
+- [About](/about): Team, story, credentials and approach.
+- [Contact](/contact): Free consultation, quote request, contact details.
+- [Blog](/blog): 29+ SEO, web design and business growth articles.
+- [Privacy Policy](/privacy): Data collection and privacy practices.
+- [Terms & Conditions](/terms): Service agreements and policies.
 
-## Blog
+## Service Pages
 
-- [Best Website Development Services in Lucknow for Small Businesses](/blog/best-website-development-services-lucknow): Guide to choosing affordable web development in Lucknow.
-- [How Much Does Website Development Cost in India (2026 Guide)](/blog/website-development-cost-india-2026): Complete pricing breakdown for Indian businesses.
-- [Step-by-Step Guide to Build a Business Website in India](/blog/step-by-step-build-business-website-india): Full roadmap from planning to launch.
-- [Top SEO Strategies for Small Businesses in India](/blog/top-seo-strategies-small-businesses-india): Actionable SEO tips for Indian SMBs.
-- [How to Get Clients Online Using a Website](/blog/how-to-get-clients-online-using-website): Lead generation and conversion strategies.
-- [Top 10 Benefits of Having a Website for Your Business in 2026](/blog/top-10-benefits-of-having-a-website): Why every business needs a professional website.
-- [How Small Businesses Can Grow Online in India – 2026 Guide](/blog/how-small-businesses-grow-online-india): Budget-friendly digital growth strategies.
-- [Why Every Business Needs SEO in 2026 – The Complete Guide](/blog/why-every-business-needs-seo-2026): Critical SEO insights for business survival.
-- [How to Create a Website in India – Complete Guide 2025](/blog/how-to-create-website-in-india): Step-by-step website creation for Indian entrepreneurs.
-- [Website Development Cost in India – Pricing Guide 2025](/blog/website-development-cost-india): Detailed cost analysis for different website types.
-- [What is SEO and How Does It Work? A Beginner's Guide](/blog/what-is-seo-how-it-works): Fundamentals of search engine optimization explained.
-- [10 Best Website Design Tips for a Professional Look](/blog/best-website-design-tips): Proven design principles for high-converting websites.
-- [How to Grow Your Business Online in India](/blog/how-to-grow-business-online): Strategies for expanding digital presence and revenue.
+- [Website Development Company in Lucknow](/services/website-development-lucknow): Custom website development, React/TypeScript, from ₹4,999.
+- [Web Design Services in Lucknow](/services/web-design-services-lucknow): Custom UI/UX design from ₹2,999.
+- [E-commerce Website Development in Lucknow](/services/ecommerce-website-development-lucknow): Full online stores with Razorpay/PayU, from ₹8,999.
+- [SEO Services in Lucknow](/services/seo-services-lucknow): Local + national SEO from ₹1,999/month.
+- [Business Website Development](/services/business-website-development): 4-10 page business sites from ₹4,999.
+- [Landing Page Design Services](/services/landing-page-design-services): High-converting landing pages from ₹1,999.
+- [Website Maintenance Services](/services/website-maintenance-services): Security, backups, updates from ₹499/month.
 
-## Optional
+## Featured Blog Posts
 
-- [Privacy Policy](/privacy): Data handling and privacy practices.
-- [Terms of Service](/terms): Service agreements and usage terms.
+- [Best Website Development Services in Lucknow](/blog/best-website-development-services-lucknow)
+- [Website Development Cost in India 2026](/blog/website-development-cost-india-2026)
+- [Complete Local SEO Guide for Lucknow](/blog/local-seo-guide-lucknow)
+- [Google Business Profile Optimization Guide](/blog/google-business-profile-optimization-india)
+- [Core Web Vitals Explained](/blog/core-web-vitals-explained)
+- [AI Search Optimization Guide](/blog/ai-search-optimization-guide)
+- [E-commerce Website Guide for Indian Startups](/blog/ecommerce-website-guide-india)
+- [Razorpay vs PayU vs Stripe Comparison](/blog/razorpay-vs-payu-vs-stripe)

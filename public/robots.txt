@@ -1,5 +1,22 @@
 # Fahad WebService - Premium Website Development
 User-agent: *
 Allow: /
+Disallow: /lovable/
+
+# Allow major AI crawlers explicitly
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
 
 Sitemap: https://fahadwebservicecom.lovable.app/sitemap.xml

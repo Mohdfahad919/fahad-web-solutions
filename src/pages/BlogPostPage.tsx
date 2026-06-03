@@ -7,11 +7,13 @@ import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ArrowLeft, Clock, User, Calendar, ArrowRight, ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { additionalBlogPosts } from "@/data/additionalBlogPosts";
 
 interface BlogFAQ {
   question: string;
   answer: string;
 }
+
 
 const blogContent: Record<string, {
   title: string;
@@ -1930,8 +1932,10 @@ Whether you need a simple landing page, a complete business website, or a full e
 
 export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
-  const post = slug ? blogContent[slug] : null;
+  const allPosts = { ...blogContent, ...additionalBlogPosts } as typeof blogContent;
+  const post = slug ? allPosts[slug] : null;
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+
 
   if (!post) {
     return (
@@ -2007,9 +2011,10 @@ export default function BlogPostPage() {
     return elements;
   };
 
-  const otherPosts = Object.entries(blogContent)
+  const otherPosts = Object.entries(allPosts)
     .filter(([s]) => s !== slug)
     .slice(0, 3);
+
 
   const toISODate = (d: string) => {
     const parsed = new Date(d);

@@ -8,15 +8,19 @@ const quickLinks = [
   { name: "About", href: "/about" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
+  { name: "Privacy Policy", href: "/privacy" },
+  { name: "Terms & Conditions", href: "/terms" },
+  { name: "Sitemap", href: "/sitemap.xml" },
 ];
 
 const services = [
-  "Website Design",
-  "UI/UX Optimization",
-  "E-commerce Websites",
-  "SEO & Performance",
-  "App Development",
-  "Maintenance & Support",
+  { name: "Website Development Lucknow", href: "/services/website-development-lucknow" },
+  { name: "Web Design Services Lucknow", href: "/services/web-design-services-lucknow" },
+  { name: "E-commerce Development", href: "/services/ecommerce-website-development-lucknow" },
+  { name: "SEO Services in Lucknow", href: "/services/seo-services-lucknow" },
+  { name: "Business Website Development", href: "/services/business-website-development" },
+  { name: "Landing Page Design", href: "/services/landing-page-design-services" },
+  { name: "Website Maintenance", href: "/services/website-maintenance-services" },
 ];
 
 export function Footer() {
@@ -119,9 +123,9 @@ export function Footer() {
               </h4>
               <nav className="flex flex-col gap-2.5">
                 {services.map((service) => (
-                  <span key={service} className="text-white/50 text-sm">
-                    {service}
-                  </span>
+                  <Link key={service.name} to={service.href} className="text-white/50 hover:text-accent transition-colors text-sm">
+                    {service.name}
+                  </Link>
                 ))}
               </nav>
             </div>
