@@ -180,7 +180,7 @@ export default function ContactPage() {
                               {item.href ? (
                                 <a href={item.href} className="text-accent text-sm hover:underline break-all">{item.value}</a>
                               ) : item.onClick ? (
-                                <button onClick={item.onClick} className="text-accent text-sm hover:underline text-left">{item.value}</button>
+                                <button type="button" onClick={item.onClick} className="text-accent text-sm hover:underline text-left">{item.value}</button>
                               ) : (
                                 <p className="text-foreground text-sm">{item.value}</p>
                               )}
@@ -194,7 +194,7 @@ export default function ContactPage() {
                     <div className="glass-card p-6">
                       <h3 className="font-semibold text-lg text-foreground mb-4">Other Ways to Reach Us</h3>
                       <div className="space-y-3">
-                        <button
+                        <button type="button"
                           onClick={openWhatsApp}
                           className="w-full flex items-center gap-3 p-3.5 rounded-xl border border-whatsapp/20 bg-whatsapp/5 hover:bg-whatsapp/10 transition-all duration-200 group"
                         >

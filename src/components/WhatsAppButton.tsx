@@ -6,7 +6,7 @@ export function WhatsAppButton() {
   };
 
   return (
-    <button
+    <button type="button"
       onClick={openWhatsApp}
       className="fixed bottom-6 right-6 z-50 group"
       aria-label="Chat on WhatsApp"

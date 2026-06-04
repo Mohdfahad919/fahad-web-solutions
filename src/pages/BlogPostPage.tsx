@@ -2113,7 +2113,7 @@ export default function BlogPostPage() {
                     <div className="space-y-3">
                       {post.faqs.map((faq, index) => (
                         <div key={index} className="bg-card rounded-lg border border-border overflow-hidden">
-                          <button
+                          <button type="button"
                             onClick={() => setOpenFaq(openFaq === index ? null : index)}
                             className="w-full p-4 text-left flex items-center justify-between gap-3 hover:bg-muted/30 transition-colors"
                           >

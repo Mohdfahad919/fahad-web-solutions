@@ -80,7 +80,7 @@ export default function PortfolioPage() {
               </AnimatedSection>
               <AnimatedSection className="flex flex-wrap justify-center gap-2 mb-8">
                 {filters.map((filter) => (
-                  <button 
+                  <button type="button" 
                     key={filter} 
                     onClick={() => setActiveFilter(filter)} 
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ${

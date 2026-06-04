@@ -205,7 +205,7 @@ export default function ServiceLandingPage() {
                 {data.faqs.map((faq, i) => (
                   <AnimatedSection key={i} animation="slide-up" delay={i * 40}>
                     <div className="glass-card overflow-hidden">
-                      <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 hover:bg-muted/30 transition-colors">
+                      <button type="button" onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 hover:bg-muted/30 transition-colors">
                         <span className="font-medium text-sm text-foreground">{faq.question}</span>
                         <ChevronDown className={`w-4 h-4 text-accent transition-transform duration-200 flex-shrink-0 ${openFaq === i ? 'rotate-180' : ''}`} />
                       </button>

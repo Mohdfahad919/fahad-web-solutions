@@ -87,7 +87,7 @@ export function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
+          <button type="button"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
