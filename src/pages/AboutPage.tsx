@@ -149,15 +149,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="w-full section-padding">
-          <div className="w-full px-4 sm:px-6 lg:px-8">
-            <div className="max-w-[1200px] mx-auto">
-              <AnimatedSection>
-                <div className="bg-primary rounded-2xl p-8 sm:p-12 text-center relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-accent/8 rounded-full blur-[80px]" />
-                  <div className="relative z-10">
-                    <h2 className="text-white mb-4">Let's Build Something Great Together</h2>
-                    <p className="text-white/60 text-base mb-6 max-w-xl mx-auto">Ready to take your business online?</p>
         {/* Founder / Meet the Team */}
         <section className="w-full section-padding bg-muted/30">
           <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -267,11 +258,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-                </div>
-              </AnimatedSection>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
       <WhatsAppButton />
