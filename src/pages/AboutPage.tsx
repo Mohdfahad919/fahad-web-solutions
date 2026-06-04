@@ -5,7 +5,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
+import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2, Code2, Rocket, Search, MessageSquare, Briefcase, Star, Zap } from "lucide-react";
 
 const values = [
   { icon: Users, title: "Client-Focused", description: "Your success is our priority. We deliver solutions that exceed expectations." },
@@ -19,6 +19,22 @@ const stats = [
   { value: "50+", label: "Happy Clients" },
   { value: "7+", label: "Years Experience" },
   { value: "100%", label: "Satisfaction Rate" },
+];
+
+const expertise = [
+  { icon: Code2, title: "Web Development", description: "React, Next.js, TypeScript, Node.js, full-stack architecture for fast, scalable websites." },
+  { icon: Sparkles, title: "UI/UX Design", description: "Conversion-focused interfaces built with Figma, design systems and a sharp eye for detail." },
+  { icon: Search, title: "Technical SEO", description: "Schema markup, Core Web Vitals, on-page optimization and local SEO for Lucknow/India." },
+  { icon: Briefcase, title: "E-commerce", description: "Shopify, custom React storefronts, payment integration, inventory, and order workflows." },
+  { icon: Rocket, title: "Performance Engineering", description: "Sub-2s load times, image optimization, code-splitting, CDN delivery, mobile-first builds." },
+  { icon: Shield, title: "Security & Maintenance", description: "Form protection, rate limiting, dependency audits, uptime monitoring and ongoing support." },
+];
+
+const process = [
+  { step: "01", title: "Discovery", description: "Free strategy call to understand your business, goals, target customers in Lucknow and beyond." },
+  { step: "02", title: "Design", description: "Wireframes and high-fidelity mockups in Figma, refined with your feedback until you love it." },
+  { step: "03", title: "Develop", description: "Clean React/TypeScript build with SEO, accessibility and performance baked in from day one." },
+  { step: "04", title: "Launch", description: "Domain setup, Analytics + Search Console, training, and 30 days of free post-launch support." },
 ];
 
 export default function AboutPage() {
