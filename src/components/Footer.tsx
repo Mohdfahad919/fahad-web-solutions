@@ -165,7 +165,7 @@ export function Footer() {
               © 2026 Fahad WebService. All rights reserved.
             </p>
 
-            <button
+            <button type="button"
               onClick={scrollToTop}
               className="group flex items-center gap-2 text-white/40 hover:text-accent transition-colors text-xs"
             >

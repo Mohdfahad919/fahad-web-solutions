@@ -212,7 +212,7 @@ export default function ServicesPage() {
                 {serviceFaqs.map((faq, index) => (
                   <AnimatedSection key={index} animation="slide-up" delay={index * 50}>
                     <div className="glass-card overflow-hidden">
-                      <button
+                      <button type="button"
                         onClick={() => setOpenFaq(openFaq === index ? null : index)}
                         className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 hover:bg-muted/30 transition-colors"
                       >

@@ -277,7 +277,8 @@ const Index = () => {
                       alt="Professional website development in Lucknow - modern web design services"
                       className="w-full h-auto rounded-2xl shadow-2xl border border-border"
                       loading="eager"
-                      fetchPriority="high"
+                      // @ts-expect-error lowercase per HTML spec
+                      fetchpriority="high"
                     />
                   </div>
                 </div>
@@ -479,7 +480,7 @@ const Index = () => {
 
               <AnimatedSection delay={100} className="flex flex-wrap justify-center gap-2 mb-8">
                 {filters.map((filter) => (
-                  <button
+                  <button type="button"
                     key={filter}
                     onClick={() => setActiveFilter(filter)}
                     className={`px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
@@ -705,7 +706,7 @@ const Index = () => {
                 {faqs.map((faq, index) => (
                   <AnimatedSection key={index} animation="slide-up" delay={index * 50}>
                     <div className="glass-card overflow-hidden">
-                      <button
+                      <button type="button"
                         onClick={() => setOpenFaq(openFaq === index ? null : index)}
                         className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-3 hover:bg-muted/30 transition-colors"
                       >
