@@ -277,7 +277,8 @@ const Index = () => {
                       alt="Professional website development in Lucknow - modern web design services"
                       className="w-full h-auto rounded-2xl shadow-2xl border border-border"
                       loading="eager"
-                      fetchPriority="high"
+                      // @ts-expect-error lowercase per HTML spec
+                      fetchpriority="high"
                     />
                   </div>
                 </div>
