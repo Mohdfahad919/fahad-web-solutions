@@ -251,22 +251,92 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Location Info */}
+        {/* Business Hours + Service Areas */}
         <section className="w-full pb-12">
           <div className="w-full px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto">
-              <AnimatedSection>
-                <div className="glass-card p-6 sm:p-8 text-center">
-                  <MapPin className="w-8 h-8 text-accent mx-auto mb-3" />
-                  <h3 className="font-semibold text-lg text-foreground mb-2">Based in Lucknow, Serving All India</h3>
-                  <p className="text-muted-foreground text-sm max-w-lg mx-auto">
-                    We work with clients across India and internationally. Whether you're in Lucknow, Delhi, Mumbai, or anywhere else — we deliver premium websites remotely.
+            <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-5">
+              <AnimatedSection animation="slide-up">
+                <div className="glass-card p-6 h-full">
+                  <div className="flex items-center gap-2 mb-4">
+                    <Clock className="w-5 h-5 text-accent" />
+                    <h2 className="font-semibold text-lg text-foreground">Business Hours</h2>
+                  </div>
+                  <ul className="space-y-2 text-sm">
+                    {[
+                      { d: "Monday – Friday", h: "9:00 AM – 9:00 PM" },
+                      { d: "Saturday", h: "10:00 AM – 7:00 PM" },
+                      { d: "Sunday", h: "11:00 AM – 5:00 PM (WhatsApp only)" },
+                    ].map((row) => (
+                      <li key={row.d} className="flex justify-between border-b border-border/40 pb-2 last:border-0">
+                        <span className="text-foreground font-medium">{row.d}</span>
+                        <span className="text-muted-foreground">{row.h}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-xs text-muted-foreground mt-4">All times IST. Emergency support available 24/7 for existing clients via WhatsApp.</p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="slide-up" delay={100}>
+                <div className="glass-card p-6 h-full">
+                  <div className="flex items-center gap-2 mb-4">
+                    <MapPin className="w-5 h-5 text-accent" />
+                    <h2 className="font-semibold text-lg text-foreground">Service Areas</h2>
+                  </div>
+                  <p className="text-muted-foreground text-sm mb-3">
+                    Headquartered in <strong className="text-foreground">Lucknow</strong>, serving clients across India and internationally:
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Lucknow", "Kanpur", "Varanasi", "Allahabad", "Noida", "Delhi NCR", "Mumbai", "Bangalore", "Hyderabad", "Pune", "Ahmedabad", "Jaipur", "All India", "International"].map((city) => (
+                      <span key={city} className="px-2.5 py-1 rounded-md bg-accent/8 border border-accent/15 text-xs text-accent font-medium">{city}</span>
+                    ))}
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-4">
+                    Looking for a <Link to="/services/website-development-lucknow" className="text-accent hover:underline">website development company in Lucknow</Link>, <Link to="/services/web-design-services-lucknow" className="text-accent hover:underline">web design</Link>, <Link to="/services/seo-services-lucknow" className="text-accent hover:underline">SEO services</Link>, or <Link to="/services/ecommerce-website-development-lucknow" className="text-accent hover:underline">e-commerce development</Link>? We deliver end-to-end remotely.
                   </p>
                 </div>
               </AnimatedSection>
             </div>
           </div>
         </section>
+
+        {/* Google Maps + Location */}
+        <section className="w-full pb-16">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <AnimatedSection>
+                <div className="glass-card overflow-hidden">
+                  <div className="p-6 sm:p-7 border-b border-border/50">
+                    <div className="flex items-start gap-3">
+                      <div className="icon-box w-11 h-11 flex-shrink-0">
+                        <MapPin className="w-5 h-5 text-accent" />
+                      </div>
+                      <div>
+                        <h2 className="font-semibold text-lg text-foreground mb-1">Visit or Reach Us in Lucknow</h2>
+                        <p className="text-muted-foreground text-sm">
+                          Fahad WebService · Lucknow, Uttar Pradesh 226001, India · <a href="tel:9076669103" className="text-accent hover:underline">+91 9076669103</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative w-full h-[360px] bg-muted">
+                    <iframe
+                      title="Fahad WebService location in Lucknow"
+                      src="https://www.google.com/maps?q=Lucknow,Uttar+Pradesh,India&z=11&output=embed"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
       </main>
       <Footer />
       <WhatsAppButton />
