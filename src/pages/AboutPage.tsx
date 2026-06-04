@@ -5,7 +5,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
+import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2, Code2, Rocket, Search, MessageSquare, Briefcase, Star, Zap } from "lucide-react";
 
 const values = [
   { icon: Users, title: "Client-Focused", description: "Your success is our priority. We deliver solutions that exceed expectations." },
@@ -19,6 +19,22 @@ const stats = [
   { value: "50+", label: "Happy Clients" },
   { value: "7+", label: "Years Experience" },
   { value: "100%", label: "Satisfaction Rate" },
+];
+
+const expertise = [
+  { icon: Code2, title: "Web Development", description: "React, Next.js, TypeScript, Node.js, full-stack architecture for fast, scalable websites." },
+  { icon: Sparkles, title: "UI/UX Design", description: "Conversion-focused interfaces built with Figma, design systems and a sharp eye for detail." },
+  { icon: Search, title: "Technical SEO", description: "Schema markup, Core Web Vitals, on-page optimization and local SEO for Lucknow/India." },
+  { icon: Briefcase, title: "E-commerce", description: "Shopify, custom React storefronts, payment integration, inventory, and order workflows." },
+  { icon: Rocket, title: "Performance Engineering", description: "Sub-2s load times, image optimization, code-splitting, CDN delivery, mobile-first builds." },
+  { icon: Shield, title: "Security & Maintenance", description: "Form protection, rate limiting, dependency audits, uptime monitoring and ongoing support." },
+];
+
+const process = [
+  { step: "01", title: "Discovery", description: "Free strategy call to understand your business, goals, target customers in Lucknow and beyond." },
+  { step: "02", title: "Design", description: "Wireframes and high-fidelity mockups in Figma, refined with your feedback until you love it." },
+  { step: "03", title: "Develop", description: "Clean React/TypeScript build with SEO, accessibility and performance baked in from day one." },
+  { step: "04", title: "Launch", description: "Domain setup, Analytics + Search Console, training, and 30 days of free post-launch support." },
 ];
 
 export default function AboutPage() {
@@ -133,6 +149,96 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Founder / Meet the Team */}
+        <section className="w-full section-padding bg-muted/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1100px] mx-auto">
+              <AnimatedSection className="text-center mb-10">
+                <span className="section-badge mb-4"><Users className="w-3.5 h-3.5" />Meet the Founder</span>
+                <h2 className="font-bold text-2xl sm:text-3xl text-foreground mb-3">Built by a <span className="gradient-text">founder who codes</span></h2>
+              </AnimatedSection>
+              <div className="grid md:grid-cols-3 gap-6 items-start">
+                <AnimatedSection animation="scale-in">
+                  <div className="glass-card p-5 text-center">
+                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-accent to-accent-secondary mx-auto mb-3 flex items-center justify-center text-3xl font-bold text-white">FS</div>
+                    <h3 className="font-semibold text-base text-foreground">Fahad Shaikh</h3>
+                    <p className="text-accent text-xs font-medium mb-2">Founder & Lead Developer</p>
+                    <div className="flex justify-center gap-0.5 mb-2">
+                      {[1,2,3,4,5].map(i => <Star key={i} className="w-3 h-3 fill-yellow-400 text-yellow-400" />)}
+                    </div>
+                    <p className="text-xs text-muted-foreground">7+ years · 120+ projects · Lucknow, India</p>
+                  </div>
+                </AnimatedSection>
+                <AnimatedSection animation="slide-up" delay={100} className="md:col-span-2">
+                  <div className="glass-card p-6">
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                      Hi, I'm <strong className="text-foreground">Fahad Shaikh</strong> — the developer behind every line of code Fahad WebService ships. I started building websites in 2018 while still in college and turned it into a full-time agency from Lucknow in 2023.
+                    </p>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+                      What makes us different: no project managers, no outsourced juniors, no template builders. When you hire Fahad WebService, you talk directly to the person designing your wireframes, writing your React code, and tuning your Core Web Vitals. That's why 50+ businesses in Lucknow, India and abroad trust us with their digital presence.
+                    </p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      My commitment: honest quotes, on-time delivery, and websites that actually rank on Google — not just look pretty in a screenshot.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {["React Specialist", "Google Search Console Certified", "TypeScript", "SEO Practitioner", "Shopify Partner"].map((b) => (
+                        <span key={b} className="px-2.5 py-1 rounded-md bg-accent/8 border border-accent/15 text-xs text-accent font-medium">{b}</span>
+                      ))}
+                    </div>
+                  </div>
+                </AnimatedSection>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Skills & Expertise */}
+        <section className="w-full section-padding">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1200px] mx-auto">
+              <AnimatedSection className="text-center mb-10">
+                <span className="section-badge mb-4"><Zap className="w-3.5 h-3.5" />Expertise</span>
+                <h2 className="font-bold text-2xl sm:text-3xl text-foreground mb-3">Skills we bring to every <span className="gradient-text">project</span></h2>
+                <p className="text-muted-foreground text-base max-w-2xl mx-auto">Full-stack capability so your website is shipped, ranked and supported by one team.</p>
+              </AnimatedSection>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {expertise.map((item, index) => (
+                  <AnimatedSection key={item.title} animation="slide-up" delay={index * 60}>
+                    <div className="glass-card p-5 h-full">
+                      <div className="icon-box w-10 h-10 mb-3"><item.icon className="w-4 h-4 text-accent" /></div>
+                      <h3 className="font-semibold text-base text-foreground mb-1.5">{item.title}</h3>
+                      <p className="text-muted-foreground text-xs leading-relaxed">{item.description}</p>
+                    </div>
+                  </AnimatedSection>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Process Overview */}
+        <section className="w-full section-padding bg-muted/30">
+          <div className="w-full px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1200px] mx-auto">
+              <AnimatedSection className="text-center mb-10">
+                <span className="section-badge mb-4"><MessageSquare className="w-3.5 h-3.5" />Our Process</span>
+                <h2 className="font-bold text-2xl sm:text-3xl text-foreground mb-3">How we work, <span className="gradient-text">step by step</span></h2>
+              </AnimatedSection>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                {process.map((p, i) => (
+                  <AnimatedSection key={p.step} animation="slide-up" delay={i * 60}>
+                    <div className="glass-card p-5 h-full relative">
+                      <span className="absolute top-3 right-4 text-3xl font-bold text-accent/10">{p.step}</span>
+                      <h3 className="font-semibold text-base text-foreground mb-2">{p.title}</h3>
+                      <p className="text-muted-foreground text-xs leading-relaxed">{p.description}</p>
+                    </div>
+                  </AnimatedSection>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="w-full section-padding">
           <div className="w-full px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1200px] mx-auto">
@@ -151,6 +257,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+
       </main>
       <Footer />
       <WhatsAppButton />
