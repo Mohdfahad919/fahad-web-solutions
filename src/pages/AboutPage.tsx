@@ -6,6 +6,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { Target, Eye, Users, Award, Clock, Shield, ArrowRight, Sparkles, CheckCircle2, Code2, Rocket, Search, MessageSquare, Briefcase, Star, Zap } from "lucide-react";
+import fahadImg from "@/assets/fahad.jpg";
 
 const values = [
   { icon: Users, title: "Client-Focused", description: "Your success is our priority. We deliver solutions that exceed expectations." },
@@ -160,7 +161,7 @@ export default function AboutPage() {
               <div className="grid md:grid-cols-3 gap-6 items-start">
                 <AnimatedSection animation="scale-in">
                   <div className="glass-card p-5 text-center">
-                    <div className="w-24 h-24 rounded-full bg-gradient-to-br from-accent to-accent-secondary mx-auto mb-3 flex items-center justify-center text-3xl font-bold text-white">FS</div>
+                    <img src={fahadImg} alt="Fahad Shaikh, founder of Fahad WebService — Lucknow web development agency" className="w-24 h-24 rounded-full object-cover mx-auto mb-3 border-2 border-accent/30" loading="lazy" decoding="async" />
                     <h3 className="font-semibold text-base text-foreground">Fahad Shaikh</h3>
                     <p className="text-accent text-xs font-medium mb-2">Founder & Lead Developer</p>
                     <div className="flex justify-center gap-0.5 mb-2">
