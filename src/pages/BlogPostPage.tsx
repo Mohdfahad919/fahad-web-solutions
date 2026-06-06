@@ -318,7 +318,7 @@ Website development in India offers excellent value for money in 2026. Whether y
     date: "April 3, 2026",
     readTime: "13 min read",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80&fm=webp",
     faqs: [
       { question: "How long does it take to build a business website?", answer: "A basic business website takes 2-4 days, a standard multi-page site takes 4-7 days, and complex websites with custom features take 7-12 days with a professional developer." },
       { question: "Do I need a business email with my website?", answer: "Yes, a professional email (info@yourbusiness.com) builds credibility. It costs ₹1,000-5,000/year through Google Workspace or similar providers." },
