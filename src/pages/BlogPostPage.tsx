@@ -1341,7 +1341,7 @@ Website development in India offers excellent value for money. Whether you're a 
     date: "March 5, 2025",
     readTime: "12 min read",
     category: "SEO",
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=1200&q=80&fm=webp",
     faqs: [
       { question: "Is SEO free?", answer: "The organic traffic from SEO is free, but implementing SEO requires investment — either your time (DIY) or money (hiring professionals). Professional SEO services in India start from ₹1,999/month." },
       { question: "How do I know if my SEO is working?", answer: "Track your Google rankings for target keywords, monitor organic traffic in Google Analytics, and check impressions and clicks in Google Search Console. Improvements typically start showing within 3-6 months." },
