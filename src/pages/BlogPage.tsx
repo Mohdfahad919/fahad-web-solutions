@@ -123,7 +123,7 @@ const blogPosts = [
     date: "February 20, 2025",
     readTime: "9 min read",
     category: "Marketing",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=72&fm=webp&auto=format",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "how-professional-website-increases-sales",
