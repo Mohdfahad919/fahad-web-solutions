@@ -1234,7 +1234,7 @@ Creating a website in India has never been more accessible or affordable. Whethe
     date: "March 10, 2025",
     readTime: "9 min read",
     category: "Business",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80&fm=webp",
     faqs: [
       { question: "What is the minimum cost of a website in India?", answer: "A basic landing page starts from ₹1,999. A full business website with 4-5 pages starts from ₹4,999. E-commerce websites start from ₹8,999 depending on features and complexity." },
       { question: "Are there any recurring costs after building a website?", answer: "Yes. You'll need to pay for domain renewal (₹500-₹1,500/year), web hosting (₹1,200-₹12,000/year), and optionally SSL certificate and maintenance services." },
