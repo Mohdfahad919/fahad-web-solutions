@@ -997,7 +997,7 @@ From our client work:
     description: "Build high-converting landing pages for Google Ads, Meta and WhatsApp campaigns. Real frameworks, copy, design, and tracking.",
     keywords: "landing page best practices, high converting landing page, landing page design tips, Google Ads landing page",
     date: "June 3, 2026", readTime: "10 min read", category: "Marketing",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=1200&q=80&fm=webp",
     content: `
 ## What Makes a Landing Page Different
 
