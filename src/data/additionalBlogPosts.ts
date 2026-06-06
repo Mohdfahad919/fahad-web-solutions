@@ -1266,7 +1266,7 @@ Our [SEO services](/services/seo-services-lucknow) include AI search optimizatio
     description: "The web design trends shaping 2026: glassmorphism, AI-generated visuals, bold typography, micro-animations, dark mode by default.",
     keywords: "web design trends 2026, modern web design, glassmorphism, dark mode, design trends India",
     date: "June 3, 2026", readTime: "10 min read", category: "Design",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80&fm=webp",
     content: `
 ## What's In for 2026
 
