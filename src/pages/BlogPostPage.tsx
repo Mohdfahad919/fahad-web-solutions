@@ -318,7 +318,7 @@ Website development in India offers excellent value for money in 2026. Whether y
     date: "April 3, 2026",
     readTime: "13 min read",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80&fm=webp",
     faqs: [
       { question: "How long does it take to build a business website?", answer: "A basic business website takes 2-4 days, a standard multi-page site takes 4-7 days, and complex websites with custom features take 7-12 days with a professional developer." },
       { question: "Do I need a business email with my website?", answer: "Yes, a professional email (info@yourbusiness.com) builds credibility. It costs ₹1,000-5,000/year through Google Workspace or similar providers." },
@@ -1234,7 +1234,7 @@ Creating a website in India has never been more accessible or affordable. Whethe
     date: "March 10, 2025",
     readTime: "9 min read",
     category: "Business",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80&fm=webp",
     faqs: [
       { question: "What is the minimum cost of a website in India?", answer: "A basic landing page starts from ₹1,999. A full business website with 4-5 pages starts from ₹4,999. E-commerce websites start from ₹8,999 depending on features and complexity." },
       { question: "Are there any recurring costs after building a website?", answer: "Yes. You'll need to pay for domain renewal (₹500-₹1,500/year), web hosting (₹1,200-₹12,000/year), and optionally SSL certificate and maintenance services." },
@@ -1341,7 +1341,7 @@ Website development in India offers excellent value for money. Whether you're a 
     date: "March 5, 2025",
     readTime: "12 min read",
     category: "SEO",
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=1200&q=80&fm=webp",
     faqs: [
       { question: "Is SEO free?", answer: "The organic traffic from SEO is free, but implementing SEO requires investment — either your time (DIY) or money (hiring professionals). Professional SEO services in India start from ₹1,999/month." },
       { question: "How do I know if my SEO is working?", answer: "Track your Google rankings for target keywords, monitor organic traffic in Google Analytics, and check impressions and clicks in Google Search Console. Improvements typically start showing within 3-6 months." },
@@ -1606,7 +1606,7 @@ Following these design principles will transform your website from amateur to pr
     date: "February 20, 2025",
     readTime: "11 min read",
     category: "Marketing",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&fm=webp",
     faqs: [
       { question: "What is the first step to growing my business online?", answer: "Build a professional website. It's the foundation of your entire digital presence. Every other strategy — SEO, social media, content marketing — drives traffic back to your website where visitors convert into customers." },
       { question: "How much should I spend on digital marketing?", answer: "Start with a professional website (₹1,999-₹8,999), then allocate ₹3,000-₹10,000/month for SEO and content marketing. Paid advertising can start from ₹200/day. Scale your budget as you see ROI from each channel." },

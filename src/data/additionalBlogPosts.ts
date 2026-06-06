@@ -328,7 +328,7 @@ We optimize sites to 95+ Lighthouse scores routinely. See our [website maintenan
     description: "Understand the three Core Web Vitals Google uses to rank pages. Targets, measurement, and proven fixes for each metric.",
     keywords: "Core Web Vitals, LCP, INP, CLS, Google ranking factors, web vitals optimization",
     date: "June 3, 2026", readTime: "10 min read", category: "Performance",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1200&q=80&fm=webp",
     content: `
 ## What Are Core Web Vitals?
 
@@ -747,7 +747,7 @@ See our [website maintenance services in Lucknow](/services/website-maintenance-
     description: "Find high-volume, low-difficulty keywords for Indian markets. Tools, process, intent mapping, local modifiers — everything you need.",
     keywords: "keyword research India, SEO keyword research, Ahrefs vs Semrush, Indian keywords, local keywords Lucknow",
     date: "June 3, 2026", readTime: "12 min read", category: "SEO",
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200&q=80&fm=webp",
     content: `
 ## What Is Keyword Research?
 
@@ -911,7 +911,7 @@ See our [SEO services in Lucknow](/services/seo-services-lucknow) — schema mar
     description: "Increase conversions 2-3x with proven CRO tactics tailored for Indian audiences. Forms, CTAs, trust signals, WhatsApp, mobile UX.",
     keywords: "conversion rate optimization India, CRO India, increase website conversions, lead generation India",
     date: "June 3, 2026", readTime: "12 min read", category: "Marketing",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1200&q=80&fm=webp",
     content: `
 ## What Is CRO?
 
@@ -997,7 +997,7 @@ From our client work:
     description: "Build high-converting landing pages for Google Ads, Meta and WhatsApp campaigns. Real frameworks, copy, design, and tracking.",
     keywords: "landing page best practices, high converting landing page, landing page design tips, Google Ads landing page",
     date: "June 3, 2026", readTime: "10 min read", category: "Marketing",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=1200&q=80&fm=webp",
     content: `
 ## What Makes a Landing Page Different
 
@@ -1266,7 +1266,7 @@ Our [SEO services](/services/seo-services-lucknow) include AI search optimizatio
     description: "The web design trends shaping 2026: glassmorphism, AI-generated visuals, bold typography, micro-animations, dark mode by default.",
     keywords: "web design trends 2026, modern web design, glassmorphism, dark mode, design trends India",
     date: "June 3, 2026", readTime: "10 min read", category: "Design",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80&fm=webp",
     content: `
 ## What's In for 2026
 
