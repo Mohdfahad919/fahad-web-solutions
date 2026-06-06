@@ -1606,7 +1606,7 @@ Following these design principles will transform your website from amateur to pr
     date: "February 20, 2025",
     readTime: "11 min read",
     category: "Marketing",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&fm=webp",
     faqs: [
       { question: "What is the first step to growing my business online?", answer: "Build a professional website. It's the foundation of your entire digital presence. Every other strategy — SEO, social media, content marketing — drives traffic back to your website where visitors convert into customers." },
       { question: "How much should I spend on digital marketing?", answer: "Start with a professional website (₹1,999-₹8,999), then allocate ₹3,000-₹10,000/month for SEO and content marketing. Paid advertising can start from ₹200/day. Scale your budget as you see ROI from each channel." },
