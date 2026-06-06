@@ -33,7 +33,7 @@ const blogPosts = [
     date: "April 3, 2026",
     readTime: "13 min read",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=72&fm=webp&auto=format",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "top-seo-strategies-small-businesses-india",
