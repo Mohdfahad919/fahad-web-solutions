@@ -328,7 +328,7 @@ We optimize sites to 95+ Lighthouse scores routinely. See our [website maintenan
     description: "Understand the three Core Web Vitals Google uses to rank pages. Targets, measurement, and proven fixes for each metric.",
     keywords: "Core Web Vitals, LCP, INP, CLS, Google ranking factors, web vitals optimization",
     date: "June 3, 2026", readTime: "10 min read", category: "Performance",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=1200&q=80&fm=webp",
     content: `
 ## What Are Core Web Vitals?
 
