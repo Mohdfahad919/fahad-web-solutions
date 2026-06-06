@@ -28,9 +28,9 @@ export default function PrivacyPage() {
             <h2 className="font-bold text-xl text-foreground mt-8 mb-3">Cookies & Analytics</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">We use Google Analytics to understand how visitors use our website. This data is anonymized and used solely to improve user experience. You can disable cookies in your browser at any time.</p>
             <h2 className="font-bold text-xl text-foreground mt-8 mb-3">Your Rights</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">You can request access to, correction of, or deletion of your personal data at any time by emailing fahadshaikh9076669103@gmail.com. We will respond within 7 business days.</p>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">You can request access to, correction of, or deletion of your personal data at any time by emailing fahadwebservice@gmail.com. We will respond within 7 business days.</p>
             <h2 className="font-bold text-xl text-foreground mt-8 mb-3">Contact Us</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">For any privacy-related questions, contact us at fahadshaikh9076669103@gmail.com or +91 9076669103.</p>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">For any privacy-related questions, contact us at fahadwebservice@gmail.com or +91 9076669103.</p>
           </div>
         </div>
       </main>
