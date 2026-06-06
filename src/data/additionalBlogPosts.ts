@@ -911,7 +911,7 @@ See our [SEO services in Lucknow](/services/seo-services-lucknow) — schema mar
     description: "Increase conversions 2-3x with proven CRO tactics tailored for Indian audiences. Forms, CTAs, trust signals, WhatsApp, mobile UX.",
     keywords: "conversion rate optimization India, CRO India, increase website conversions, lead generation India",
     date: "June 3, 2026", readTime: "12 min read", category: "Marketing",
-    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1200&q=80&fm=webp",
     content: `
 ## What Is CRO?
 
