@@ -161,7 +161,7 @@ export default function AboutPage() {
               <div className="grid md:grid-cols-3 gap-6 items-start">
                 <AnimatedSection animation="scale-in">
                   <div className="glass-card p-5 text-center">
-                    <img src={fahadImg} alt="Fahad Shaikh, founder of Fahad WebService — Lucknow web development agency" className="w-24 h-24 rounded-full object-cover mx-auto mb-3 border-2 border-accent/30" loading="lazy" decoding="async" />
+                    <img src={fahadImg} alt="Fahad Shaikh, founder of Fahad WebService — Lucknow web development agency" className="w-28 h-28 rounded-full object-cover object-top mx-auto mb-3 border-2 border-accent/30 shadow-lg" style={{ objectPosition: '50% 20%' }} loading="lazy" decoding="async" />
                     <h3 className="font-semibold text-base text-foreground">Fahad Shaikh</h3>
                     <p className="text-accent text-xs font-medium mb-2">Founder & Lead Developer</p>
                     <div className="flex justify-center gap-0.5 mb-2">
