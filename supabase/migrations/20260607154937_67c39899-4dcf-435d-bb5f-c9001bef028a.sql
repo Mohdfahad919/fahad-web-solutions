@@ -1,0 +1,1 @@
+REVOKE ALL ON public.contact_rate_limits FROM anon, authenticated, PUBLIC;

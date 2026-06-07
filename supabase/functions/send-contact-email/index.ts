@@ -1,6 +1,13 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.0";
 
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
+const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
+const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+
+const supabaseAdmin = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
+  auth: { persistSession: false },
+});
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -15,26 +22,60 @@ interface ContactFormData {
   honeypot?: string; // Honeypot field - should be empty
 }
 
-// Simple in-memory rate limiting (resets on function cold start)
-const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
 const RATE_LIMIT_MAX = 5; // Max 5 requests per window
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // 1 hour window
 
-function checkRateLimit(ip: string): boolean {
-  const now = Date.now();
-  const record = rateLimitMap.get(ip);
+// Persistent rate limiting backed by the contact_rate_limits table.
+// Survives cold starts and is shared across function instances.
+async function checkRateLimit(ip: string): Promise<boolean> {
+  try {
+    const now = Date.now();
+    const { data, error } = await supabaseAdmin
+      .from("contact_rate_limits")
+      .select("request_count, window_start")
+      .eq("ip_address", ip)
+      .maybeSingle();
 
-  if (!record || now > record.resetTime) {
-    rateLimitMap.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW_MS });
+    if (error) {
+      console.error("Rate-limit read error:", error);
+      // Fail-closed on read errors would block legitimate users during a DB
+      // hiccup; fail-open but log so spikes are still visible.
+      return true;
+    }
+
+    const windowStartMs = data ? new Date(data.window_start).getTime() : 0;
+    const withinWindow = data && now - windowStartMs < RATE_LIMIT_WINDOW_MS;
+
+    if (!data || !withinWindow) {
+      const { error: upsertErr } = await supabaseAdmin
+        .from("contact_rate_limits")
+        .upsert({
+          ip_address: ip,
+          request_count: 1,
+          window_start: new Date(now).toISOString(),
+          updated_at: new Date(now).toISOString(),
+        });
+      if (upsertErr) console.error("Rate-limit upsert error:", upsertErr);
+      return true;
+    }
+
+    if (data.request_count >= RATE_LIMIT_MAX) {
+      return false;
+    }
+
+    const { error: updErr } = await supabaseAdmin
+      .from("contact_rate_limits")
+      .update({
+        request_count: data.request_count + 1,
+        updated_at: new Date(now).toISOString(),
+      })
+      .eq("ip_address", ip);
+    if (updErr) console.error("Rate-limit update error:", updErr);
+    return true;
+  } catch (e) {
+    console.error("Rate-limit unexpected error:", e);
     return true;
   }
-
-  if (record.count >= RATE_LIMIT_MAX) {
-    return false;
-  }
-
-  record.count++;
-  return true;
 }
 
 // HTML entity escaping to prevent HTML injection
@@ -88,7 +129,7 @@ const handler = async (req: Request): Promise<Response> => {
                      req.headers.get("cf-connecting-ip") || 
                      "unknown";
     
-    if (!checkRateLimit(clientIP)) {
+    if (!(await checkRateLimit(clientIP))) {
       console.warn(`Rate limit exceeded for IP: ${clientIP}`);
       return new Response(
         JSON.stringify({ error: "Too many requests. Please try again later." }),
