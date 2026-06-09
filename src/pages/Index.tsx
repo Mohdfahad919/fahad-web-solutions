@@ -231,6 +231,10 @@ const Index = () => {
                     <span className="gradient-text">Lucknow</span>
                   </h1>
 
+                  <p className="text-accent text-lg sm:text-xl font-semibold mb-5">
+                    🚀 Website Updated Successfully
+                  </p>
+
                   <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
                     We build modern, fast, and SEO-optimized websites for your business. Get your professional website starting at just <span className="text-accent font-bold">₹1,999</span>.
                   </p>
