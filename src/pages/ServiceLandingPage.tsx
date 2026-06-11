@@ -52,7 +52,7 @@ export default function ServiceLandingPage() {
       "@type": "LocalBusiness",
       name: "Fahad WebService",
       telephone: "+919076669103",
-      email: "fahadwebservice@gmail.com",
+      email: "fahadshaikh9076669103@gmail.com",
       address: { "@type": "PostalAddress", addressLocality: "Lucknow", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
     },
     areaServed: [{ "@type": "City", name: "Lucknow" }, { "@type": "Country", name: "India" }],
