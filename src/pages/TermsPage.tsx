@@ -36,7 +36,7 @@ export default function TermsPage() {
             <h2 className="font-bold text-xl text-foreground mt-8 mb-3">Governing Law</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">These terms are governed by the laws of India. Disputes shall be subject to the exclusive jurisdiction of courts in Lucknow, Uttar Pradesh.</p>
             <h2 className="font-bold text-xl text-foreground mt-8 mb-3">Contact</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">For any questions about these terms, contact fahadwebservice@gmail.com or +91 9076669103.</p>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">For any questions about these terms, contact fahadshaikh9076669103@gmail.com or +91 9076669103.</p>
           </div>
         </div>
       </main>
