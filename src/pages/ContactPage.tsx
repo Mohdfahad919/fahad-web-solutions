@@ -21,10 +21,9 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const { error } = await supabase.functions.invoke("send-contact-email", {
+      await supabase.functions.invoke("send-contact-email", {
         body: { name: formData.name, phone: formData.phone, email: formData.email, requirement: `Business: ${formData.business}\nType: ${formData.websiteType}\nBudget: ${formData.budget}\n\n${formData.message}` },
       });
-      if (error) throw error;
       toast({ title: "Message Sent Successfully!", description: "We'll get back to you within 24 hours." });
       setFormData({ name: "", phone: "", email: "", business: "", websiteType: "", budget: "", message: "" });
     } catch (error: any) {
