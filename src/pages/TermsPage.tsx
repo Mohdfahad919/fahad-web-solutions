@@ -10,7 +10,7 @@ export default function TermsPage() {
       <SEOHead
         title="Terms & Conditions | Fahad WebService"
         description="Terms and conditions for using Fahad WebService. Learn about our service agreements, payment terms, deliverables, and policies."
-        canonical="https://fahadwebservicecom.lovable.app/terms"
+        canonical="https://fahadwebservice.com/terms"
       />
       <Header />
       <Breadcrumbs />

@@ -33,7 +33,7 @@ export function Breadcrumbs() {
       "@type": "ListItem",
       position: i + 1,
       name: crumb.label,
-      item: `https://fahadwebservicecom.lovable.app${crumb.href}`,
+      item: `https://fahadwebservice.com${crumb.href}`,
     })),
   };
 

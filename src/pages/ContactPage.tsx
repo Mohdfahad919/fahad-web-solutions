@@ -57,7 +57,7 @@ export default function ContactPage() {
         title="Contact Us | Free Website Quote | Fahad WebService"
         description="Get a free website consultation from Fahad WebService, Lucknow. Affordable web design services India. SEO services for small businesses. Reply in 24hrs."
         keywords="contact web developer Lucknow, website development in Lucknow, affordable web design services India, SEO services for small businesses India"
-        canonical="https://fahadwebservicecom.lovable.app/contact"
+        canonical="https://fahadwebservice.com/contact"
       />
       <Header />
       <Breadcrumbs />

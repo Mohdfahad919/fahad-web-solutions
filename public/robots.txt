@@ -19,4 +19,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://fahadwebservicecom.lovable.app/sitemap.xml
+Sitemap: https://fahadwebservice.com/sitemap.xml

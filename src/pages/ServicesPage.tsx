@@ -91,7 +91,7 @@ export default function ServicesPage() {
         title="Affordable Web Design Services India | Fahad WebService"
         description="Professional web design & development services in Lucknow, India. SEO services for small businesses, e-commerce websites & landing pages from ₹1,999."
         keywords="affordable web design services India, website development in Lucknow, SEO services for small businesses India, ecommerce website development"
-        canonical="https://fahadwebservicecom.lovable.app/services"
+        canonical="https://fahadwebservice.com/services"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <Header />

@@ -10,7 +10,7 @@ export default function PrivacyPage() {
       <SEOHead
         title="Privacy Policy | Fahad WebService"
         description="Privacy policy for Fahad WebService. Learn how we collect, use, and protect your personal information when you use our website development services."
-        canonical="https://fahadwebservicecom.lovable.app/privacy"
+        canonical="https://fahadwebservice.com/privacy"
       />
       <Header />
       <Breadcrumbs />

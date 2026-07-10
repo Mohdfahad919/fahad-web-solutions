@@ -32,7 +32,7 @@ export default function PortfolioPage() {
         title="Portfolio | Web Development Projects | Fahad WebService"
         description="120+ successful website development projects in Lucknow & India. Business websites, e-commerce stores & SEO results. See real client case studies."
         keywords="web development portfolio India, website development in Lucknow, ecommerce website examples, affordable web design services India"
-        canonical="https://fahadwebservicecom.lovable.app/portfolio"
+        canonical="https://fahadwebservice.com/portfolio"
       />
       <Header />
       <Breadcrumbs />

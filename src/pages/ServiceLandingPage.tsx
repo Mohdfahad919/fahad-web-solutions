@@ -42,7 +42,7 @@ export default function ServiceLandingPage() {
 
   if (!data) return <Navigate to="/services" replace />;
 
-  const canonical = `https://fahadwebservicecom.lovable.app/services/${data.slug}`;
+  const canonical = `https://fahadwebservice.com/services/${data.slug}`;
 
   const serviceJsonLd = {
     "@context": "https://schema.org",

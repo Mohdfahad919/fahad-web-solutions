@@ -160,7 +160,7 @@ export default function BlogPage() {
         title="Blog | SEO & Web Design Tips India | Fahad WebService"
         description="Expert articles on website development in Lucknow, SEO services for small businesses India, and affordable web design tips. Grow your business online."
         keywords="web development blog India, SEO services for small businesses India, website development in Lucknow, affordable web design tips"
-        canonical="https://fahadwebservicecom.lovable.app/blog"
+        canonical="https://fahadwebservice.com/blog"
       />
       <Header />
       <Breadcrumbs />

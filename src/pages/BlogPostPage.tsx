@@ -2033,9 +2033,9 @@ export default function BlogPostPage() {
     publisher: {
       "@type": "Organization",
       name: "Fahad WebService",
-      logo: { "@type": "ImageObject", url: "https://fahadwebservicecom.lovable.app/favicon.ico" },
+      logo: { "@type": "ImageObject", url: "https://fahadwebservice.com/favicon.ico" },
     },
-    mainEntityOfPage: `https://fahadwebservicecom.lovable.app/blog/${slug}`,
+    mainEntityOfPage: `https://fahadwebservice.com/blog/${slug}`,
   };
   const faqJsonLd = post.faqs && post.faqs.length > 0 ? {
     "@context": "https://schema.org",
@@ -2053,7 +2053,7 @@ export default function BlogPostPage() {
         title={post.seoTitle ?? post.title}
         description={post.description}
         keywords={post.keywords}
-        canonical={`https://fahadwebservicecom.lovable.app/blog/${slug}`}
+        canonical={`https://fahadwebservice.com/blog/${slug}`}
         ogType="article"
         ogImage={post.image}
       />
