@@ -14,7 +14,7 @@ export default function CaseStudyPage() {
   if (!study) return <Navigate to="/portfolio" replace />;
 
   const others = caseStudies.filter((c) => c.slug !== study.slug).slice(0, 3);
-  const url = `https://fahadwebservicecom.lovable.app/case-studies/${study.slug}`;
+  const url = `https://fahadwebservice.com/case-studies/${study.slug}`;
 
   const schema = {
     "@context": "https://schema.org",
