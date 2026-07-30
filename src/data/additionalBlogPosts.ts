@@ -21,6 +21,176 @@ export interface BlogPost {
 }
 
 export const additionalBlogPosts: Record<string, BlogPost> = {
+  "how-to-choose-website-development-company-lucknow": {
+    title: "How to Choose the Best Website Development Company in Lucknow (2026 Complete Guide)",
+    seoTitle: "Best Website Development Company in Lucknow",
+    description: "A practical 2026 guide to choosing a website development company in Lucknow — what to ask, what things cost, red flags to avoid, and how to judge real work.",
+    keywords: "website development company in Lucknow, website development Lucknow, best web design company in Lucknow, affordable website development, website design services Lucknow, custom website development, business website development, professional website design, SEO friendly website, responsive website design",
+    date: "July 30, 2026", readTime: "12 min read", category: "Web Development",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80&fm=webp",
+    content: `
+Ask ten shop owners in Aminabad who built their website and you will hear ten different stories. One paid ₹6,000 to a cousin's friend and still cannot log in to change a phone number. Another paid ₹80,000 to an agency in Gomti Nagar and genuinely gets enquiries every week. Same city, same budget range, completely different outcomes.
+
+The difference is almost never talent. It is the questions asked before the money moved.
+
+This guide is written from the trenches — from rebuilding sites for a coaching institute in Aliganj, a dental clinic in Hazratganj, a saree wholesaler in Chowk, and a cloud kitchen off Faizabad Road. The pattern repeats so reliably that you can protect yourself with about an hour of homework. Here is that hour, written down.
+
+## Table of Contents
+
+- [Get clear on what the website is for](#purpose)
+- [Nine questions that separate professionals from amateurs](#questions)
+- [What website development actually costs in Lucknow](#pricing)
+- [How to judge a portfolio properly](#portfolio)
+- [Freelancer, small studio, or big agency?](#who)
+- [The contract details people forget](#contract)
+- [Real examples from Lucknow businesses](#examples)
+- [Common mistakes that cost people money](#mistakes)
+- [FAQs](#faqs)
+
+## Get clear on what the website is for {#purpose}
+
+Before you call anyone, finish this sentence: *"I will consider this website successful if ______ happens within six months."*
+
+For a dermatologist, that might be "twelve appointment requests a month without paying for ads." For a school, "parents stop calling the office for the fee structure." For a furniture manufacturer, "buyers from Kanpur and Delhi find us for bulk orders."
+
+Those three answers lead to three completely different builds. The clinic needs a fast mobile site with a visible booking form and strong Google Maps presence. The school needs clean information architecture and downloadable documents. The manufacturer needs product depth and search visibility for commercial keywords.
+
+If you skip this step, you will be sold whatever the vendor happens to build most often. Vague briefs are how people end up with a beautiful homepage and no enquiries.
+
+Write down, on one page:
+
+- The single most valuable action a visitor can take
+- Three competitors whose sites you have actually looked at
+- Whether you will update content yourself or want it handled
+- Your realistic launch deadline
+- Your budget range — yes, share it; hiding it wastes everyone's time
+
+## Nine questions that separate professionals from amateurs {#questions}
+
+Any serious **website development company in Lucknow** will answer these without hesitation. Hesitation itself is the signal.
+
+**1. "Who owns the domain, hosting, and code after launch?"**
+The correct answer is *you*. Domain registered in your name, hosting under your email, code handed over. A surprising number of local disputes come down to a developer holding the domain hostage at renewal time.
+
+**2. "Show me a site you built that is over two years old."**
+New sites always look fine. Two-year-old sites reveal whether the work held up — or whether it broke, got hacked, or was quietly replaced.
+
+**3. "What is the mobile load time of your last three projects?"**
+Ask them to run PageSpeed Insights on a call. In Lucknow, most traffic arrives on mid-range Android phones on 4G. Anything over three seconds on mobile is losing you customers before they see your first heading. **Responsive website design** is not a bonus feature in 2026; it is the baseline.
+
+**4. "What exactly is included in SEO setup?"**
+Real answers sound like: unique title tags and meta descriptions per page, clean heading structure, image alt text, schema markup, sitemap, robots file, Google Search Console and Analytics connected, Google Business Profile linked. Vague answers sound like "full SEO included." An **SEO friendly website** is a set of specific, checkable things.
+
+**5. "How will I edit content next year?"**
+Either you get a simple admin panel, or you get a documented process and a support retainer. What you must not accept is "call me whenever" from someone with no contract.
+
+**6. "What happens if the site goes down on a Sunday?"**
+Support hours, response time, and who picks up the phone. Get it in writing.
+
+**7. "Who writes the content?"**
+This derails more projects in Lucknow than any technical issue. If you are supplying the text, block time for it now. If they are writing it, ask to see writing samples in your language and tone — Hinglish-friendly copy for a local restaurant reads nothing like copy for a B2B exporter.
+
+**8. "Is the design custom or a template?"**
+Templates are not evil — a well-implemented template beats a bad custom design. But you deserve to know which you are buying, because the price gap is large. **Custom website development** makes sense when your service or booking flow is genuinely unusual.
+
+**9. "Can I speak to one past client directly?"**
+The best **web design company in Lucknow** for you will say yes immediately. This one question filters out most of the field.
+
+## What website development actually costs in Lucknow {#pricing}
+
+Honest ranges, based on projects delivered in this market:
+
+- **₹2,000 – ₹8,000** — single-page or small brochure site. Fine for a new clinic, tuition centre, or salon that mainly needs a credible presence and a WhatsApp button.
+- **₹10,000 – ₹30,000** — 5 to 10 page **business website development** with service pages, enquiry forms, basic SEO setup, and a blog. This is where most Lucknow SMEs land.
+- **₹35,000 – ₹90,000** — larger builds: booking systems, multi-location pages, admissions flows, catalogues, custom integrations.
+- **₹1,00,000+** — e-commerce with payments, inventory, and logistics, or a genuine web application.
+
+Two costs people forget: recurring hosting and domain (roughly ₹1,500–₹8,000 a year for a normal business site) and maintenance (₹500–₹3,000 a month for updates, backups, and security patches). **Affordable website development** means the total three-year cost is reasonable, not that the first invoice is small. A ₹5,000 site you abandon in eight months is more expensive than a ₹20,000 site that still earns in year three.
+
+Be sceptical of quotes that are dramatically below the range. Someone is either using a stolen template, planning to disappear after payment, or losing money and will therefore stop replying. See our [transparent pricing and service scope](/services) if you want a written reference point while comparing quotes.
+
+## How to judge a portfolio properly {#portfolio}
+
+Do not scroll through screenshots. Open the live sites on your own phone and check five things:
+
+1. **Speed on mobile data** — turn off WiFi and load it.
+2. **Does the enquiry form actually work?** Submit a test message. You will be surprised how often nothing happens.
+3. **Is the content real** or is there still "Lorem ipsum" and stock text three months after launch?
+4. **Search the business name on Google** — is the site indexed and ranking for its own name?
+5. **Check the footer year and blog** — a dead blog and "© 2021" tell you the relationship ended badly.
+
+Then reverse it: search the phrase you want to rank for, like "dental clinic Hazratganj," and see whose work is already showing up. Vendors whose clients rank are demonstrating something a case study cannot fake. Our own [project work and case studies](/portfolio) are structured exactly this way — problem, what we changed, what the numbers did afterwards — because that is the only format worth reading.
+
+## Freelancer, small studio, or big agency? {#who}
+
+**Freelancer (₹5k–₹25k).** Best value when the scope is small and clear, and when you can speak to two of their past clients. Risk: one person, no backup, and they may take a full-time job mid-project. Mitigation: milestone payments and code handover in writing.
+
+**Small studio of 3–15 people (₹15k–₹90k).** Usually the sweet spot for Lucknow businesses. You still talk to the person doing the work, but there is continuity, process, and someone available when your form breaks. **Website design services in Lucknow** at this tier typically include SEO basics and post-launch support.
+
+**Large agency (₹1L+).** Worth it for complex platforms, multi-city brands, or when procurement requires formal contracts and SLAs. For a 6-page site it is usually overpriced, and your account will be handled by a junior.
+
+There is a fourth option worth naming: the "₹999 website" WhatsApp offers. These are almost always a shared template with your logo dropped in, no ownership, no support, and a hosting account that vanishes. Every business we have rescued from one paid twice in the end.
+
+## The contract details people forget {#contract}
+
+Insist on a written scope, however informal the relationship feels. It should name:
+
+- Exact page count and what each page contains
+- Number of design revision rounds (two or three is normal)
+- Who supplies text, photos, and logo files
+- Payment milestones — typically 40% advance, 40% on design approval, 20% on launch
+- Launch date and what happens if it slips
+- Post-launch support window (30–90 days is standard)
+- Domain, hosting, and source code ownership
+- What is *not* included — this clause prevents most arguments
+
+Also ask for logins as they are created, not at the end: domain registrar, hosting, Search Console, Analytics. Collect them in one document you control.
+
+## Real examples from Lucknow businesses {#examples}
+
+**A coaching institute in Aliganj** had a five-year-old site that took nine seconds to load on mobile and hid its course fees. Parents were calling the office to ask basic questions. The rebuild was not fancy: compressed images, a proper course page per batch, fees stated openly, and one enquiry form. Front-desk calls for information dropped noticeably, and admission enquiries started arriving in writing with the batch already chosen. Clarity beat cleverness.
+
+**A dental clinic in Hazratganj** ranked nowhere for its own locality. Nothing exotic was required — a **professional website design** with a real service page for each treatment, LocalBusiness schema, the Google Business Profile properly completed and linked, and a genuine effort to collect patient reviews. Local search visibility follows consistency, not tricks. That combination of on-site work plus profile work is what our [SEO services](/services/seo-services-lucknow) are built around.
+
+**A furniture wholesaler off Faizabad Road** was invisible to buyers outside Lucknow. The fix was depth: individual product category pages with specifications, dimensions, and honest photographs, plus content answering what bulk buyers actually search for. Enquiries began coming from Kanpur and Delhi within a few months — from search, not advertising.
+
+The pattern in all three: the winning changes were unglamorous. Speed, clear information, one obvious next step.
+
+## Common mistakes that cost people money {#mistakes}
+
+- **Choosing purely on price.** The cheapest quote frequently becomes the most expensive project because it gets rebuilt.
+- **Approving a design without seeing it on a phone.** Over 80% of your visitors will be on mobile. Review mobile first, always.
+- **Letting the developer register your domain in their name.** Non-negotiable: it goes in yours.
+- **No content plan.** Projects stall for months because nobody wrote the About page. Assign it to a person with a date.
+- **Cramming in features nobody asked for.** Chatbots, sliders, animations, a members' area. Launch lean, add later based on real behaviour.
+- **Skipping analytics.** Without Search Console and Analytics from day one, you cannot tell whether the site is working.
+- **Treating launch as the finish line.** Search rankings, content, and trust compound over months. A site left untouched for two years quietly stops performing.
+- **Hiring someone who will not put anything in writing.** Friendliness is not a substitute for a scope document.
+
+## Making the decision {#decision}
+
+Shortlist three vendors. Send the same one-page brief to all of them. Compare not just price but how they respond: does the quote reflect your brief, or is it a copy-paste? Did they ask a question you had not considered? Did they reply within a day?
+
+That last part predicts your next two years of working together better than any portfolio.
+
+Whoever you choose, hold the line on four things: you own the domain and code, mobile speed is measured before payment, SEO basics are itemised, and support is written down. Get those right and even a modest budget produces a website that earns.
+
+If you would like a straight assessment of your current site — or a written quote with the scope spelled out line by line — [get in touch](/contact). No obligation, and you will get an honest answer even if the answer is that you do not need a new website yet.
+`,
+    faqs: [
+      { question: "How much does website development in Lucknow cost in 2026?", answer: "A small brochure site typically runs ₹2,000–₹8,000. A 5–10 page business website with service pages, forms and SEO setup usually costs ₹10,000–₹30,000. Booking systems, catalogues and multi-location builds range from ₹35,000–₹90,000, and full e-commerce with payments starts around ₹1,00,000. Budget separately for hosting and domain (₹1,500–₹8,000 a year) and maintenance (₹500–₹3,000 a month)." },
+      { question: "How long does it take to build a business website?", answer: "A single-page site can go live in 3–5 days. A standard 5–10 page business website takes 2–4 weeks, and larger builds with booking or catalogue features take 6–10 weeks. In practice the biggest delay is content — if your text and photos are ready, timelines shrink considerably." },
+      { question: "Should I hire a freelancer or a website development company in Lucknow?", answer: "A freelancer is good value for small, clearly scoped work if you can speak to their past clients. A small studio of 3–15 people is usually the best fit for most Lucknow businesses because you get continuity and post-launch support. Large agencies make sense only for complex platforms or when formal contracts and SLAs are required." },
+      { question: "Who should own my domain and hosting?", answer: "You should — always. The domain must be registered in your name with your email, and hosting should be under an account you control. Ask for every login as it is created. Developers holding domains at renewal time is one of the most common disputes in this market." },
+      { question: "What does 'SEO friendly website' actually include?", answer: "Concrete, checkable items: unique title tags and meta descriptions per page, a clean heading structure, image alt text, schema markup, an XML sitemap, a robots file, fast mobile load times, and Google Search Console plus Analytics connected. If a vendor says only 'full SEO included', ask for the itemised list." },
+      { question: "Is a custom website better than a template?", answer: "Not automatically. A well-built template can outperform a poor custom design and costs far less. Custom development is worth the premium when your booking flow, catalogue, or service logic is genuinely unusual, or when brand differentiation matters commercially. Just insist on knowing which one you are paying for." },
+      { question: "How do I check whether a web design company is any good?", answer: "Open their past projects on your own phone with mobile data, submit a test enquiry form, check whether the content is real, and search the client's business name on Google to confirm the site is indexed. Then ask to speak with one past client directly. Most of the field is filtered out by that last request." },
+      { question: "Do I need a website if I already have Instagram and a Google Business Profile?", answer: "They complement each other but do not replace a website. Social profiles are rented space with limited control, and a Google Business Profile performs measurably better when it links to a fast, relevant website. A site is also where you can publish service details, pricing and proof that search engines can rank." },
+      { question: "What should I avoid in a ₹999 or ₹1,499 website offer?", answer: "These are typically shared templates with a logo dropped in — no ownership, no support, and hosting that can disappear without notice. Businesses that start there usually pay a second time within a year. If the budget is genuinely tight, a well-built single-page site with clear content is a far better use of the same money." },
+      { question: "How soon will my new website bring enquiries?", answer: "Branded searches and direct visits convert almost immediately. Organic search traffic for competitive local terms generally builds over 60–90 days, and competitive niches such as dentists, lawyers or real estate can take 4–6 months of consistent content and local SEO work." },
+    ],
+  },
+
   "local-seo-guide-lucknow": {
     title: "Complete Local SEO Guide for Lucknow Businesses (2026)",
     seoTitle: "Local SEO Guide for Lucknow Businesses — 2026",
