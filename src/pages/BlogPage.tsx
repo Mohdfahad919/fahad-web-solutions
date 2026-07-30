@@ -9,6 +9,15 @@ import { Clock, ArrowRight, Sparkles, User } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "how-to-choose-website-development-company-lucknow",
+    title: "How to Choose the Best Website Development Company in Lucknow (2026 Complete Guide)",
+    excerpt: "A practical guide to hiring a website development company in Lucknow — the nine questions to ask, honest 2026 price ranges, portfolio checks and red flags.",
+    date: "July 30, 2026",
+    readTime: "12 min read",
+    category: "Web Development",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=72&fm=webp&auto=format",
+  },
+  {
     slug: "best-website-development-services-lucknow",
     title: "Best Website Development Services in Lucknow for Small Businesses",
     excerpt: "Looking for affordable, professional website development in Lucknow? Discover the best web design services for small businesses and startups in Lucknow, India.",
