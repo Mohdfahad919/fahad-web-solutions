@@ -37,17 +37,17 @@ This guide is written from the trenches — from rebuilding sites for a coaching
 
 ## Table of Contents
 
-- [Get clear on what the website is for](#purpose)
-- [Nine questions that separate professionals from amateurs](#questions)
-- [What website development actually costs in Lucknow](#pricing)
-- [How to judge a portfolio properly](#portfolio)
-- [Freelancer, small studio, or big agency?](#who)
-- [The contract details people forget](#contract)
-- [Real examples from Lucknow businesses](#examples)
-- [Common mistakes that cost people money](#mistakes)
-- [FAQs](#faqs)
+- Get clear on what the website is for
+- Nine questions that separate professionals from amateurs
+- What website development actually costs in Lucknow
+- How to judge a portfolio properly
+- Freelancer, small studio, or big agency?
+- The contract details people forget
+- Real examples from Lucknow businesses
+- Common mistakes that cost people money
+- FAQs
 
-## Get clear on what the website is for {#purpose}
+## Get clear on what the website is for
 
 Before you call anyone, finish this sentence: *"I will consider this website successful if ______ happens within six months."*
 
@@ -65,7 +65,7 @@ Write down, on one page:
 - Your realistic launch deadline
 - Your budget range — yes, share it; hiding it wastes everyone's time
 
-## Nine questions that separate professionals from amateurs {#questions}
+## Nine questions that separate professionals from amateurs
 
 Any serious **website development company in Lucknow** will answer these without hesitation. Hesitation itself is the signal.
 
@@ -96,7 +96,7 @@ Templates are not evil — a well-implemented template beats a bad custom design
 **9. "Can I speak to one past client directly?"**
 The best **web design company in Lucknow** for you will say yes immediately. This one question filters out most of the field.
 
-## What website development actually costs in Lucknow {#pricing}
+## What website development actually costs in Lucknow
 
 Honest ranges, based on projects delivered in this market:
 
@@ -109,7 +109,7 @@ Two costs people forget: recurring hosting and domain (roughly ₹1,500–₹8,0
 
 Be sceptical of quotes that are dramatically below the range. Someone is either using a stolen template, planning to disappear after payment, or losing money and will therefore stop replying. See our [transparent pricing and service scope](/services) if you want a written reference point while comparing quotes.
 
-## How to judge a portfolio properly {#portfolio}
+## How to judge a portfolio properly
 
 Do not scroll through screenshots. Open the live sites on your own phone and check five things:
 
@@ -121,7 +121,7 @@ Do not scroll through screenshots. Open the live sites on your own phone and che
 
 Then reverse it: search the phrase you want to rank for, like "dental clinic Hazratganj," and see whose work is already showing up. Vendors whose clients rank are demonstrating something a case study cannot fake. Our own [project work and case studies](/portfolio) are structured exactly this way — problem, what we changed, what the numbers did afterwards — because that is the only format worth reading.
 
-## Freelancer, small studio, or big agency? {#who}
+## Freelancer, small studio, or big agency?
 
 **Freelancer (₹5k–₹25k).** Best value when the scope is small and clear, and when you can speak to two of their past clients. Risk: one person, no backup, and they may take a full-time job mid-project. Mitigation: milestone payments and code handover in writing.
 
@@ -131,7 +131,7 @@ Then reverse it: search the phrase you want to rank for, like "dental clinic Haz
 
 There is a fourth option worth naming: the "₹999 website" WhatsApp offers. These are almost always a shared template with your logo dropped in, no ownership, no support, and a hosting account that vanishes. Every business we have rescued from one paid twice in the end.
 
-## The contract details people forget {#contract}
+## The contract details people forget
 
 Insist on a written scope, however informal the relationship feels. It should name:
 
@@ -146,7 +146,7 @@ Insist on a written scope, however informal the relationship feels. It should na
 
 Also ask for logins as they are created, not at the end: domain registrar, hosting, Search Console, Analytics. Collect them in one document you control.
 
-## Real examples from Lucknow businesses {#examples}
+## Real examples from Lucknow businesses
 
 **A coaching institute in Aliganj** had a five-year-old site that took nine seconds to load on mobile and hid its course fees. Parents were calling the office to ask basic questions. The rebuild was not fancy: compressed images, a proper course page per batch, fees stated openly, and one enquiry form. Front-desk calls for information dropped noticeably, and admission enquiries started arriving in writing with the batch already chosen. Clarity beat cleverness.
 
@@ -156,7 +156,7 @@ Also ask for logins as they are created, not at the end: domain registrar, hosti
 
 The pattern in all three: the winning changes were unglamorous. Speed, clear information, one obvious next step.
 
-## Common mistakes that cost people money {#mistakes}
+## Common mistakes that cost people money
 
 - **Choosing purely on price.** The cheapest quote frequently becomes the most expensive project because it gets rebuilt.
 - **Approving a design without seeing it on a phone.** Over 80% of your visitors will be on mobile. Review mobile first, always.
@@ -167,7 +167,7 @@ The pattern in all three: the winning changes were unglamorous. Speed, clear inf
 - **Treating launch as the finish line.** Search rankings, content, and trust compound over months. A site left untouched for two years quietly stops performing.
 - **Hiring someone who will not put anything in writing.** Friendliness is not a substitute for a scope document.
 
-## Making the decision {#decision}
+## Making the decision
 
 Shortlist three vendors. Send the same one-page brief to all of them. Compare not just price but how they respond: does the quote reflect your brief, or is it a copy-paste? Did they ask a question you had not considered? Did they reply within a day?
 
