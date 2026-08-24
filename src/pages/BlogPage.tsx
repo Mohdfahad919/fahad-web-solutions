@@ -9,6 +9,15 @@ import { Clock, ArrowRight, Sparkles, User } from "lucide-react";
 
 const blogPosts = [
   {
+    slug: "website-development-cost-lucknow-2026",
+    title: "Website Development Cost in Lucknow (2026): Complete Pricing Guide for Businesses",
+    excerpt: "Honest 2026 price ranges for websites in Lucknow — what each band includes, what pushes a quote up, yearly running costs and the questions to ask before paying.",
+    date: "August 24, 2026",
+    readTime: "11 min read",
+    category: "Business",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=72&fm=webp&auto=format",
+  },
+  {
     slug: "how-to-choose-website-development-company-lucknow",
     title: "How to Choose the Best Website Development Company in Lucknow (2026 Complete Guide)",
     excerpt: "A practical guide to hiring a website development company in Lucknow — the nine questions to ask, honest 2026 price ranges, portfolio checks and red flags.",
