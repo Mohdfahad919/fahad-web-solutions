@@ -21,6 +21,144 @@ export interface BlogPost {
 }
 
 export const additionalBlogPosts: Record<string, BlogPost> = {
+  "website-development-cost-lucknow-2026": {
+    title: "Website Development Cost in Lucknow (2026): Complete Pricing Guide for Businesses",
+    seoTitle: "Website Development Cost in Lucknow (2026 Guide)",
+    description: "What does a website really cost in Lucknow in 2026? Honest price ranges by website type, what changes the quote, hidden running costs and questions to ask.",
+    keywords: "website development cost in Lucknow, website design cost in Lucknow, website development Lucknow, website development company in Lucknow, affordable website development, business website development, custom website development, ecommerce website development, professional website design, website design services Lucknow, website maintenance cost, SEO cost for website",
+    date: "August 24, 2026", readTime: "11 min read", category: "Business",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&fm=webp",
+    content: `
+"How much for a website?" is usually the first question, and it is the hardest one to answer in a single line — for the same reason a builder cannot price "a house" over the phone. Two shops on the same street in Hazratganj can need work that differs by ten times in effort.
+
+Still, you deserve real numbers before you start calling people. Below are the price bands that actually show up in Lucknow in 2026, what sits inside each one, what quietly adds to the bill, and the running costs nobody mentions until renewal time. Ranges here reflect typical market rates for the city — your final quote depends on scope, page count, features, design work and how much ongoing support you want.
+
+## Table of Contents
+
+- What you are really paying for
+- Price bands by website type
+- What pushes a quote up or down
+- Yearly running costs: domain, hosting, maintenance
+- Four realistic Lucknow examples
+- WordPress or custom build?
+- Where SEO fits into the budget
+- Mistakes that make websites cost more than they should
+- Questions to ask before you pay a rupee
+- FAQs
+
+## What you are really paying for
+
+A website quote is mostly time. Someone has to plan the structure, design each screen, write or arrange content, build it, test it on real phones, connect the forms, set up hosting and hand it over. Design and content usually eat more hours than coding.
+
+That is why "just 5 pages" is not a price. Five pages with your existing photos and text is a small job. Five pages where someone has to interview you, write the copy, arrange photography and design a custom look is several times the work.
+
+## Price bands by website type
+
+Treat these as planning ranges, not fixed rates.
+
+- **Basic business website — around ₹8,000 to ₹25,000.** Roughly 4 to 6 pages: home, about, services, contact. Mobile responsive, one enquiry form, WhatsApp button, SSL, basic on-page SEO (titles, descriptions, clean headings), Google Maps embed. Content usually supplied by you. Good fit for a shop, a small consultancy or a new service business that mainly needs to look credible and be reachable.
+- **Professional business website — around ₹25,000 to ₹75,000.** 8 to 20 pages, custom design instead of a template, individual service pages written for search, gallery, testimonials, blog section, admin panel so you can edit content yourself, appointment or lead forms with email notifications, speed optimisation and analytics. This is the band most clinics, institutes, schools and B2B firms end up in once they want enquiries rather than just presence.
+- **Ecommerce website — around ₹45,000 to ₹1,50,000+.** Product catalogue with variants, cart, checkout, payment gateway (Razorpay, PayU or similar), shipping and tax rules, order management, customer accounts, coupons, invoices. Cost scales with catalogue size and how custom the shopping rules are. Marketplace-style features, multi-vendor logic or ERP integrations sit above this band.
+- **Custom web application — ₹1,50,000 and upward.** A booking platform, learning portal, CRM, dashboard or anything with logins, roles, permissions and business logic. Priced by feature set and testing effort, almost never by page count.
+
+Anything advertised as a complete professional business website for ₹2,000–₹3,000 is a template with your logo dropped in. That is not automatically wrong — a one-page profile can be genuinely enough for a freelancer — but be clear that is what you are buying.
+
+## What pushes a quote up or down
+
+The honest list, roughly in order of impact:
+
+- **Page count and content depth.** Twenty pages of written service content is a different project from four.
+- **Design approach.** Ready template, customised template, or designed from scratch. Each step roughly adds a third to half.
+- **Who writes the content.** Copywriting, translation and product descriptions are real hours.
+- **Photography.** Stock images cost little; a shoot for your restaurant or showroom is a separate line item and usually worth it.
+- **Forms and workflows.** A contact form is trivial. An admission form that validates fields, uploads documents, emails the office and stores entries is not.
+- **Booking or appointment systems.** Slot logic, confirmations and reminders add meaningful development time.
+- **Payment gateway.** Integration itself is modest; the gateway also charges roughly 2% per transaction, which is an ongoing cost, not a build cost.
+- **CMS or admin panel.** Being able to edit content yourself adds to the build but saves change-request fees forever.
+- **Number of languages.** Hindi plus English roughly doubles content work.
+- **Speed and Core Web Vitals work.** Image compression, code splitting and caching done properly take time and directly affect rankings and conversions.
+- **Security basics.** SSL, form spam protection, rate limiting, backups.
+- **Revision rounds.** Two rounds is normal. Unlimited revisions either raises the price or quietly limits it somewhere else.
+
+## Yearly running costs: domain, hosting, maintenance
+
+Build cost is one-time. These recur, and this is where surprises usually happen:
+
+- **Domain:** roughly ₹700–₹1,500 a year for a .com or .in.
+- **Hosting:** ₹1,500–₹6,000 a year for shared hosting suitable for a brochure site; ₹8,000–₹30,000+ a year for busy ecommerce or application hosting. Modern static hosting for a fast business site can be very cheap or free at low traffic.
+- **Business email:** ₹1,500–₹3,000 per mailbox per year if you want name@yourbusiness.com through a paid provider.
+- **Maintenance:** typically ₹500–₹5,000 a month depending on what is included — updates, backups, uptime checks, small content edits, security patches. Plugin-heavy WordPress sites need more attention than lean custom builds.
+- **SEO, if you want ongoing work:** usually ₹5,000–₹25,000 a month in this market. Optional, but see the section below.
+
+Budget the first-year total, not just the build. A ₹30,000 site with ₹12,000 of first-year running costs is a ₹42,000 decision.
+
+## Four realistic Lucknow examples
+
+**A coaching institute in Aliganj.** Needs home, about, courses, faculty, gallery, contact and an admission enquiry form that reaches the front desk. Roughly 8–10 pages, one form with validation, plenty of content to write, photos of the classrooms. No payments, no product logic. Lands in the professional band — commonly ₹30,000–₹55,000 — and the value comes from parents finding fee and batch details without calling.
+
+**A restaurant near Gomti Nagar.** Fewer pages, but the menu changes and photos matter enormously. Needs a fast mobile site, editable menu, table enquiry form, Google Maps, links to delivery apps. Often ₹18,000–₹40,000, with food photography as a separate cost. If online ordering with payment is added, it moves toward the ecommerce band.
+
+**A dental clinic in Hazratganj.** Five to eight pages, treatment pages written for search terms people actually type, doctor profile for credibility, appointment form, clinic timings, directions. Usually ₹25,000–₹50,000. Most of the return comes from local search visibility rather than the design itself.
+
+**A saree store selling online.** 300 products with size and colour variants, cart, Razorpay checkout, shipping rules by pincode, order dashboard, invoices, coupons. Even with a sensible platform, this is ₹60,000–₹1,20,000 depending on how much catalogue entry the developer does versus your staff. The recurring cost is higher too — better hosting, gateway fees, ongoing product updates.
+
+Notice why the ecommerce project costs three times the clinic site: it is not prettier, it has far more moving parts that can break and must be tested.
+
+## WordPress or custom build?
+
+Neither is universally right.
+
+WordPress makes sense when you want a large editable content site, plugins cover your needs and you have someone willing to keep it updated. It is cheaper to start and there is a wide pool of people who can maintain it.
+
+A custom build (React and similar modern stacks) makes sense when speed, security and precise design matter, or when your workflow does not match any plugin. Fewer moving parts means fewer things breaking on their own — but you need the original developer or a competent replacement for bigger changes.
+
+Ask which one is being proposed and why. "Because it is what we always use" is a weaker answer than one tied to your requirements. Our [website development approach](/services/website-development-lucknow) and [web design work](/services/web-design-services-lucknow) pages explain how scope decisions are made in practice.
+
+## Where SEO fits into the budget
+
+Basic on-page SEO should be part of any professional build: sensible titles and descriptions, clean heading structure, fast loading, mobile layout, sitemap, schema markup, Google Business Profile linkage. If a quote excludes these, it is not a finished website.
+
+Ongoing SEO — keyword research, new content every month, local citations, link building, reporting — is separate work with a monthly cost, because it is separate labour. A useful sequence for a tight budget: build the site properly, claim and optimise your Google Business Profile, publish content steadily, then add paid SEO retainers once enquiries justify it. The [SEO services](/services/seo-services-lucknow) page covers what that ongoing work involves.
+
+## Mistakes that make websites cost more than they should
+
+- **Hiring purely on lowest price.** The rebuild almost always costs more than the difference you saved.
+- **Skipping mobile checks.** Most Lucknow traffic is mobile. Ask to see the site on your own phone before final payment.
+- **Not looking at real work.** Ask for live URLs, not screenshots, and open them on mobile. See [our portfolio and case studies](/portfolio) as an example of what live proof looks like.
+- **Forgetting maintenance.** A site nobody updates decays — broken plugins, expired SSL, outdated prices.
+- **Not asking who owns the domain and hosting.** Both should be registered in your name with your email. This single question prevents the most common hostage situation.
+- **Ignoring SEO at build time.** Retrofitting structure and speed later costs more than doing it right initially.
+- **Buying features you will not use.** Chat bots, sliders, animations and apps that nobody touches after month one.
+- **Not testing speed.** Run PageSpeed Insights before you sign off. A slow site loses enquiries quietly.
+- **Vague payment and support terms.** Get milestones, deliverables, revision limits and post-launch support duration in writing.
+
+## Questions to ask before you pay a rupee
+
+Ask these five and most bad outcomes disappear: Is the domain registered in my name? What exactly is in the maintenance plan and what costs extra? Can I edit content myself, and can you show me how? How many revision rounds are included? Who owns the source code and files after final payment?
+
+If the answers are clear and written down, the price you are quoted is probably a fair one. If they are vague, no discount makes it a good deal.
+
+## Bottom line
+
+For most Lucknow businesses in 2026: ₹8,000–₹25,000 buys a credible small brochure site, ₹25,000–₹75,000 buys a website designed to bring enquiries, and ecommerce realistically starts around ₹45,000 and rises with catalogue and checkout complexity. Add ₹5,000–₹15,000 a year for domain, hosting and basic maintenance.
+
+Decide the outcome you want first — appointments, admissions, orders, bulk enquiries — then price the build against that. It is a far better way to judge a quote than page count.
+
+If you want a specific figure for your business, share your requirement and we will break down scope, timeline and costs plainly, with no obligation. Start on the [contact page](/contact) or read the honest hiring checklist in [how to choose a website development company in Lucknow](/blog/how-to-choose-website-development-company-lucknow).
+`,
+    faqs: [
+      { question: "How much does a website cost in Lucknow in 2026?", answer: "Most business websites in Lucknow fall between ₹8,000 and ₹75,000. A basic 4-6 page site typically costs ₹8,000-₹25,000, while a custom-designed site with individual service pages, blog, admin panel and lead forms usually runs ₹25,000-₹75,000. Ecommerce and custom applications cost more. Final pricing depends on scope, page count, design work, features and maintenance needs." },
+      { question: "What is the cheapest professional website option?", answer: "A one-page or 3-4 page site built on a customised template with your own content, hosted on inexpensive modern hosting. Around ₹8,000-₹15,000 is realistic for genuinely professional work at that size. Below roughly ₹5,000 you are buying an unedited template, which can be fine for a freelancer profile but rarely supports a growing business." },
+      { question: "How much does an ecommerce website cost in Lucknow?", answer: "Usually ₹45,000 to ₹1,50,000 or more. Cost is driven by catalogue size, product variants, payment gateway and shipping rules, order management needs and how much product data entry the developer handles. Remember the recurring costs too: better hosting and roughly 2% payment gateway fees per transaction." },
+      { question: "Does website development include hosting?", answer: "Sometimes for the first year, but not always. Ask explicitly whether hosting is bundled, what it costs after year one, and where the site is hosted. Shared hosting for a brochure site runs about ₹1,500-₹6,000 a year; ecommerce hosting is higher." },
+      { question: "Is the domain name included in the price?", answer: "Many quotes include the first year of a domain (around ₹700-₹1,500). The critical point is ownership: insist the domain is registered in your name and your email, and that you receive the registrar login. Never let a developer hold your domain in their own account." },
+      { question: "How much does website maintenance cost?", answer: "Typically ₹500-₹5,000 per month depending on inclusions. Basic plans cover backups, security updates, uptime monitoring and small content edits. Plugin-heavy WordPress sites generally need more maintenance attention than lean custom builds. Always get the list of what is included and what is billed separately." },
+      { question: "Does SEO cost extra?", answer: "Basic on-page SEO — titles, descriptions, heading structure, mobile layout, speed, sitemap and schema — should be part of any professional build. Ongoing SEO such as monthly content, keyword research, local citations and link building is separate work and usually costs ₹5,000-₹25,000 a month in this market." },
+      { question: "How long does website development take?", answer: "A small business site takes about 1-2 weeks once content is ready. A professional 10-20 page site typically takes 3-6 weeks, and ecommerce 4-10 weeks. The most common cause of delay is content — photos, text and product details arriving late from the business side." },
+      { question: "Should a small business choose WordPress or custom development?", answer: "Choose WordPress if you need a large content site, existing plugins cover your requirements and you will keep it updated. Choose a custom build when speed, security and exact design matter, or your workflow does not fit off-the-shelf plugins. Ask your developer to justify the choice against your actual requirements." },
+      { question: "What should I ask a website development company before hiring them?", answer: "Five questions matter most: Is the domain registered in my name? What exactly does maintenance include and what costs extra? Can I edit content myself? How many revision rounds are included? Who owns the source code after final payment? Clear written answers to these are a better signal of quality than price alone." },
+    ],
+  },
   "how-to-choose-website-development-company-lucknow": {
     title: "How to Choose the Best Website Development Company in Lucknow (2026 Complete Guide)",
     seoTitle: "Best Website Development Company in Lucknow",
