@@ -15,7 +15,7 @@ const blogPosts = [
     date: "August 24, 2026",
     readTime: "11 min read",
     category: "Business",
-    image: "https://images.unsplash.com/photo-1454165804606-3bebb47c2617?w=600&q=72&fm=webp&auto=format",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=72&fm=webp&auto=format",
   },
   {
     slug: "how-to-choose-website-development-company-lucknow",
