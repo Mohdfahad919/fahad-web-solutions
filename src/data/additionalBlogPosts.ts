@@ -27,7 +27,7 @@ export const additionalBlogPosts: Record<string, BlogPost> = {
     description: "What does a website really cost in Lucknow in 2026? Honest price ranges by website type, what changes the quote, hidden running costs and questions to ask.",
     keywords: "website development cost in Lucknow, website design cost in Lucknow, website development Lucknow, website development company in Lucknow, affordable website development, business website development, custom website development, ecommerce website development, professional website design, website design services Lucknow, website maintenance cost, SEO cost for website",
     date: "August 24, 2026", readTime: "11 min read", category: "Business",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&fm=webp",
+    image: "https://images.unsplash.com/photo-1454165804606-3bebb47c2617?w=1200&q=80&fm=webp",
     content: `
 "How much for a website?" is usually the first question, and it is the hardest one to answer in a single line — for the same reason a builder cannot price "a house" over the phone. Two shops on the same street in Hazratganj can need work that differs by ten times in effort.
 
