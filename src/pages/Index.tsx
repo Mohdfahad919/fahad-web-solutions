@@ -277,6 +277,8 @@ const Index = () => {
                     <img 
                       src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&fm=webp" 
                       alt="Professional website development in Lucknow - modern web design services"
+                      width="800"
+                      height="533"
                       className="w-full h-auto rounded-2xl shadow-2xl border border-border"
                       loading="eager"
                       // @ts-expect-error lowercase per HTML spec
@@ -290,8 +292,12 @@ const Index = () => {
                   <img 
                     src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80&fm=webp" 
                     alt="Web design services India - affordable website development"
+                    width="600"
+                    height="400"
                     className="w-full h-auto rounded-xl shadow-lg border border-border"
                     loading="eager"
+                    // @ts-expect-error lowercase per HTML spec
+                    fetchpriority="high"
                   />
                 </div>
               </div>
