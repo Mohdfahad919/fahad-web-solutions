@@ -63,10 +63,11 @@ const websiteTypes = [
 ];
 
 const benefits = [
-  { icon: Zap, title: "Lightning Fast", description: "Websites that load in under 2 seconds" },
-  { icon: Search, title: "SEO Optimized", description: "Built to rank higher on Google" },
-  { icon: TrendingUp, title: "Conversion Focused", description: "Turns visitors into customers" },
-  { icon: Shield, title: "Secure & Reliable", description: "Enterprise-grade security" },
+  { icon: BadgeCheck, title: "Starting at ₹1,999", description: "Clear starting prices for your website" },
+  { icon: Monitor, title: "Mobile Responsive", description: "Designed to work across screen sizes" },
+  { icon: Search, title: "SEO-Ready", description: "Built with search-friendly foundations" },
+  { icon: Zap, title: "Fast Delivery", description: "Defined timelines before work begins" },
+  { icon: Palette, title: "Professional Design", description: "A polished look tailored to your business" },
 ];
 
 const projects = [
@@ -238,10 +239,10 @@ const Index = () => {
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
-                    <Link to="/contact" className="group relative inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl bg-accent text-accent-foreground shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:scale-[1.02] transition-all duration-300">
-                      Get Started <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                    <Link to="/contact" className="group relative inline-flex min-h-12 items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl bg-accent text-accent-foreground shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:scale-[1.02] transition-all duration-300">
+                      Start Your Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                     </Link>
-                    <a href="https://wa.me/9076669103" className="group inline-flex items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl border border-border bg-card text-foreground hover:border-accent/30 hover:shadow-lg transition-all duration-300">
+                    <a href="https://wa.me/9076669103" target="_blank" rel="noopener noreferrer" className="group inline-flex min-h-12 items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl border border-border bg-card text-foreground hover:border-accent/30 hover:shadow-lg transition-all duration-300">
                       <MessageCircle className="w-4 h-4 text-accent" />
                       Chat on WhatsApp
                     </a>

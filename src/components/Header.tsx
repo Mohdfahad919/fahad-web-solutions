@@ -81,7 +81,7 @@ export function Header() {
               to="/contact"
               className="bg-accent hover:bg-accent-hover text-white text-sm font-semibold inline-flex items-center gap-1.5 px-[22px] py-[10px] rounded-[10px] transition-all duration-200 hover:-translate-y-px shadow-[0_2px_10px_-2px_hsl(var(--accent)/0.4)]"
             >
-              Get Started
+              Start Your Project
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -92,7 +92,7 @@ export function Header() {
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-menu"
-            className="lg:hidden p-2 rounded-md text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+            className="lg:hidden min-h-11 min-w-11 p-2 rounded-md text-white/80 hover:text-white hover:bg-white/10 transition-colors"
           >
             {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -123,7 +123,7 @@ export function Header() {
                 to="/contact"
                 className="bg-accent hover:bg-accent-hover text-white w-full text-center block text-sm font-medium py-3 rounded-lg transition-all"
               >
-                Get Started
+                Start Your Project
               </Link>
             </div>
           </nav>
