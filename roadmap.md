@@ -1,0 +1,3 @@
+- [x] Review uploaded improvement brief and current page implementation.
+- [x] Refine homepage CTA hierarchy, mobile call/WhatsApp access, trust highlights, and reduced-motion behavior.
+- [ ] Verify desktop/mobile layout, navigation, contact links, assets, and runtime health.
