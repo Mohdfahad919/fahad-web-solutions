@@ -81,7 +81,7 @@ export function Header() {
               to="/contact"
               className="bg-accent hover:bg-accent-hover text-white text-sm font-semibold inline-flex items-center gap-1.5 px-[22px] py-[10px] rounded-[10px] transition-all duration-200 hover:-translate-y-px shadow-[0_2px_10px_-2px_hsl(var(--accent)/0.4)]"
             >
-              Start Your Project
+              Get Started
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
