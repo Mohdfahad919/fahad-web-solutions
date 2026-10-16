@@ -1,3 +1,3 @@
-- [x] Review uploaded improvement brief and current page implementation.
-- [x] Refine homepage CTA hierarchy, mobile call/WhatsApp access, trust highlights, and reduced-motion behavior.
-- [x] Verify desktop/mobile layout, navigation, contact links, assets, routes, and runtime health.
+- [ ] Improve mobile floating contact-button spacing, safe-area clearance, and avoid overlap with the homepage hero CTA.
+- [ ] Tighten homepage hero vertical gaps on narrow mobile screens while preserving tap targets.
+- [ ] Verify narrow-screen overflow, contact links, desktop appearance, and production build.

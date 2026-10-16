@@ -1,26 +1,46 @@
+import { useEffect, useState } from "react";
 import { MessageCircle, Phone } from "lucide-react";
 
 export function WhatsAppButton() {
+  const [isHeroVisible, setIsHeroVisible] = useState(true);
+
+  useEffect(() => {
+    const hero = document.getElementById("home-hero");
+    if (!hero || typeof IntersectionObserver === "undefined") {
+      setIsHeroVisible(false);
+      return;
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsHeroVisible(entry.isIntersecting);
+    });
+    observer.observe(hero);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
-      <div className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-50 flex items-center gap-2 sm:hidden">
-        <a
-          href="tel:9076669103"
-          aria-label="Call Fahad WebService"
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg transition-colors hover:bg-accent-hover"
-        >
-          <Phone className="h-5 w-5" />
-        </a>
-        <a
-          href="https://wa.me/9076669103"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Chat on WhatsApp"
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-whatsapp text-white shadow-lg transition-colors hover:bg-whatsapp-hover"
-        >
-          <MessageCircle className="h-5 w-5" />
-        </a>
-      </div>
+      {!isHeroVisible && (
+        <div className="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-[calc(1rem+env(safe-area-inset-right))] z-50 flex items-center gap-3 sm:hidden">
+          <a
+            href="tel:9076669103"
+            aria-label="Call Fahad WebService"
+            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg transition-colors hover:bg-accent-hover"
+          >
+            <Phone className="h-5 w-5" />
+          </a>
+          <a
+            href="https://wa.me/9076669103"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp"
+            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-whatsapp text-white shadow-lg transition-colors hover:bg-whatsapp-hover"
+          >
+            <MessageCircle className="h-5 w-5" />
+          </a>
+        </div>
+      )}
 
       <a
         href="https://wa.me/9076669103"

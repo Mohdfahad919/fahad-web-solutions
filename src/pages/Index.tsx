@@ -211,13 +211,13 @@ const Index = () => {
       <Header />
       <main className="overflow-hidden">
         {/* Hero Section */}
-        <section className="w-full relative min-h-[85svh] flex items-center pt-28 pb-16 overflow-hidden bg-background">
+        <section id="home-hero" className="w-full relative min-h-[85svh] flex items-center pt-28 pb-16 overflow-hidden bg-background">
           <div className="w-full px-6 sm:px-8 lg:px-8 relative z-10">
             <div className="max-w-[1200px] mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 {/* Left Content */}
                 <div className="text-center lg:text-left">
-                  <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-accent/8 border border-accent/15 mb-8">
+                  <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-accent/8 border border-accent/15 mb-6 sm:mb-8">
                     <span className="relative flex h-2 w-2">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
@@ -225,7 +225,7 @@ const Index = () => {
                     <span className="text-accent text-xs font-semibold tracking-wide uppercase">Now Accepting New Projects</span>
                   </div>
 
-                  <h1 className="text-foreground mb-5 leading-[1.1] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold tracking-tight">
+                  <h1 className="text-foreground mb-4 sm:mb-5 leading-[1.1] text-4xl sm:text-5xl lg:text-[3.5rem] font-bold tracking-tight">
                     Affordable Website{" "}
                     <br className="hidden sm:block" />
                     Development in{" "}
@@ -234,15 +234,15 @@ const Index = () => {
 
                  
 
-                  <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                  <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-6 sm:mb-8 leading-relaxed">
                     We build modern, fast, and SEO-optimized websites for your business. Get your professional website starting at just <span className="text-accent font-bold">₹1,999</span>.
                   </p>
                   
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center mb-8 sm:mb-10">
                     <Link to="/contact" className="group relative inline-flex min-h-12 items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl bg-accent text-accent-foreground shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:scale-[1.02] transition-all duration-300">
                       Start Your Project <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                     </Link>
-                    <a href="https://wa.me/9076669103" target="_blank" rel="noopener noreferrer" className="group inline-flex min-h-12 items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl border border-border bg-card text-foreground hover:border-accent/30 hover:shadow-lg transition-all duration-300">
+                    <a id="hero-whatsapp-cta" href="https://wa.me/9076669103" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" className="group inline-flex min-h-12 items-center gap-2.5 w-full sm:w-auto justify-center text-base font-semibold px-8 py-4 rounded-xl border border-border bg-card text-foreground hover:border-accent/30 hover:shadow-lg transition-all duration-300">
                       <MessageCircle className="w-4 h-4 text-accent" />
                       Chat on WhatsApp
                     </a>
