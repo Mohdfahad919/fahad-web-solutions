@@ -391,7 +391,7 @@ const Index = () => {
                 </p>
               </AnimatedSection>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              <div className="grid grid-cols-1 min-[380px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                 {websiteTypes.map((type, index) => (
                   <AnimatedSection key={type.title} animation="scale-in" delay={index * 40}>
                     <div className="glass-card p-4 h-full group flex flex-col">
