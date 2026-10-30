@@ -2,26 +2,26 @@ import { useEffect, useState } from "react";
 import { MessageCircle, Phone } from "lucide-react";
 
 export function WhatsAppButton() {
-  const [isHeroVisible, setIsHeroVisible] = useState(true);
+  const [isHeroCtaVisible, setIsHeroCtaVisible] = useState(true);
 
   useEffect(() => {
-    const hero = document.getElementById("home-hero");
-    if (!hero || typeof IntersectionObserver === "undefined") {
-      setIsHeroVisible(false);
+    const heroCta = document.getElementById("hero-whatsapp-cta");
+    if (!heroCta || typeof IntersectionObserver === "undefined") {
+      setIsHeroCtaVisible(false);
       return;
     }
 
     const observer = new IntersectionObserver(([entry]) => {
-      setIsHeroVisible(entry.isIntersecting);
+      setIsHeroCtaVisible(entry.isIntersecting);
     });
-    observer.observe(hero);
+    observer.observe(heroCta);
 
     return () => observer.disconnect();
   }, []);
 
   return (
     <>
-      {!isHeroVisible && (
+      {!isHeroCtaVisible && (
         <div className="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-[calc(1rem+env(safe-area-inset-right))] z-50 flex items-center gap-3 sm:hidden">
           <a
             href="tel:9076669103"
