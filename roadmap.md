@@ -1,3 +1,3 @@
-- [ ] Improve mobile floating contact-button spacing, safe-area clearance, and avoid overlap with the homepage hero CTA.
-- [ ] Tighten homepage hero vertical gaps on narrow mobile screens while preserving tap targets.
-- [ ] Verify narrow-screen overflow, contact links, desktop appearance, and production build.
+- [x] Improve mobile floating contact-button spacing, safe-area clearance, and avoid overlap with the homepage hero CTA.
+- [x] Tighten homepage hero vertical gaps on narrow mobile screens while preserving tap targets.
+- [x] Verify narrow-screen overflow, contact links, desktop appearance, and production build.
